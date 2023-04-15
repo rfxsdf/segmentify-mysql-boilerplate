@@ -1,7 +1,7 @@
 # MySQL + Flask Boilerplate Project
 
 ## Project Overview
-**Project Description**: Our project is meant to create an application that helps companies (from start-ups to well-established organizations) segment customers, improve marketing strategies, and provide detailed analytical reports on customer transaction information to build their customer base.
+**Project Description**: Our project is meant to create an application that helps companies (from start-ups to well-established organizations) segment customers, improve marketing strategies, and provide detailed analytical reports on customer transaction information to build their customer base. This application will make marketing easier, more convenient, and more efficient. Instead of trying to develop marketing strategies towards a certain customer base, our application will develop a plan for you to help you attract particular customers, expand product markets, and boost revenue.
 
 **Usage Examples**:
 
