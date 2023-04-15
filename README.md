@@ -2,8 +2,11 @@
 
 ## Project Overview
 **Project Description**: Our project is meant to create an application that helps companies (from start-ups to well-established organizations) segment customers, improve marketing strategies, and provide detailed analytical reports on customer transaction information to build their customer base.
+
 **Usage Examples**:
+
 **Features**: 
+
 **Contact Information**: Luke Abbatessa (abbatessa.l@northeastern.edu), Jenny Cai (cai.je@northeastern.edu), Yuting Zheng (zheng.yuti@northeastern.edu)
 
 This repo contains a boilerplate setup for spinning up 3 Docker containers: 
