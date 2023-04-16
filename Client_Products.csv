@@ -1,0 +1,101 @@
+Product_ID,CP_Name,Unit_Price,Curr_Client_ID,Category_ID
+1,Wine - Manischewitz Concord,33,65,2
+2,Oil - Macadamia,55,10,75
+3,Muffin - Mix - Creme Brule 15l,77,13,90
+4,Cheese - Mozzarella,74,47,13
+5,Sobe - Orange Carrot,53,62,79
+6,Truffle Shells - White Chocolate,85,78,39
+7,Cabbage Roll,39,3,74
+8,Vinegar - White,79,17,28
+9,Chocolate - White,65,95,90
+10,Calypso - Strawberry Lemonade,57,17,82
+11,Filter - Coffee,6,9,76
+12,Lamb - Ground,3,80,9
+13,"Wine - Red, Pelee Island Merlot",73,34,84
+14,Cookie Dough - Double,8,75,78
+15,Coffee - Frthy Coffee Crisp,72,52,80
+16,Cups 10oz Trans,41,15,62
+17,Chocolate - Milk Coating,10,69,89
+18,Wine - Rosso Toscano Igt,50,33,14
+19,Beans - Wax,53,20,39
+20,"Wine - White, Chardonnay",64,97,88
+21,Carbonated Water - Strawberry,55,7,27
+22,Juice - Orange,65,19,39
+23,Cheese - Cheddar With Claret,7,12,47
+24,Chips - Doritos,66,14,17
+25,"Sauce - Black Current, Dry Mix",7,61,33
+26,Sauce - Rosee,1,68,83
+27,Soup - Campbells Chili Veg,41,82,50
+28,"Pineapple - Canned, Rings",70,31,49
+29,"Napkin - Cocktail,beige 2 - Ply",33,66,39
+30,Clam Nectar,30,46,80
+31,"Chicken - Thigh, Bone In",16,74,30
+32,Cookie Chocolate Chip With,1,90,23
+33,Juice - Happy Planet,28,59,50
+34,Butter Balls Salted,9,99,88
+35,Swordfish Loin Portions,6,1,21
+36,Icecream - Dstk Cml And Fdg,62,74,86
+37,Longos - Grilled Chicken With,52,86,67
+38,"Asparagus - Green, Fresh",98,21,6
+39,Mcguinness - Blue Curacao,68,97,12
+40,Caviar - Salmon,90,16,88
+41,"Lamb - Whole, Fresh",30,91,39
+42,Steampan - Lid For Half Size,67,64,84
+43,Tea - Apple Green Tea,16,19,48
+44,"Thyme - Lemon, Fresh",38,82,22
+45,Mushroom - Porcini Frozen,73,90,100
+46,"Quail - Whole, Boneless",21,82,56
+47,Chocolate Bar - Reese Pieces,35,79,59
+48,Honey - Liquid,83,31,14
+49,"Beef - Chuck, Boneless",60,98,23
+50,Vinegar - Cider,2,99,100
+51,Eggplant - Asian,55,92,4
+52,Cocoa Feuilletine,5,96,24
+53,Filling - Mince Meat,3,28,71
+54,Cream - 18%,74,99,52
+55,Cheese - Parmigiano Reggiano,90,23,15
+56,Wine - Barolo Fontanafredda,56,71,74
+57,Currants,32,42,38
+58,Pork Ham Prager,52,60,93
+59,"Quail - Eggs, Fresh",43,13,71
+60,Cookie Double Choco,100,12,4
+61,Beans - Soya Bean,47,70,45
+62,Wheat - Soft Kernal Of Wheat,77,42,79
+63,Sloe Gin - Mcguinness,82,91,52
+64,Bread - Crusty Italian Poly,31,73,57
+65,Lettuce - Curly Endive,46,87,15
+66,Pork Loin Cutlets,55,11,12
+67,Salt And Pepper Mix - Black,21,15,47
+68,Wine - Delicato Merlot,83,38,78
+69,Pepper - Sorrano,24,95,80
+70,Butter - Pod,94,7,39
+71,Soup - Campbells Beef Stew,99,73,12
+72,Lettuce - Boston Bib - Organic,33,67,7
+73,Wine - Casillero Del Diablo,84,52,33
+74,Beets - Mini Golden,58,64,32
+75,Nantucket - Carrot Orange,92,79,26
+76,Coffee - French Vanilla Frothy,91,68,65
+77,"Tortillas - Flour, 10",66,98,39
+78,Bananas,96,21,77
+79,Lettuce - Escarole,72,37,17
+80,Kiwi,23,29,7
+81,Lobster - Base,94,93,91
+82,Crackers - Soda / Saltins,2,80,9
+83,"Wine - Red, Metus Rose",39,47,69
+84,Bar - Granola Trail Mix Fruit Nut,27,79,24
+85,Sansho Powder,43,75,93
+86,Coffee - French Vanilla Frothy,69,26,50
+87,Lid Tray - 12in Dome,49,100,87
+88,Breakfast Quesadillas,78,43,11
+89,"Lentils - Red, Dry",4,7,46
+90,Soup - Campbells Mushroom,84,44,42
+91,Nantucket Apple Juice,5,67,14
+92,Tea - English Breakfast,40,20,87
+93,Pork - Ground,4,55,29
+94,Butter Ripple - Phillips,67,76,93
+95,"Wine - Red, Colio Cabernet",91,62,1
+96,Corn - On The Cob,2,47,48
+97,Salmon - Fillets,74,12,55
+98,Appetizer - Asian Shrimp Roll,34,72,33
+99,Quiche Assorted,64,33,41
+100,"Asparagus - Green, Fresh",55,98,56
