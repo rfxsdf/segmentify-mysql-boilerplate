@@ -10,14 +10,13 @@ create database segmentify;
 -- all privilages to the new database we just created. 
 -- TODO: If you changed the name of the database above, you need 
 -- to change it here too.
-grant all privileges on cool_db.* to 'webapp'@'%';
+grant all privileges on segmentify.* to 'webapp'@'%';
 flush privileges;
 
 -- Move into the database we just created.
 -- TODO: If you changed the name of the database above, you need to
 -- change it here too. 
-use segmentify;
-
+USE segmentify;
 
 CREATE TABLE IF NOT EXISTS The_Mavericks
 (
@@ -35,7 +34,7 @@ CREATE TABLE IF NOT EXISTS The_Mavericks
     UNIQUE INDEX uq_idx_Phone (Phone),
     UNIQUE INDEX uq_idx_Fax (Fax),
     INDEX idx_Company_ID (Company_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO The_Mavericks(Headquarter_Address,Reviews,Phone,Location,Fax,Home_Page,Company_ID,Contact_Title,Contact_Name,Company_Name) VALUES ('624 Clemons Way','Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
@@ -566,7 +565,7 @@ CREATE TABLE IF NOT EXISTS Departments
     INDEX idx_Company_ID (Company_ID),
     INDEX idx_Name (Dept_Name),
     INDEX idx_Number (Dept_Number)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Departments(Company_ID,Dept_Name,Dept_Number) VALUES (3104705100,'Business Development',6650);
 INSERT INTO Departments(Company_ID,Dept_Name,Dept_Number) VALUES (3104705100,'Creative Services',6651);
@@ -625,7 +624,7 @@ CREATE TABLE IF NOT EXISTS Internal_Employees
         FOREIGN KEY (Sup_ID) REFERENCES Internal_Employees (Int_Emp_ID) ON DELETE cascade,
     UNIQUE INDEX uq_idx_Email (Email),
     INDEX idx_ID (Int_Emp_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Internal_Employees(First_Name,Last_Name,Int_Emp_ID,Email,City,State,Zip_Code,Dept_Name,Dept_Number,Company_ID,Sup_ID) VALUES ('Trudie','Robbins',230,'trobbins0@weibo.com','Boston','Massachusetts',2208,'Business Development',6650,3104705100,230);
 INSERT INTO Internal_Employees(First_Name,Last_Name,Int_Emp_ID,Email,City,State,Zip_Code,Dept_Name,Dept_Number,Company_ID,Sup_ID) VALUES ('Kate','Kingstne',231,'kkingstne1@foxnews.com','Charleston','West Virginia',25336,'Creative Services',6651,3104705100,231);
@@ -746,7 +745,7 @@ CREATE TABLE IF NOT EXISTS Projects
         FOREIGN KEY (Company_ID) REFERENCES Departments (Company_ID) ON DELETE restrict,
     INDEX idx_Name (Proj_Name),
     INDEX idx_Number (Proj_Number)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Projects(Proj_Name,Proj_Number,Location,Dept_Name,Dept_Number,Company_ID) VALUES ('Stringtough',6979973606,'11th Floor','Research and Development',6669,3104705100);
 INSERT INTO Projects(Proj_Name,Proj_Number,Location,Dept_Name,Dept_Number,Company_ID) VALUES ('Sonsing',2209113997,'11th Floor','Research and Development',6669,3104705100);
@@ -865,7 +864,7 @@ CREATE TABLE IF NOT EXISTS Int_Emp_Proj
     INDEX idx_ID (Int_Emp_ID),
     INDEX idx_Proj_Name (Proj_Name),
     INDEX idx_Proj_Number (Proj_Number)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Int_Emp_Proj(Int_Emp_ID,Proj_Name,Proj_Number) VALUES (230,'Stringtough',6979973606);
 INSERT INTO Int_Emp_Proj(Int_Emp_ID,Proj_Name,Proj_Number) VALUES (231,'Sonsing',2209113997);
@@ -985,7 +984,7 @@ CREATE TABLE IF NOT EXISTS Dept_Locs
     INDEX idx_Dept_Number (Dept_Number),
     INDEX idx_Company_ID (Company_ID),
     INDEX idx_Locations (Location)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Dept_Locs(Dept_Name,Dept_Number,Company_ID,Location) VALUES ('Business Development',6650,3104705100,'Springfield');
 INSERT INTO Dept_Locs(Dept_Name,Dept_Number,Company_ID,Location) VALUES ('Creative Services',6651,3104705100,'Springfield');
@@ -1032,7 +1031,7 @@ CREATE TABLE IF NOT EXISTS Dependents
         FOREIGN KEY (Int_Emp_ID) REFERENCES Internal_Employees (Int_Emp_ID) ON DELETE cascade,
     INDEX idx_ID (Int_Emp_ID),
     INDEX idx_number (Depend_number)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Dependents(Int_Emp_ID,Depend_Number,Depend_Name,Gender,Relationship) VALUES (230,580,'Carson Delue','Male','vulputate nonummy');
 INSERT INTO Dependents(Int_Emp_ID,Depend_Number,Depend_Name,Gender,Relationship) VALUES (231,581,'Tobye Ida','Female','at');
@@ -1152,7 +1151,7 @@ CREATE TABLE IF NOT EXISTS Prospective_Clients
     UNIQUE INDEX uq_idx_Fax (Fax),
     UNIQUE INDEX uq_idx_Phone (Phone),
     INDEX idx_Prosp_Client_ID (Prosp_Client_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Prospective_Clients(Company_Name,Contact_Title,Contact_Name,Headquarter_Address,Email,Fax,Phone,Prosp_Client_ID) VALUES ('Flipstorm','Rev','Wainwright Tacey','8 Merchant Place','wtacey0@csmonitor.com','+63 (207) 228-1260','+63 (234) 291-4917',2236025599);
 INSERT INTO Prospective_Clients(Company_Name,Contact_Title,Contact_Name,Headquarter_Address,Email,Fax,Phone,Prosp_Client_ID) VALUES ('Divape','Honorable','Oswell Hannant','00 Alpine Terrace','ohannant1@lulu.com','+351 (974) 635-3029','+46 (704) 718-0108',4771435731);
@@ -1265,7 +1264,7 @@ CREATE TABLE IF NOT EXISTS Prosp_Client_Locs
         FOREIGN KEY (Prosp_Client_ID) REFERENCES Prospective_Clients (Prosp_Client_ID) ON DELETE cascade,
     INDEX idx_Prosp_Client_ID (Prosp_Client_ID),
     INDEX idx_Locations (Location)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Prosp_Client_Locs(Prosp_Client_ID,Location) VALUES (2236025599,'Raoyang');
 INSERT INTO Prosp_Client_Locs(Prosp_Client_ID,Location) VALUES (4771435731,'Kuala Lumpur');
@@ -1381,7 +1380,7 @@ CREATE TABLE IF NOT EXISTS Services
         FOREIGN KEY (Serv_Company_ID) REFERENCES The_Mavericks (Company_ID) ON DELETE cascade,
     INDEX idx_Company_ID (Serv_Company_ID),
     INDEX idx_Service_ID (Service_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Services(Service_Name,Price,Discontinued,Service_ID,Serv_Company_ID) VALUES ('Quo Lux','$14,460.80','FALSE',4976560562,3104705100);
 INSERT INTO Services(Service_Name,Price,Discontinued,Service_ID,Serv_Company_ID) VALUES ('Flowdesk','$17,279.84','FALSE',2146349026,3104705100);
@@ -1496,7 +1495,7 @@ CREATE TABLE IF NOT EXISTS Prosp_Serv
         FOREIGN KEY (Service_ID) REFERENCES Services (Service_ID) ON DELETE cascade,
     CONSTRAINT fk_21
         FOREIGN KEY (Serv_Company_ID) REFERENCES Services (Serv_Company_ID) ON DELETE cascade
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Prosp_Serv(Prosp_Client_ID,Service_ID,Serv_Company_ID) VALUES (2236025599,4976560562,3104705100);
 INSERT INTO Prosp_Serv(Prosp_Client_ID,Service_ID,Serv_Company_ID) VALUES (4771435731,2146349026,3104705100);
@@ -1621,7 +1620,7 @@ CREATE TABLE IF NOT EXISTS Current_Clients
     INDEX idx_Client_Company_ID (Client_Company_ID),
     INDEX idx_Int_Emp_ID (Int_Emp_Id),
     INDEX idx_Curr_Client_ID (Curr_Client_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Current_Clients(Contact_Name,Company_Name,Contact_Title,Headquarter_Address,Phone,Fax,Demographics,Client_Company_ID,Int_Emp_ID,Curr_Client_ID,Reports) VALUES ('Maria Bridges','Oyope','Mr','139 Sauthoff Court','+356 (863) 194-6805','+966 (966) 654-3311','neque sapien placerat ante nulla justo aliquam quis turpis',9134530606,230,9467661993,'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
 
@@ -2184,7 +2183,7 @@ CREATE TABLE IF NOT EXISTS Curr_Services
         FOREIGN KEY (Service_ID) REFERENCES Services (Service_ID) ON DELETE cascade,
     CONSTRAINT fk_26
         FOREIGN KEY (Serv_Company_ID) REFERENCES Services (Serv_Company_ID) ON DELETE cascade
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9467661993,9134530606,4976560562,3104705100);
 INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7468186278,1262586062,2146349026,3104705100);
@@ -2302,7 +2301,7 @@ CREATE TABLE IF NOT EXISTS Curr_Client_Locs
     INDEX idx_Client_Company_ID (Client_Company_ID),
     INDEX idx_Curr_Client_ID (Curr_Client_ID),
     INDEX idx_Locations (Location)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9134530606,9467661993,'Nanga Eboko');
 INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1262586062,7468186278,'Rio Branco do Sul');
@@ -2415,7 +2414,7 @@ CREATE TABLE IF NOT EXISTS Comp_Comp
         FOREIGN KEY (Client_Company_ID) REFERENCES Current_Clients (Client_Company_ID) ON DELETE cascade,
     CONSTRAINT fk_30
         FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9134530606,9467661993);
 INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1262586062,7468186278);
@@ -2530,7 +2529,7 @@ CREATE TABLE IF NOT EXISTS Marketing_Department
     CONSTRAINT fk_31
         FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE restrict,
     INDEX idx_Department_ID (Department_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (1,6659,9467661993);
 INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (2,6659,7468186278);
@@ -2652,18 +2651,8 @@ CREATE TABLE IF NOT EXISTS Applications
     INDEX idx_Department_ID (Department_ID),
     INDEX idx_Service_ID (Service_ID),
     INDEX idx_App_ID (App_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE Applications(
-   Address        VARCHAR(26) NOT NULL PRIMARY KEY
-  ,Phone          VARCHAR(19) NOT NULL
-  ,Contact_Title  VARCHAR(9) NOT NULL
-  ,First_Name     VARCHAR(11) NOT NULL
-  ,Last_Name      VARCHAR(12) NOT NULL
-  ,Demographics   VARCHAR(40) NOT NULL
-  ,CI_Customer_ID INTEGER  NOT NULL
-  ,O_Order_ID     INTEGER  NOT NULL
-);
 INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Flexidy','$24,852.71','2104016258','6659','4976560562','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
 
 Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
@@ -3669,7 +3658,7 @@ CREATE TABLE IF NOT EXISTS Categories
     Category_ID INTEGER AUTO_INCREMENT,
     PRIMARY KEY (Category_ID),
     INDEX idx_Category_ID (Category_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Lettuce - Spring Mix',1270934228);
 INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Longos - Cheese Tortellini',4840397252);
@@ -3788,7 +3777,7 @@ CREATE TABLE IF NOT EXISTS Client_Products
         FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade,
     INDEX idx_Curr_Client_ID (Curr_Client_ID),
     INDEX idx_Product_ID (Product_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Wine - Trimbach Pinot Blanc','$4.14',8318809335,1270934228,9467661993);
 INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cookies - Englishbay Oatmeal','$0.51',6898935038,4840397252,7468186278);
@@ -3905,7 +3894,7 @@ CREATE TABLE IF NOT EXISTS Orders
     CONSTRAINT fk_37
         FOREIGN KEY (App_ID) REFERENCES Applications (App_ID) ON DELETE restrict,
     INDEX idx_O_Order_ID (O_Order_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4828072535,6961461808,4976560562,2104016258);
 INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3950580239,7906908899,2146349026,6958645839);
@@ -4019,7 +4008,7 @@ CREATE TABLE IF NOT EXISTS Order_Details
     CONSTRAINT fk_38
         FOREIGN KEY (O_Order_ID) REFERENCES Orders (O_Order_ID) ON DELETE restrict,
     INDEX idx_OD_Order_ID (OD_Order_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (20,14.05,2.25,9465906573,6961461808);
 INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (69,22.13,3.43,1722837802,7906908899);
@@ -4134,7 +4123,7 @@ CREATE TABLE IF NOT EXISTS Client_Order
         FOREIGN KEY (Product_ID) REFERENCES Client_Products (Product_ID) ON DELETE cascade,
     CONSTRAINT fk_41
         FOREIGN KEY (OD_Order_ID) REFERENCES Order_Details (OD_Order_ID) ON DELETE cascade
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9467661993,8318809335,9465906573);
 INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7468186278,6898935038,1722837802);
@@ -4255,7 +4244,7 @@ CREATE TABLE IF NOT EXISTS Customer_Information
     UNIQUE INDEX idx_Phone (Phone),
     INDEX idx_O_Order_ID (O_Order_ID),
     INDEX idx_CI_Customer_ID (CI_Customer_ID)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('85249 Erie Pass','+62 (443) 247-6221','Ms','Ezri','Cussons','molestie sed justo pellentesque',1,6961461808);
 INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('26809 Fulton Trail','+62 (196) 889-4157','Honorable','Humfried','Aspland','mus etiam vel',2,7906908899);
@@ -4359,4 +4348,8 @@ INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Nam
 INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('51831 Farmco Trail','+82 (353) 743-1142','Mrs','Miquela','Atcheson','orci',100,2697712445);
 
 
-#DROP DATABASE segmentify;
+-- #DROP DATABASE segmentify;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
