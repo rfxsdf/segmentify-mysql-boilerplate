@@ -2169,2183 +2169,1283 @@ Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.'
 
 
 
-CREATE TABLE IF NOT EXISTS Curr_Services
+CREATE TABLE IF NOT EXISTS `Curr_Services`
 (
-    Curr_Client_ID    INTEGER NOT NULL,
-    Client_Company_ID INTEGER NOT NULL,
-    Service_ID        INTEGER NOT NULL,
-    Serv_Company_ID   INTEGER NOT NULL,
+    `Curr_Client_ID`    INTEGER NOT NULL,
+    `Client_Company_ID` INTEGER NOT NULL,
+    `Service_ID`        INTEGER NOT NULL,
+    `Serv_Company_ID`   INTEGER NOT NULL,
     CONSTRAINT fk_23
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade,
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
     CONSTRAINT fk_24
-        FOREIGN KEY (Client_Company_ID) REFERENCES Current_Clients (Client_Company_ID) ON DELETE cascade,
+        FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
     CONSTRAINT fk_25
-        FOREIGN KEY (Service_ID) REFERENCES Services (Service_ID) ON DELETE cascade,
+        FOREIGN KEY (`Service_ID`) REFERENCES `Services` (`Service_ID`) ON DELETE cascade,
     CONSTRAINT fk_26
-        FOREIGN KEY (Serv_Company_ID) REFERENCES Services (Serv_Company_ID) ON DELETE cascade
+        FOREIGN KEY (`Serv_Company_ID`) REFERENCES `Services` (`Serv_Company_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9467661993,9134530606,4976560562,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7468186278,1262586062,2146349026,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6664649489,7370314812,7034880573,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9429212265,4087716309,4451940362,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (775550353,4955806457,8465821836,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1265294704,8582387245,4409227548,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9078229721,4084794120,4457892300,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4788639181,2099173958,7815675522,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (267345917,8231266844,2944473921,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6895570020,2798444527,7064737892,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5342435234,4752739259,7614860470,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2104432235,3666413048,8129916800,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3654911803,9821053580,1658613899,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4587202983,5803701521,4013436779,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1292725192,9528989446,9882148395,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1836055536,5401776284,3564245944,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4900207969,9388551869,4502083208,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4762453366,7503367997,5337758691,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (280881169,8292934057,6910897846,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6743546569,7814993946,3780151359,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9691562529,1590499735,4550784326,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (934193630,3954047861,8100902534,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6969232263,6091179942,6455129059,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9874873604,9735432668,1164397826,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4133836626,217680364,8235434148,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5884506260,2392670897,7542145533,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (920935192,9415969504,3383146766,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9516262457,4912704458,8721613753,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5128406008,4914419610,9307407150,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1469214873,5408867110,1827929553,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9572590979,4595879032,117730785,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (617541159,1386755222,8456321192,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8710416889,5437962347,5650803048,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7923583056,7333417514,3446849440,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2641745550,4883319008,2444085302,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9187020556,7614794109,1802782729,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2688993151,8023036165,8077683126,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3845496061,3015197401,7698644421,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9064744149,1748122282,2811577637,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7561109407,8952458613,9317200877,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2149725401,9007550101,3488885216,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4822461327,9350940434,8935655813,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9652783064,4527553127,8960055611,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6477074524,1214596819,1744090467,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7666795068,9415046937,3661541358,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1958031631,4667311177,4747725180,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5330803322,508979900,8801009348,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (316160024,8724468223,775451037,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8914181707,7963915467,9855773217,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (700120343,277005736,2632226007,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1103865749,4637651980,3386324452,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (124599532,8670682494,4828714693,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8457926322,9161831352,2591101353,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3882304685,2734533901,5619806669,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9572221698,388601647,3410679820,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7287503204,2292441756,2551004403,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4985292400,3945013690,8857723798,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3288442019,6875380668,8656946854,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (667453369,4506509951,2085636586,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4018821344,9316935113,1360092595,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7330047384,1581184158,5343613470,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8533194579,8357805604,8891750204,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6418489780,1562579835,6024378335,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (994431473,8686869378,6338502683,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7729088584,6296947844,387798374,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9148178551,9169393893,2025231571,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1422982750,1092440208,6330678650,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2681670667,6018780747,9302207226,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9740901948,5200476968,7127296987,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6639733382,8540115174,4210828092,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1283710765,9541545106,5195827346,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1834508770,2744231037,5335662182,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8510683441,1382306547,3798597758,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1034074180,4079076924,7999777080,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3129976000,9266006475,3117065865,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6086726213,5057944991,1765264774,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1708061614,6949584326,6105638507,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9044477420,9176126927,6387829496,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7968983878,5372970898,5808687276,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4126237259,597726647,4398907750,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6354571686,2136848577,2002703817,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2999813961,9359370029,1276151012,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4973144177,9356820821,5110667497,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2986648800,2937442161,518270165,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7255363261,5210102513,9873063404,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5372592028,3457946647,836986644,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7932134218,5158698260,4940220885,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6803107973,2772874214,2745897500,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4379265374,8909369256,2318810168,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1277412774,4568671914,7807563176,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1028829108,4690768943,7978270459,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2482304504,8312003495,1863209514,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (724605517,6534568802,8972845876,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8189098039,822259613,3173885295,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8285427528,2290534536,6744558749,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3421413339,3201643394,9120744218,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (723021244,9298565526,2805336747,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (186753888,390345164,1077756577,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8674939457,4996464089,9906461233,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5810139965,115318763,716880148,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9467661993,9134530606,4976560562,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7468186278,1262586062,2146349026,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6664649489,7370314812,7034880573,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9429212265,4087716309,4451940362,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (775550353,4955806457,8465821836,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1265294704,8582387245,4409227548,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9078229721,4084794120,4457892300,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4788639181,2099173958,7815675522,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (267345917,8231266844,2944473921,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6895570020,2798444527,7064737892,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5342435234,4752739259,7614860470,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2104432235,3666413048,8129916800,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3654911803,9821053580,1658613899,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4587202983,5803701521,4013436779,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1292725192,9528989446,9882148395,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1836055536,5401776284,3564245944,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4900207969,9388551869,4502083208,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4762453366,7503367997,5337758691,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (280881169,8292934057,6910897846,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6743546569,7814993946,3780151359,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9691562529,1590499735,4550784326,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (934193630,3954047861,8100902534,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6969232263,6091179942,6455129059,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9874873604,9735432668,1164397826,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4133836626,217680364,8235434148,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5884506260,2392670897,7542145533,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (920935192,9415969504,3383146766,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9516262457,4912704458,8721613753,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5128406008,4914419610,9307407150,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1469214873,5408867110,1827929553,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9572590979,4595879032,117730785,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (617541159,1386755222,8456321192,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8710416889,5437962347,5650803048,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7923583056,7333417514,3446849440,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2641745550,4883319008,2444085302,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9187020556,7614794109,1802782729,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2688993151,8023036165,8077683126,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3845496061,3015197401,7698644421,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9064744149,1748122282,2811577637,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7561109407,8952458613,9317200877,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2149725401,9007550101,3488885216,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4822461327,9350940434,8935655813,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9652783064,4527553127,8960055611,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6477074524,1214596819,1744090467,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7666795068,9415046937,3661541358,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1958031631,4667311177,4747725180,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5330803322,508979900,8801009348,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (316160024,8724468223,775451037,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8914181707,7963915467,9855773217,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (700120343,277005736,2632226007,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1103865749,4637651980,3386324452,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (124599532,8670682494,4828714693,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8457926322,9161831352,2591101353,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3882304685,2734533901,5619806669,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9572221698,388601647,3410679820,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7287503204,2292441756,2551004403,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4985292400,3945013690,8857723798,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3288442019,6875380668,8656946854,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (667453369,4506509951,2085636586,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4018821344,9316935113,1360092595,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7330047384,1581184158,5343613470,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8533194579,8357805604,8891750204,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6418489780,1562579835,6024378335,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (994431473,8686869378,6338502683,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7729088584,6296947844,387798374,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9148178551,9169393893,2025231571,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1422982750,1092440208,6330678650,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2681670667,6018780747,9302207226,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9740901948,5200476968,7127296987,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6639733382,8540115174,4210828092,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1283710765,9541545106,5195827346,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1834508770,2744231037,5335662182,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8510683441,1382306547,3798597758,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1034074180,4079076924,7999777080,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3129976000,9266006475,3117065865,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6086726213,5057944991,1765264774,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1708061614,6949584326,6105638507,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9044477420,9176126927,6387829496,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7968983878,5372970898,5808687276,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4126237259,597726647,4398907750,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6354571686,2136848577,2002703817,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2999813961,9359370029,1276151012,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4973144177,9356820821,5110667497,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2986648800,2937442161,518270165,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7255363261,5210102513,9873063404,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5372592028,3457946647,836986644,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7932134218,5158698260,4940220885,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6803107973,2772874214,2745897500,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4379265374,8909369256,2318810168,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1277412774,4568671914,7807563176,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1028829108,4690768943,7978270459,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2482304504,8312003495,1863209514,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (724605517,6534568802,8972845876,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8189098039,822259613,3173885295,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8285427528,2290534536,6744558749,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3421413339,3201643394,9120744218,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (723021244,9298565526,2805336747,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (186753888,390345164,1077756577,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8674939457,4996464089,9906461233,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5810139965,115318763,716880148,3104705100);
 
 
 
-CREATE TABLE IF NOT EXISTS Curr_Client_Locs
+CREATE TABLE IF NOT EXISTS `Curr_Client_Locs`
 (
-    Client_Company_ID INTEGER     NOT NULL,
-    Curr_Client_ID    INTEGER     NOT NULL,
+    `Client_Company_ID` INTEGER     NOT NULL,
+    `Curr_Client_ID`    INTEGER     NOT NULL,
     Location          varchar(50) NOT NULL,
-    PRIMARY KEY (Client_Company_ID, Curr_Client_ID, Location),
+    PRIMARY KEY (`Client_Company_ID`, `Curr_Client_ID`, Location),
     CONSTRAINT fk_27
-        FOREIGN KEY (Client_Company_ID) REFERENCES Current_Clients (Client_Company_ID) ON DELETE cascade,
+        FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
     CONSTRAINT fk_28
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade,
-    INDEX idx_Client_Company_ID (Client_Company_ID),
-    INDEX idx_Curr_Client_ID (Curr_Client_ID),
-    INDEX idx_Locations (Location)
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
+    INDEX idx_Client_Company_ID (`Client_Company_ID`),
+    INDEX idx_Curr_Client_ID (`Curr_Client_ID`),
+    INDEX idx_Locations (`Location`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9134530606,9467661993,'Nanga Eboko');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1262586062,7468186278,'Rio Branco do Sul');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7370314812,6664649489,'Nice');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4087716309,9429212265,'Stockholm');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4955806457,775550353,'Nīkshahr');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8582387245,1265294704,'Denton');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4084794120,9078229721,'Venado Tuerto');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2099173958,4788639181,'Lakateng');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8231266844,267345917,'Molodohvardiys’k');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2798444527,6895570020,'Quimistán');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4752739259,5342435234,'Puerto Santander');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3666413048,2104432235,'Amparafaravola');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9821053580,3654911803,'Sopron');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5803701521,4587202983,'Dongtai');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9528989446,1292725192,'Sutton');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5401776284,1836055536,'Yabrūd');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9388551869,4900207969,'Hengjing');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7503367997,4762453366,'Kocēni');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8292934057,280881169,'Lameira');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7814993946,6743546569,'Lewopao');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1590499735,9691562529,'Umm Şalāl ‘Alī');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3954047861,934193630,'Bishan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6091179942,6969232263,'Železná Ruda');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9735432668,9874873604,'Pacucha');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (217680364,4133836626,'Estrada');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2392670897,5884506260,'Terong');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9415969504,920935192,'Springfield');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4912704458,9516262457,'Luofang');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4914419610,5128406008,'Xin’an');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5408867110,1469214873,'Ginowan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4595879032,9572590979,'Heung-hai');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1386755222,617541159,'Nioki');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5437962347,8710416889,'Mezhevoy');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7333417514,7923583056,'Muan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4883319008,2641745550,'Lopandino');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7614794109,9187020556,'Xiyang');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8023036165,2688993151,'Iwase');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3015197401,3845496061,'Longsha');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1748122282,9064744149,'Ijuí');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8952458613,7561109407,'Las Varas');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9007550101,2149725401,'Vília');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9350940434,4822461327,'Zhushan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4527553127,9652783064,'Longbu');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1214596819,6477074524,'Labuan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9415046937,7666795068,'Trzebiatów');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4667311177,1958031631,'Pshada');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (508979900,5330803322,'Aral');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8724468223,316160024,'Yantian');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7963915467,8914181707,'Moch');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (277005736,700120343,'Plereyan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4637651980,1103865749,'Almoínhas Velhas');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8670682494,124599532,'Concepcion');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9161831352,8457926322,'Divinópolis');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2734533901,3882304685,'Uryupinsk');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (388601647,9572221698,'Rivadavia');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2292441756,7287503204,'Mukacheve');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3945013690,4985292400,'Quinta do Sobrado');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6875380668,3288442019,'Ressano Garcia');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4506509951,667453369,'Rana');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9316935113,4018821344,'Gaoua');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1581184158,7330047384,'Xiaoguwei');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8357805604,8533194579,'Beaufort');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1562579835,6418489780,'Vale de Rolas');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8686869378,994431473,'São Fidélis');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6296947844,7729088584,'Casalinho');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9169393893,9148178551,'Granada');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1092440208,1422982750,'Raciążek');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6018780747,2681670667,'Stamáta');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5200476968,9740901948,'Takarazuka');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8540115174,6639733382,'Beselga');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9541545106,1283710765,'Parung');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2744231037,1834508770,'Barrio San Luis');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1382306547,8510683441,'Achoma');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4079076924,1034074180,'Picoto');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9266006475,3129976000,'Mueang Phuket');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5057944991,6086726213,'Guapimirim');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6949584326,1708061614,'Shixian');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9176126927,9044477420,'København');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5372970898,7968983878,'Santiago de Cuba');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (597726647,4126237259,'Thika');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2136848577,6354571686,'Pingshi');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9359370029,2999813961,'Uinskoye');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9356820821,4973144177,'Aţ Ţafīlah');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2937442161,2986648800,'Miyang');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5210102513,7255363261,'Amersfoort');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3457946647,5372592028,'Zhukovka');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5158698260,7932134218,'Petaling Jaya');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2772874214,6803107973,'South River');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8909369256,4379265374,'Marale');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4568671914,1277412774,'Kulykiv');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4690768943,1028829108,'Keroak');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8312003495,2482304504,'Delareyville');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6534568802,724605517,'Veisiejai');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (822259613,8189098039,'Szlachta');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2290534536,8285427528,'Kingisepp');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3201643394,3421413339,'Uruobo-Okija');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9298565526,723021244,'Basseterre');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (390345164,186753888,'Krabi');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4996464089,8674939457,'Poręba Spytkowska');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (115318763,5810139965,'Krajan Timur Mlokorejo');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9134530606,9467661993,'Nanga Eboko');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1262586062,7468186278,'Rio Branco do Sul');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7370314812,6664649489,'Nice');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4087716309,9429212265,'Stockholm');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4955806457,775550353,'Nīkshahr');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8582387245,1265294704,'Denton');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4084794120,9078229721,'Venado Tuerto');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2099173958,4788639181,'Lakateng');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8231266844,267345917,'Molodohvardiys’k');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2798444527,6895570020,'Quimistán');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4752739259,5342435234,'Puerto Santander');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3666413048,2104432235,'Amparafaravola');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9821053580,3654911803,'Sopron');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5803701521,4587202983,'Dongtai');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9528989446,1292725192,'Sutton');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5401776284,1836055536,'Yabrūd');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9388551869,4900207969,'Hengjing');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7503367997,4762453366,'Kocēni');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8292934057,280881169,'Lameira');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7814993946,6743546569,'Lewopao');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1590499735,9691562529,'Umm Şalāl ‘Alī');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3954047861,934193630,'Bishan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6091179942,6969232263,'Železná Ruda');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9735432668,9874873604,'Pacucha');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (217680364,4133836626,'Estrada');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2392670897,5884506260,'Terong');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9415969504,920935192,'Springfield');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4912704458,9516262457,'Luofang');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4914419610,5128406008,'Xin’an');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5408867110,1469214873,'Ginowan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4595879032,9572590979,'Heung-hai');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1386755222,617541159,'Nioki');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5437962347,8710416889,'Mezhevoy');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7333417514,7923583056,'Muan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4883319008,2641745550,'Lopandino');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7614794109,9187020556,'Xiyang');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8023036165,2688993151,'Iwase');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3015197401,3845496061,'Longsha');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1748122282,9064744149,'Ijuí');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8952458613,7561109407,'Las Varas');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9007550101,2149725401,'Vília');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9350940434,4822461327,'Zhushan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4527553127,9652783064,'Longbu');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1214596819,6477074524,'Labuan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9415046937,7666795068,'Trzebiatów');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4667311177,1958031631,'Pshada');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (508979900,5330803322,'Aral');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8724468223,316160024,'Yantian');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7963915467,8914181707,'Moch');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (277005736,700120343,'Plereyan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4637651980,1103865749,'Almoínhas Velhas');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8670682494,124599532,'Concepcion');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9161831352,8457926322,'Divinópolis');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2734533901,3882304685,'Uryupinsk');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (388601647,9572221698,'Rivadavia');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2292441756,7287503204,'Mukacheve');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3945013690,4985292400,'Quinta do Sobrado');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6875380668,3288442019,'Ressano Garcia');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4506509951,667453369,'Rana');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9316935113,4018821344,'Gaoua');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1581184158,7330047384,'Xiaoguwei');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8357805604,8533194579,'Beaufort');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1562579835,6418489780,'Vale de Rolas');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8686869378,994431473,'São Fidélis');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6296947844,7729088584,'Casalinho');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9169393893,9148178551,'Granada');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1092440208,1422982750,'Raciążek');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6018780747,2681670667,'Stamáta');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5200476968,9740901948,'Takarazuka');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8540115174,6639733382,'Beselga');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9541545106,1283710765,'Parung');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2744231037,1834508770,'Barrio San Luis');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1382306547,8510683441,'Achoma');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4079076924,1034074180,'Picoto');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9266006475,3129976000,'Mueang Phuket');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5057944991,6086726213,'Guapimirim');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6949584326,1708061614,'Shixian');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9176126927,9044477420,'København');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5372970898,7968983878,'Santiago de Cuba');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (597726647,4126237259,'Thika');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2136848577,6354571686,'Pingshi');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9359370029,2999813961,'Uinskoye');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9356820821,4973144177,'Aţ Ţafīlah');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2937442161,2986648800,'Miyang');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5210102513,7255363261,'Amersfoort');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3457946647,5372592028,'Zhukovka');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5158698260,7932134218,'Petaling Jaya');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2772874214,6803107973,'South River');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8909369256,4379265374,'Marale');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4568671914,1277412774,'Kulykiv');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4690768943,1028829108,'Keroak');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8312003495,2482304504,'Delareyville');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6534568802,724605517,'Veisiejai');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (822259613,8189098039,'Szlachta');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2290534536,8285427528,'Kingisepp');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3201643394,3421413339,'Uruobo-Okija');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9298565526,723021244,'Basseterre');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (390345164,186753888,'Krabi');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4996464089,8674939457,'Poręba Spytkowska');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (115318763,5810139965,'Krajan Timur Mlokorejo');
 
 
 
-CREATE TABLE IF NOT EXISTS Comp_Comp
+CREATE TABLE IF NOT EXISTS `Comp_Comp`
 (
-    Client_Company_ID INTEGER NOT NULL,
-    Curr_Client_ID    INTEGER NOT NULL,
-    CONSTRAINT fk_29
-        FOREIGN KEY (Client_Company_ID) REFERENCES Current_Clients (Client_Company_ID) ON DELETE cascade,
-    CONSTRAINT fk_30
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade
+    `Client_Company_ID` INTEGER NOT NULL,
+    `Curr_Client_ID`    INTEGER NOT NULL,
+    CONSTRAINT `fk_29`
+        FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
+    CONSTRAINT `fk_30`
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9134530606,9467661993);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1262586062,7468186278);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7370314812,6664649489);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4087716309,9429212265);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4955806457,775550353);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8582387245,1265294704);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4084794120,9078229721);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2099173958,4788639181);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8231266844,267345917);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2798444527,6895570020);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4752739259,5342435234);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3666413048,2104432235);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9821053580,3654911803);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5803701521,4587202983);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9528989446,1292725192);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5401776284,1836055536);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9388551869,4900207969);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7503367997,4762453366);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8292934057,280881169);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7814993946,6743546569);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1590499735,9691562529);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3954047861,934193630);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6091179942,6969232263);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9735432668,9874873604);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (217680364,4133836626);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2392670897,5884506260);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9415969504,920935192);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4912704458,9516262457);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4914419610,5128406008);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5408867110,1469214873);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4595879032,9572590979);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1386755222,617541159);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5437962347,8710416889);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7333417514,7923583056);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4883319008,2641745550);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7614794109,9187020556);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8023036165,2688993151);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3015197401,3845496061);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1748122282,9064744149);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8952458613,7561109407);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9007550101,2149725401);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9350940434,4822461327);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4527553127,9652783064);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1214596819,6477074524);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9415046937,7666795068);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4667311177,1958031631);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (508979900,5330803322);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8724468223,316160024);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7963915467,8914181707);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (277005736,700120343);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4637651980,1103865749);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8670682494,124599532);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9161831352,8457926322);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2734533901,3882304685);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (388601647,9572221698);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2292441756,7287503204);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3945013690,4985292400);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6875380668,3288442019);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4506509951,667453369);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9316935113,4018821344);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1581184158,7330047384);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8357805604,8533194579);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1562579835,6418489780);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8686869378,994431473);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6296947844,7729088584);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9169393893,9148178551);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1092440208,1422982750);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6018780747,2681670667);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5200476968,9740901948);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8540115174,6639733382);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9541545106,1283710765);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2744231037,1834508770);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1382306547,8510683441);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4079076924,1034074180);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9266006475,3129976000);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5057944991,6086726213);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6949584326,1708061614);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9176126927,9044477420);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5372970898,7968983878);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (597726647,4126237259);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2136848577,6354571686);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9359370029,2999813961);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9356820821,4973144177);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2937442161,2986648800);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5210102513,7255363261);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3457946647,5372592028);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5158698260,7932134218);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2772874214,6803107973);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8909369256,4379265374);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4568671914,1277412774);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4690768943,1028829108);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8312003495,2482304504);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6534568802,724605517);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (822259613,8189098039);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2290534536,8285427528);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3201643394,3421413339);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9298565526,723021244);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (390345164,186753888);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4996464089,8674939457);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (115318763,5810139965);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9134530606,9467661993);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1262586062,7468186278);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7370314812,6664649489);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4087716309,9429212265);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4955806457,775550353);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8582387245,1265294704);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4084794120,9078229721);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2099173958,4788639181);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8231266844,267345917);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2798444527,6895570020);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4752739259,5342435234);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3666413048,2104432235);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9821053580,3654911803);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5803701521,4587202983);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9528989446,1292725192);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5401776284,1836055536);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9388551869,4900207969);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7503367997,4762453366);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8292934057,280881169);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7814993946,6743546569);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1590499735,9691562529);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3954047861,934193630);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6091179942,6969232263);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9735432668,9874873604);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (217680364,4133836626);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2392670897,5884506260);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9415969504,920935192);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4912704458,9516262457);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4914419610,5128406008);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5408867110,1469214873);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4595879032,9572590979);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1386755222,617541159);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5437962347,8710416889);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7333417514,7923583056);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4883319008,2641745550);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7614794109,9187020556);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8023036165,2688993151);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3015197401,3845496061);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1748122282,9064744149);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8952458613,7561109407);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9007550101,2149725401);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9350940434,4822461327);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4527553127,9652783064);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1214596819,6477074524);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9415046937,7666795068);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4667311177,1958031631);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (508979900,5330803322);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8724468223,316160024);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7963915467,8914181707);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (277005736,700120343);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4637651980,1103865749);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8670682494,124599532);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9161831352,8457926322);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2734533901,3882304685);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (388601647,9572221698);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2292441756,7287503204);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3945013690,4985292400);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6875380668,3288442019);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4506509951,667453369);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9316935113,4018821344);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1581184158,7330047384);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8357805604,8533194579);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1562579835,6418489780);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8686869378,994431473);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6296947844,7729088584);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9169393893,9148178551);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1092440208,1422982750);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6018780747,2681670667);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5200476968,9740901948);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8540115174,6639733382);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9541545106,1283710765);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2744231037,1834508770);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1382306547,8510683441);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4079076924,1034074180);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9266006475,3129976000);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5057944991,6086726213);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6949584326,1708061614);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9176126927,9044477420);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5372970898,7968983878);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (597726647,4126237259);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2136848577,6354571686);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9359370029,2999813961);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9356820821,4973144177);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2937442161,2986648800);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5210102513,7255363261);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3457946647,5372592028);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5158698260,7932134218);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2772874214,6803107973);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8909369256,4379265374);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4568671914,1277412774);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4690768943,1028829108);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8312003495,2482304504);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6534568802,724605517);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (822259613,8189098039);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2290534536,8285427528);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3201643394,3421413339);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9298565526,723021244);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (390345164,186753888);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4996464089,8674939457);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (115318763,5810139965);
 
-
-
-
-CREATE TABLE IF NOT EXISTS Marketing_Department
+CREATE TABLE IF NOT EXISTS `Marketing_Department`
 (
-    Supervisor_ID  INTEGER NOT NULL,
-    Department_ID  INTEGER AUTO_INCREMENT,
-    Curr_Client_ID INTEGER NOT NULL,
-    PRIMARY KEY (Department_ID),
-    CONSTRAINT fk_31
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE restrict,
-    INDEX idx_Department_ID (Department_ID)
+    `Supervisor_ID`  INTEGER NOT NULL,
+    `Department_ID`  INTEGER AUTO_INCREMENT,
+    `Curr_Client_ID` INTEGER NOT NULL,
+    PRIMARY KEY (`Department_ID`),
+    CONSTRAINT `fk_31`
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE restrict,
+    INDEX `idx_Department_ID` (`Department_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (1,6659,9467661993);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (2,6659,7468186278);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (3,6659,6664649489);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (4,6659,9429212265);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (5,6659,775550353);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (6,6659,1265294704);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (7,6659,9078229721);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (8,6659,4788639181);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (9,6659,267345917);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (10,6659,6895570020);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (11,6659,5342435234);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (12,6659,2104432235);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (13,6659,3654911803);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (14,6659,4587202983);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (15,6659,1292725192);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (16,6659,1836055536);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (17,6659,4900207969);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (18,6659,4762453366);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (19,6659,280881169);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (20,6659,6743546569);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (21,6659,9691562529);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (22,6659,934193630);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (23,6659,6969232263);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (24,6659,9874873604);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (25,6659,4133836626);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (26,6659,5884506260);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (27,6659,920935192);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (28,6659,9516262457);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (29,6659,5128406008);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (30,6659,1469214873);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (31,6659,9572590979);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (32,6659,617541159);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (33,6659,8710416889);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (34,6659,7923583056);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (35,6659,2641745550);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (36,6659,9187020556);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (37,6659,2688993151);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (38,6659,3845496061);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (39,6659,9064744149);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (40,6659,7561109407);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (41,6659,2149725401);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (42,6659,4822461327);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (43,6659,9652783064);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (44,6659,6477074524);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (45,6659,7666795068);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (46,6659,1958031631);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (47,6659,5330803322);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (48,6659,316160024);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (49,6659,8914181707);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (50,6659,700120343);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (51,6659,1103865749);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (52,6659,124599532);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (53,6659,8457926322);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (54,6659,3882304685);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (55,6659,9572221698);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (56,6659,7287503204);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (57,6659,4985292400);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (58,6659,3288442019);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (59,6659,667453369);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (60,6659,4018821344);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (61,6659,7330047384);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (62,6659,8533194579);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (63,6659,6418489780);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (64,6659,994431473);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (65,6659,7729088584);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (66,6659,9148178551);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (67,6659,1422982750);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (68,6659,2681670667);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (69,6659,9740901948);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (70,6659,6639733382);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (71,6659,1283710765);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (72,6659,1834508770);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (73,6659,8510683441);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (74,6659,1034074180);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (75,6659,3129976000);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (76,6659,6086726213);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (77,6659,1708061614);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (78,6659,9044477420);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (79,6659,7968983878);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (80,6659,4126237259);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (81,6659,6354571686);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (82,6659,2999813961);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (83,6659,4973144177);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (84,6659,2986648800);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (85,6659,7255363261);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (86,6659,5372592028);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (87,6659,7932134218);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (88,6659,6803107973);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (89,6659,4379265374);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (90,6659,1277412774);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (91,6659,1028829108);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (92,6659,2482304504);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (93,6659,724605517);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (94,6659,8189098039);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (95,6659,8285427528);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (96,6659,3421413339);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (97,6659,723021244);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (98,6659,186753888);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (99,6659,8674939457);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (100,6659,5810139965);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (1,6659,9467661993);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (2,6659,7468186278);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (3,6659,6664649489);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (4,6659,9429212265);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (5,6659,775550353);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (6,6659,1265294704);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (7,6659,9078229721);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (8,6659,4788639181);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (9,6659,267345917);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (10,6659,6895570020);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (11,6659,5342435234);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (12,6659,2104432235);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (13,6659,3654911803);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (14,6659,4587202983);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (15,6659,1292725192);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (16,6659,1836055536);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (17,6659,4900207969);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (18,6659,4762453366);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (19,6659,280881169);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (20,6659,6743546569);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (21,6659,9691562529);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (22,6659,934193630);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (23,6659,6969232263);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (24,6659,9874873604);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (25,6659,4133836626);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (26,6659,5884506260);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (27,6659,920935192);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (28,6659,9516262457);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (29,6659,5128406008);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (30,6659,1469214873);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (31,6659,9572590979);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (32,6659,617541159);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (33,6659,8710416889);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (34,6659,7923583056);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (35,6659,2641745550);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (36,6659,9187020556);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (37,6659,2688993151);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (38,6659,3845496061);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (39,6659,9064744149);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (40,6659,7561109407);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (41,6659,2149725401);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (42,6659,4822461327);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (43,6659,9652783064);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (44,6659,6477074524);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (45,6659,7666795068);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (46,6659,1958031631);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (47,6659,5330803322);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (48,6659,316160024);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (49,6659,8914181707);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (50,6659,700120343);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (51,6659,1103865749);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (52,6659,124599532);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (53,6659,8457926322);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (54,6659,3882304685);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (55,6659,9572221698);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (56,6659,7287503204);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (57,6659,4985292400);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (58,6659,3288442019);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (59,6659,667453369);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (60,6659,4018821344);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (61,6659,7330047384);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (62,6659,8533194579);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (63,6659,6418489780);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (64,6659,994431473);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (65,6659,7729088584);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (66,6659,9148178551);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (67,6659,1422982750);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (68,6659,2681670667);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (69,6659,9740901948);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (70,6659,6639733382);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (71,6659,1283710765);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (72,6659,1834508770);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (73,6659,8510683441);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (74,6659,1034074180);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (75,6659,3129976000);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (76,6659,6086726213);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (77,6659,1708061614);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (78,6659,9044477420);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (79,6659,7968983878);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (80,6659,4126237259);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (81,6659,6354571686);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (82,6659,2999813961);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (83,6659,4973144177);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (84,6659,2986648800);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (85,6659,7255363261);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (86,6659,5372592028);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (87,6659,7932134218);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (88,6659,6803107973);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (89,6659,4379265374);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (90,6659,1277412774);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (91,6659,1028829108);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (92,6659,2482304504);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (93,6659,724605517);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (94,6659,8189098039);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (95,6659,8285427528);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (96,6659,3421413339);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (97,6659,723021244);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (98,6659,186753888);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (99,6659,8674939457);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (100,6659,5810139965);
 
 
-CREATE TABLE IF NOT EXISTS Applications
+CREATE TABLE IF NOT EXISTS `Applications`
 (
-    App_Name          varchar(50)   NOT NULL,
-    Price             DECIMAL(7, 2) NOT NULL,
-    App_ID            INTEGER AUTO_INCREMENT,
-    Department_ID     INTEGER       NOT NULL,
-    Service_ID        INTEGER       NOT NULL,
-    Spending_Analysis LONGTEXT,
-    Customer_Report   LONGTEXT,
-    Product_Report    LONGTEXT,
-    PRIMARY KEY (Department_ID, Service_ID, App_ID),
-    CONSTRAINT fk_32
-        FOREIGN KEY (Department_ID) REFERENCES Marketing_Department (Department_ID) ON DELETE cascade,
-    CONSTRAINT fk_33
-        FOREIGN KEY (Service_ID) REFERENCES Services (Service_ID) ON DELETE cascade,
-    INDEX idx_Department_ID (Department_ID),
-    INDEX idx_Service_ID (Service_ID),
-    INDEX idx_App_ID (App_ID)
+    `App_Name`          varchar(50)   NOT NULL,
+    `Price`             DECIMAL(7, 2) NOT NULL,
+    `App_ID`            INTEGER AUTO_INCREMENT,
+    `Department_ID`     INTEGER       NOT NULL,
+    `Service_ID`        INTEGER       NOT NULL,
+    `Spending_Analysis` LONGTEXT,
+    `Customer_Report`   LONGTEXT,
+    `Product_Report`    LONGTEXT,
+    PRIMARY KEY (`Department_ID`, `Service_ID`, `App_ID`),
+    CONSTRAINT `fk_32`
+        FOREIGN KEY (`Department_ID`) REFERENCES `Marketing_Department` (`Department_ID`) ON DELETE cascade,
+    CONSTRAINT `fk_33`
+        FOREIGN KEY (`Service_ID`) REFERENCES `Services` (`Service_ID`) ON DELETE cascade,
+    INDEX `idx_Department_ID` (`Department_ID`),
+    INDEX `idx_Service_ID` (`Service_ID`),
+    INDEX `idx_App_ID` (`App_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Flexidy','$24,852.71','2104016258','6659','4976560562','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Flexidy','$24,852.71',2104016258,6659,4976560562,'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.','Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.','Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Zamit','$35,580.72',6958645839,6659,2146349026,'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.','Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Holdlamis','$45,628.99',2520047488,6659,7034880573,'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.','Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Quo Lux','$22,441.68',5077860092,6659,4451940362,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.','Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Zamit','$45,647.09',2159927961,6659,8465821836,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.','Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.','Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Asoka','$41,383.53',9248744117,6659,4409227548,'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Flexidy','$44,811.04',311532284,6659,4457892300,'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('It','$31,151.18',7117262087,6659,7815675522,'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Tresom','$30,070.73',2379027382,6659,2944473921,'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cardify','$31,375.93',8222390015,6659,7064737892,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.','Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Opela','$27,369.24',2537692179,6659,7614860470,'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.','Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Bamity','$43,768.90',4029060412,6659,8129916800,'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.','Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Daltfresh','$24,431.55',8943575319,6659,1658613899,'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.','Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Flexidy','$46,393.56',1400084741,6659,4013436779,'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Greenlam','$26,153.16',5007928879,6659,9882148395,'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.','Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Pannier','$34,135.00',791920445,6659,3564245944,'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.','Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Trippledex','$42,409.01',221816836,6659,4502083208,'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Ventosanzap','$47,688.04',8629376945,6659,5337758691,'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cardify','$27,105.91',2251206310,6659,6910897846,'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Ventosanzap','$41,640.07',2011031664,6659,3780151359,'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.','Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('It','$29,693.71',2405642980,6659,4550784326,'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.','Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.','Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Toughjoyfax','$28,638.69',2983137899,6659,8100902534,'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.','Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Namfix','$34,902.91',6637979341,6659,6455129059,'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.','Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Subin','$41,685.78',5407408554,6659,1164397826,'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.','Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.','Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Subin','$31,442.50',9145132062,6659,8235434148,'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.','Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Alpha','$37,624.35',3169489550,6659,7542145533,'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.','Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.','Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Sub-Ex','$20,859.48',815326726,6659,3383146766,'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.','Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.','Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cookley','$49,863.77',5342680697,6659,8721613753,'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.','Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Zaam-Dox','$36,365.07',2856934358,6659,9307407150,'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.','Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.','Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Lotlux','$29,181.58',8770214395,6659,1827929553,'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Stim','$29,770.17',6598298792,6659,117730785,'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.','Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Ventosanzap','$21,106.97',6063695044,6659,8456321192,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Bamity','$22,415.03',3360896726,6659,5650803048,'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.','Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Konklux','$28,224.26',6271201644,6659,3446849440,'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Ronstring','$22,110.56',7931745574,6659,2444085302,'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.','Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Toughjoyfax','$23,411.83',5462864949,6659,1802782729,'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.','Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Alphazap','$44,590.43',523808445,6659,8077683126,'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Stronghold','$20,711.54',2568911905,6659,7698644421,'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Zontrax','$34,331.21',645718556,6659,2811577637,'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Zontrax','$46,634.89',2401666354,6659,9317200877,'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.','Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Solarbreeze','$40,089.76',174667906,6659,3488885216,'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Aerified','$39,706.50',6178840314,6659,8935655813,'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.','Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Flowdesk','$44,580.05',5974835514,6659,8960055611,'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.','Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Alpha','$31,143.59',7234669205,6659,1744090467,'In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Toughjoyfax','$31,914.35',1492190608,6659,3661541358,'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.','Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Tres-Zap','$45,669.32',9605664089,6659,4747725180,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.','Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Transcof','$40,331.50',1341758826,6659,8801009348,'Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.','Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Duobam','$45,382.30',1626780919,6659,775451037,'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.','Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Alphazap','$48,298.53',2817929152,6659,9855773217,'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.','Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Latlux','$22,661.99',5392019269,6659,2632226007,'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.','Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Daltfresh','$45,810.10',9892519124,6659,3386324452,'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.','Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Biodex','$34,813.33',9491552732,6659,4828714693,'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Veribet','$35,660.14',7329174483,6659,2591101353,'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Span','$29,926.59',437557227,6659,5619806669,'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.','Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Y-Solowarm','$26,150.08',7808412171,6659,3410679820,'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Opela','$24,594.63',2281971104,6659,2551004403,'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.','Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Latlux','$42,349.12',2976381429,6659,8857723798,'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Holdlamis','$35,759.40',973069430,6659,8656946854,'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cardguard','$36,508.54',5350042661,6659,2085636586,'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Biodex','$21,071.67',4527594141,6659,1360092595,'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cookley','$38,366.77',4595470185,6659,5343613470,'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.','Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Sonair','$39,041.97',4665777349,6659,8891750204,'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.','Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.','Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Trippledex','$49,197.51',8866449482,6659,6024378335,'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.','Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.','Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cardify','$31,961.20',7706088324,6659,6338502683,'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Asoka','$33,785.71',3525408838,6659,387798374,'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Holdlamis','$43,955.13',261483625,6659,2025231571,'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.','Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.','Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Biodex','$43,853.84',7947116261,6659,6330678650,'In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Voltsillam','$36,091.64',638890578,6659,9302207226,'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.','Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Mat Lam Tam','$48,533.45',6727901562,6659,7127296987,'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.','Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Temp','$32,111.06',593306074,6659,4210828092,'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Fintone','$20,014.45',684594382,6659,5195827346,'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Bytecard','$31,608.60',6636908246,6659,5335662182,'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Tresom','$47,476.91',6079485117,6659,3798597758,'In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.','Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.','Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Fixflex','$47,678.62',3959696183,6659,7999777080,'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Keylex','$46,591.08',6532688754,6659,3117065865,'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.','Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Y-Solowarm','$39,597.90',2240144270,6659,1765264774,'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.','Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.','Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Latlux','$27,879.55',6495674562,6659,6105638507,'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.','Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.','Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Zaam-Dox','$49,167.93',767883586,6659,6387829496,'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.','Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Temp','$45,118.15',6002724788,6659,5808687276,'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.','Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Tampflex','$33,033.70',5764702380,6659,4398907750,'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Bytecard','$45,228.73',4166844156,6659,2002703817,'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Latlux','$26,530.90',5763894162,6659,1276151012,'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.','Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Gembucket','$43,184.15',134664124,6659,5110667497,'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Duobam','$36,833.77',7746573371,6659,518270165,'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Sonsing','$23,112.72',7930648133,6659,9873063404,'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.','Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.','Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Viva','$40,053.74',9021104881,6659,836986644,'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.','Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Fintone','$36,998.50',6244311744,6659,4940220885,'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.','Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Sonair','$37,892.27',114707243,6659,2745897500,'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Toughjoyfax','$36,320.70',4259672177,6659,2318810168,'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.','Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cookley','$34,239.28',1603497714,6659,7807563176,'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.','Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.','Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Tempsoft','$20,092.19',5074543770,6659,7978270459,'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.','Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Redhold','$48,599.51',8594897871,6659,1863209514,'Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.','In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Cookley','$28,740.50',3589722355,6659,8972845876,'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Latlux','$27,182.00',4606085452,6659,3173885295,'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.','Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Bytecard','$45,182.91',9829779475,6659,6744558749,'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Sonsing','$38,987.98',3535059763,6659,9120744218,'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.','Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Stringtough','$25,956.49',8429305122,6659,2805336747,'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.','Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.','Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Trippledex','$43,242.38',3963670967,6659,1077756577,'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.','Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Kanlam','$20,076.12',667110836,6659,9906461233,'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.');
+INSERT INTO `Applications`(`App_Name`,`Price`,`App_ID`,`Department_ID`,`Service_ID`,`Spending_Analysis`,`Customer_Report`,`Product_Report`) VALUES ('Latlux','$40,462.69',7592248611,6659,716880148,'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.','Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.','Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.');
+
 
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.,Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Zamit','$35,580.72','6958645839','6659','2146349026','Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
-
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.',Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.,Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Holdlamis','$45,628.99','2520047488','6659','7034880573','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
-
-Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.,Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Quo Lux','$22,441.68','5077860092','6659','4451940362','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.',Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.,Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Zamit','$45,647.09','2159927961','6659','8465821836','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.',Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.,Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Asoka','$41,383.53','9248744117','6659','4409227548','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.,In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Flexidy','$44,811.04','311532284','6659','4457892300','Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.',Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.,Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('It','$31,151.18','7117262087','6659','7815675522','Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
-
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.,Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Tresom','$30,070.73','2379027382','6659','2944473921','Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
-
-Fusce consequat. Nulla nisl. Nunc nisl.',Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.,Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cardify','$31,375.93','8222390015','6659','7064737892','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.',Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.,Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Opela','$27,369.24','2537692179','6659','7614860470','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.',Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.,Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Bamity','$43,768.90','4029060412','6659','8129916800','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.',In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.,Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Daltfresh','$24,431.55','8943575319','6659','1658613899','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.',Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.,Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Flexidy','$46,393.56','1400084741','6659','4013436779','Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.',Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.,In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Greenlam','$26,153.16','5007928879','6659','9882148395','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.',Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.,Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Pannier','$34,135.00','791920445','6659','3564245944','Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.',Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.,Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Trippledex','$42,409.01','221816836','6659','4502083208','Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
-
-Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.',Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.,In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Ventosanzap','$47,688.04','8629376945','6659','5337758691','Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
-
-Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.',Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.,Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cardify','$27,105.91','2251206310','6659','6910897846','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.',Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.,Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Ventosanzap','$41,640.07','2011031664','6659','3780151359','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.',Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.,In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('It','$29,693.71','2405642980','6659','4550784326','Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
-
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.,Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Toughjoyfax','$28,638.69','2983137899','6659','8100902534','Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.',Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.,Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Namfix','$34,902.91','6637979341','6659','6455129059','Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.',Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.,In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Subin','$41,685.78','5407408554','6659','1164397826','Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.',Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.,Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Subin','$31,442.50','9145132062','6659','8235434148','Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.',Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.,In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Alpha','$37,624.35','3169489550','6659','7542145533','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.',Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.,Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Sub-Ex','$20,859.48','815326726','6659','3383146766','Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
-
-Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.',Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.,Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cookley','$49,863.77','5342680697','6659','8721613753','Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
-
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.',Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.,Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Zaam-Dox','$36,365.07','2856934358','6659','9307407150','Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
-
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.',Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.,Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Lotlux','$29,181.58','8770214395','6659','1827929553','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.,Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Stim','$29,770.17','6598298792','6659','117730785','Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.',Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.,Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Ventosanzap','$21,106.97','6063695044','6659','8456321192','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.',Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.,Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Bamity','$22,415.03','3360896726','6659','5650803048','Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.',Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.,Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Konklux','$28,224.26','6271201644','6659','3446849440','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.',Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.,Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Ronstring','$22,110.56','7931745574','6659','2444085302','Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.',Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.,Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Toughjoyfax','$23,411.83','5462864949','6659','1802782729','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.',Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.,Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Alphazap','$44,590.43','523808445','6659','8077683126','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.,Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Stronghold','$20,711.54','2568911905','6659','7698644421','Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
-
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.',Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.,In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Zontrax','$34,331.21','645718556','6659','2811577637','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.',Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.,Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Zontrax','$46,634.89','2401666354','6659','9317200877','In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.',In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.,Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Solarbreeze','$40,089.76','174667906','6659','3488885216','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.,Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
-
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Aerified','$39,706.50','6178840314','6659','8935655813','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.',Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.,Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Flowdesk','$44,580.05','5974835514','6659','8960055611','Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.',Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.,Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
-
-Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Alpha','$31,143.59','7234669205','6659','1744090467','In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.',In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.,Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Toughjoyfax','$31,914.35','1492190608','6659','3661541358','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.',Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
-
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.,Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Tres-Zap','$45,669.32','9605664089','6659','4747725180','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.',Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.,Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Transcof','$40,331.50','1341758826','6659','8801009348','Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.',Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.,Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
-
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Duobam','$45,382.30','1626780919','6659','775451037','Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
-
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.',Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.,Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Alphazap','$48,298.53','2817929152','6659','9855773217','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.,Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Latlux','$22,661.99','5392019269','6659','2632226007','Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.',Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.,Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Daltfresh','$45,810.10','9892519124','6659','3386324452','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.',Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.,Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Biodex','$34,813.33','9491552732','6659','4828714693','Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.',Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.,Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Veribet','$35,660.14','7329174483','6659','2591101353','Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.',Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.,In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Span','$29,926.59','437557227','6659','5619806669','Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.,Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Y-Solowarm','$26,150.08','7808412171','6659','3410679820','Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.',Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.,Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Opela','$24,594.63','2281971104','6659','2551004403','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.',In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.,Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
-
-Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Latlux','$42,349.12','2976381429','6659','8857723798','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.',Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.,Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Holdlamis','$35,759.40','973069430','6659','8656946854','Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.',Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.,Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cardguard','$36,508.54','5350042661','6659','2085636586','Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.,Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Biodex','$21,071.67','4527594141','6659','1360092595','Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.,Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cookley','$38,366.77','4595470185','6659','5343613470','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.',Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.,Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Sonair','$39,041.97','4665777349','6659','8891750204','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.',Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.,Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
-
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Trippledex','$49,197.51','8866449482','6659','6024378335','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.',Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.,Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cardify','$31,961.20','7706088324','6659','6338502683','Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.,In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Asoka','$33,785.71','3525408838','6659','387798374','Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.',Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.,Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Holdlamis','$43,955.13','261483625','6659','2025231571','Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.',Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.,Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Biodex','$43,853.84','7947116261','6659','6330678650','In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.',Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.,Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Voltsillam','$36,091.64','638890578','6659','9302207226','Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.',Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
-
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.,Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Mat Lam Tam','$48,533.45','6727901562','6659','7127296987','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.,Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Temp','$32,111.06','593306074','6659','4210828092','Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.',Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.,Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Fintone','$20,014.45','684594382','6659','5195827346','Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.,In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Bytecard','$31,608.60','6636908246','6659','5335662182','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.',Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.,Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Tresom','$47,476.91','6079485117','6659','3798597758','In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.',Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.,Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Fixflex','$47,678.62','3959696183','6659','7999777080','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.',Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.,Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Keylex','$46,591.08','6532688754','6659','3117065865','Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.',Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.,Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Y-Solowarm','$39,597.90','2240144270','6659','1765264774','Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.,Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Latlux','$27,879.55','6495674562','6659','6105638507','Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.',Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.,Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
-
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Zaam-Dox','$49,167.93','767883586','6659','6387829496','Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.',Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
-
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.,In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Temp','$45,118.15','6002724788','6659','5808687276','Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.',Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.,Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Tampflex','$33,033.70','5764702380','6659','4398907750','Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.,Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Bytecard','$45,228.73','4166844156','6659','2002703817','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.',Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.,Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Latlux','$26,530.90','5763894162','6659','1276151012','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.',Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.,Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Gembucket','$43,184.15','134664124','6659','5110667497','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.',Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.,Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Duobam','$36,833.77','7746573371','6659','518270165','Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.',Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.,Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Sonsing','$23,112.72','7930648133','6659','9873063404','Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
-
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.,Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Viva','$40,053.74','9021104881','6659','836986644','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.',Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.,Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Fintone','$36,998.50','6244311744','6659','4940220885','In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.',Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.,Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Sonair','$37,892.27','114707243','6659','2745897500','Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.',In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
-
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.,Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Toughjoyfax','$36,320.70','4259672177','6659','2318810168','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.',Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.,Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cookley','$34,239.28','1603497714','6659','7807563176','In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.',Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.,Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Tempsoft','$20,092.19','5074543770','6659','7978270459','Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
-
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.',Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.,Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Redhold','$48,599.51','8594897871','6659','1863209514','Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.,In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Cookley','$28,740.50','3589722355','6659','8972845876','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.',Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.,Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Latlux','$27,182.00','4606085452','6659','3173885295','Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.',Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.,Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Bytecard','$45,182.91','9829779475','6659','6744558749','Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.',In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.,Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Sonsing','$38,987.98','3535059763','6659','9120744218','Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
-
-Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.',Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.,Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Stringtough','$25,956.49','8429305122','6659','2805336747','Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.',Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
-
-Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
-
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.,Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Trippledex','$43,242.38','3963670967','6659','1077756577','Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.',Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.,Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Kanlam','$20,076.12','667110836','6659','9906461233','Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
-
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.,Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.);
-INSERT INTO Applications(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('Latlux','$40,462.69','7592248611','6659','716880148','Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.',Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
-
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
-
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.,Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.);
-
-CREATE TABLE IF NOT EXISTS Categories
+CREATE TABLE IF NOT EXISTS `Categories`
 (
-    Cat_Name    varchar(50),
-    Category_ID INTEGER AUTO_INCREMENT,
-    PRIMARY KEY (Category_ID),
-    INDEX idx_Category_ID (Category_ID)
+    `Cat_Name`    varchar(50),
+    `Category_ID` INTEGER AUTO_INCREMENT,
+    PRIMARY KEY (`Category_ID`),
+    INDEX `idx_Category_ID` (`Category_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Lettuce - Spring Mix',1270934228);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Longos - Cheese Tortellini',4840397252);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Soup - Campbells - Tomato',0967002052);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wine - Jaboulet Cotes Du Rhone',5516395305);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Gelatine Powder',3393610511);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Cabbage - Nappa',1836856717);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Cookie - Dough Variety',9655307565);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Beer - Corona',7099429825);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pepper - Gypsy Pepper',4366741067);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Glass - Wine, Plastic, Clear 5 Oz',2126377504);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Vinegar - Sherry',2225448140);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pesto - Primerba, Paste',4296314424);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Tart Shells - Barquettes, Savory',9323247812);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Anchovy Paste - 56 G Tube',9599830415);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Longos - Penne With Pesto',3858987573);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Soup - Knorr, Classic Can. Chili',7303394257);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wine - Chardonnay Mondavi',6712694663);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Quinoa',7191200766);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pasta - Lasagne, Fresh',4833751801);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wine - Chateau Bonnet',9305887104);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Flour - Buckwheat, Dark',7935235384);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Turkey - Breast, Double',4310850197);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Oil - Cooking Spray',8465282072);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wonton Wrappers',1044442867);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wine - Placido Pinot Grigo',0417382332);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Cheese - Grie Des Champ',6181814183);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Lemonade - Black Cherry, 591 Ml',1121139787);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Lamb - Ground',6263552735);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Bagel - Ched Chs Presliced',4692469749);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Taro Leaves',0890341346);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Soup - Campbells Chili Veg',0728308401);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wine - Montecillo Rioja Crianza',4308253357);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Bouillion - Fish',9762949617);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Sunflower Seed Raw',3414096374);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Chutney Sauce - Mango',4180315882);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Island Oasis - Peach Daiquiri',5554489338);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pie Box - Cello Window 2.5',9886336978);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Chicken - White Meat, No Tender',1773721097);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Syrup - Kahlua Chocolate',2156940630);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Sprouts Dikon',7801687302);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Mushroom - White Button',8909339896);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pork - Tenderloin, Fresh',7255425607);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Clams - Canned',8410834081);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Cardamon Ground',2206905515);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Parsley - Fresh',6324614387);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Rabbit - Frozen',4748805595);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Beef - Tenderloin Tails',8843812696);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Beets - Golden',7378954667);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Capon - Whole',6056667723);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pears - Anjou',3008042007);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Mushroom - Shitake, Fresh',4455821848);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wine - Barossa Valley Estate',8672204085);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Chinese Foods - Pepper Beef',4607934917);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Puree - Pear',4256118020);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Rosemary - Primerba, Paste',5354762782);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Beef - Tender Tips',5249366775);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Table Cloth 53x69 White',1934270393);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Sproutsmustard Cress',0382555856);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Veal - Inside Round / Top, Lean',9484787533);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Tomatoes Tear Drop',4260536818);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Maintenance Removal Charge',7327037950);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Veal - Insides, Grains',0209075872);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Island Oasis - Wildberry',2042863130);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pepper - Black, Whole',4396112394);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Sprite, Diet - 355ml',7547252125);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Glass Clear 7 Oz Xl',9108952140);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Rice Pilaf, Dry,package',3138327192);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Chutney Sauce',1808258118);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Flounder - Fresh',3984463960);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pasta - Lasagne, Fresh',4975054515);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Creme De Cacao White',9121310629);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Ecolab - Ster Bac',1817249649);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Turkey - Breast, Bone - In',5205985267);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Salmon Steak - Cohoe 8 Oz',2586956427);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Mayonnaise - Individual Pkg',8185546894);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Poppy Seed',2324453886);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Sauce - Marinara',0206681720);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Dc - Frozen Momji',0770823343);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Water - San Pellegrino',5226637136);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Steampan - Half Size Shallow',3502707197);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Chocolate - Pistoles, White',6750582664);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Bagels Poppyseed',0667029664);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pork - Butt, Boneless',2772235254);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Lamb - Bones',9778799180);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Quinoa',4806218286);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Coconut - Shredded, Sweet',1411953339);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Long Island Ice Tea',2171467150);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Ice Cream - Turtles Stick Bar',7739580228);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Breakfast Quesadillas',1198473207);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Wine - Fontanafredda Barolo',2869061366);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Hagen Daza - Dk Choocolate',0233870997);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pork - Sausage Casing',4955837697);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Green Tea Refresher',3524051669);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Oil - Margarine',0809072157);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Bread - Kimel Stick Poly',9036729912);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Ice Cream Bar - Hageen Daz To',3145268430);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Longos - Chicken Cordon Bleu',2465518054);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Rice - Long Grain',4029397352);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Dill - Primerba, Paste',4417707073);
-INSERT INTO Categories(Cat_Name,Category_ID) VALUES ('Pasta - Elbows, Macaroni, Dry',7693562664);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Lettuce - Spring Mix',1270934228);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Longos - Cheese Tortellini',4840397252);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Soup - Campbells - Tomato',0967002052);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wine - Jaboulet Cotes Du Rhone',5516395305);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Gelatine Powder',3393610511);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Cabbage - Nappa',1836856717);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Cookie - Dough Variety',9655307565);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Beer - Corona',7099429825);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pepper - Gypsy Pepper',4366741067);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Glass - Wine, Plastic, Clear 5 Oz',2126377504);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Vinegar - Sherry',2225448140);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pesto - Primerba, Paste',4296314424);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Tart Shells - Barquettes, Savory',9323247812);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Anchovy Paste - 56 G Tube',9599830415);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Longos - Penne With Pesto',3858987573);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Soup - Knorr, Classic Can. Chili',7303394257);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wine - Chardonnay Mondavi',6712694663);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Quinoa',7191200766);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pasta - Lasagne, Fresh',4833751801);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wine - Chateau Bonnet',9305887104);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Flour - Buckwheat, Dark',7935235384);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Turkey - Breast, Double',4310850197);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Oil - Cooking Spray',8465282072);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wonton Wrappers',1044442867);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wine - Placido Pinot Grigo',0417382332);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Cheese - Grie Des Champ',6181814183);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Lemonade - Black Cherry, 591 Ml',1121139787);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Lamb - Ground',6263552735);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Bagel - Ched Chs Presliced',4692469749);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Taro Leaves',0890341346);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Soup - Campbells Chili Veg',0728308401);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wine - Montecillo Rioja Crianza',4308253357);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Bouillion - Fish',9762949617);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Sunflower Seed Raw',3414096374);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Chutney Sauce - Mango',4180315882);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Island Oasis - Peach Daiquiri',5554489338);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pie Box - Cello Window 2.5',9886336978);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Chicken - White Meat, No Tender',1773721097);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Syrup - Kahlua Chocolate',2156940630);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Sprouts Dikon',7801687302);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Mushroom - White Button',8909339896);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pork - Tenderloin, Fresh',7255425607);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Clams - Canned',8410834081);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Cardamon Ground',2206905515);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Parsley - Fresh',6324614387);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Rabbit - Frozen',4748805595);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Beef - Tenderloin Tails',8843812696);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Beets - Golden',7378954667);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Capon - Whole',6056667723);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pears - Anjou',3008042007);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Mushroom - Shitake, Fresh',4455821848);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wine - Barossa Valley Estate',8672204085);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Chinese Foods - Pepper Beef',4607934917);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Puree - Pear',4256118020);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Rosemary - Primerba, Paste',5354762782);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Beef - Tender Tips',5249366775);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Table Cloth 53x69 White',1934270393);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Sproutsmustard Cress',0382555856);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Veal - Inside Round / Top, Lean',9484787533);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Tomatoes Tear Drop',4260536818);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Maintenance Removal Charge',7327037950);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Veal - Insides, Grains',0209075872);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Island Oasis - Wildberry',2042863130);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pepper - Black, Whole',4396112394);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Sprite, Diet - 355ml',7547252125);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Glass Clear 7 Oz Xl',9108952140);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Rice Pilaf, Dry,package',3138327192);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Chutney Sauce',1808258118);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Flounder - Fresh',3984463960);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pasta - Lasagne, Fresh',4975054515);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Creme De Cacao White',9121310629);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Ecolab - Ster Bac',1817249649);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Turkey - Breast, Bone - In',5205985267);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Salmon Steak - Cohoe 8 Oz',2586956427);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Mayonnaise - Individual Pkg',8185546894);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Poppy Seed',2324453886);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Sauce - Marinara',0206681720);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Dc - Frozen Momji',0770823343);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Water - San Pellegrino',5226637136);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Steampan - Half Size Shallow',3502707197);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Chocolate - Pistoles, White',6750582664);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Bagels Poppyseed',0667029664);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pork - Butt, Boneless',2772235254);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Lamb - Bones',9778799180);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Quinoa',4806218286);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Coconut - Shredded, Sweet',1411953339);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Long Island Ice Tea',2171467150);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Ice Cream - Turtles Stick Bar',7739580228);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Breakfast Quesadillas',1198473207);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Wine - Fontanafredda Barolo',2869061366);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Hagen Daza - Dk Choocolate',0233870997);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pork - Sausage Casing',4955837697);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Green Tea Refresher',3524051669);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Oil - Margarine',0809072157);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Bread - Kimel Stick Poly',9036729912);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Ice Cream Bar - Hageen Daz To',3145268430);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Longos - Chicken Cordon Bleu',2465518054);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Rice - Long Grain',4029397352);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Dill - Primerba, Paste',4417707073);
+INSERT INTO `Categories`(`Cat_Name`,`Category_ID`) VALUES ('Pasta - Elbows, Macaroni, Dry',7693562664);
 
 
 
-CREATE TABLE IF NOT EXISTS Client_Products
+CREATE TABLE IF NOT EXISTS `Client_Products`
 (
-    CP_Name        varchar(50),
-    Unit_Price     DECIMAL(5, 2) NOT NULL,
-    Product_ID     INTEGER AUTO_INCREMENT,
-    Category_ID    INTEGER       NOT NULL,
-    Curr_Client_ID INTEGER       NOT NULL,
-    PRIMARY KEY (Curr_Client_ID, Product_ID),
-    CONSTRAINT fk_34
-        FOREIGN KEY (Category_ID) REFERENCES Categories (Category_ID) ON DELETE restrict,
-    CONSTRAINT fk_35
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade,
-    INDEX idx_Curr_Client_ID (Curr_Client_ID),
-    INDEX idx_Product_ID (Product_ID)
+    `CP_Name`        varchar(50),
+    `Unit_Price`     DECIMAL(5, 2) NOT NULL,
+    `Product_ID`     INTEGER AUTO_INCREMENT,
+    `Category_ID`    INTEGER       NOT NULL,
+    `Curr_Client_ID` INTEGER       NOT NULL,
+    PRIMARY KEY (`Curr_Client_ID`, `Product_ID`),
+    CONSTRAINT `fk_34`
+        FOREIGN KEY (`Category_ID`) REFERENCES `Categories` (`Category_ID`) ON DELETE restrict,
+    CONSTRAINT `fk_35`
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
+    INDEX `idx_Curr_Client_ID` (`Curr_Client_ID`),
+    INDEX `idx_Product_ID` (`Product_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Wine - Trimbach Pinot Blanc','$4.14',8318809335,1270934228,9467661993);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cookies - Englishbay Oatmeal','$0.51',6898935038,4840397252,7468186278);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Mcgillicuddy Vanilla Schnap','$1.20',8644487485,967002052,6664649489);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Rosemary - Dry','$4.65',5697631146,5516395305,9429212265);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Veal - Knuckle','$0.03',5556894213,3393610511,775550353);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Squid - Breaded','$0.31',2131521855,1836856717,1265294704);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Five Alive Citrus','$4.12',5895786308,9655307565,9078229721);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cookie Chocolate Chip With','$1.85',6193705732,7099429825,4788639181);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Arrowroot','$4.08',9986693934,4366741067,267345917);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Langers - Mango Nectar','$3.08',1959326155,2126377504,6895570020);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Water - Green Tea Refresher','$1.68',5130045939,2225448140,5342435234);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Chicken - Livers','$0.36',5415896201,4296314424,2104432235);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Pepper - Chili Powder','$4.81',8035692283,9323247812,3654911803);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lighter - Bbq','$0.05',7372502624,9599830415,4587202983);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Kellogs All Bran Bars','$2.55',4527151622,3858987573,1292725192);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lettuce - Romaine','$4.11',881499951,7303394257,1836055536);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Beets - Golden','$4.13',3716743658,6712694663,4900207969);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Everfresh Products','$4.88',7226477718,7191200766,4762453366);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lemonade - Strawberry, 591 Ml','$2.37',7666796463,4833751801,280881169);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Rice - Aborio','$2.21',6095529522,9305887104,6743546569);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cheese - Roquefort Pappillon','$3.19',7914147427,7935235384,9691562529);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Pork - Chop, Frenched','$4.13',1194031935,4310850197,934193630);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Bread - Pumpernickle, Rounds','$1.82',2884885676,8465282072,6969232263);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Rice - Aborio','$0.82',6499823627,1044442867,9874873604);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lettuce - Red Leaf','$4.42',3520400073,417382332,4133836626);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cheese - Comte','$1.13',9416217492,6181814183,5884506260);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Soup Campbells - Tomato Bisque','$1.58',7517288334,1121139787,920935192);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Pie Pecan','$3.56',5945093564,6263552735,9516262457);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Pasta - Canelloni, Single Serve','$1.33',8166737116,4692469749,5128406008);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Roe - White Fish','$3.68',6095288274,890341346,1469214873);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Loquat','$4.79',2017026530,728308401,9572590979);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Eel Fresh','$3.14',5453126752,4308253357,617541159);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Fennel - Seeds','$2.20',2982222027,9762949617,8710416889);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Pork - Loin, Boneless','$3.61',6481112346,3414096374,7923583056);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lobster - Tail 6 Oz','$1.62',3046164572,4180315882,2641745550);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Nescafe - Frothy French Vanilla','$4.39',3020293170,5554489338,9187020556);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Appetizer - Asian Shrimp Roll','$2.55',1838924469,9886336978,2688993151);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Jameson - Irish Whiskey','$2.15',7175658060,1773721097,3845496061);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Fennel - Seeds','$4.30',7442730094,2156940630,9064744149);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Foam Espresso Cup Plain White','$2.58',6065541060,7801687302,7561109407);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Wild Boar - Tenderloin','$0.56',8246214063,8909339896,2149725401);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lettuce - Red Leaf','$3.91',7080919177,7255425607,4822461327);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Onions Granulated','$0.89',6353254520,8410834081,9652783064);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cabbage Roll','$3.53',4213729257,2206905515,6477074524);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Wine - Magnotta - Cab Sauv','$2.98',9520710299,6324614387,7666795068);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Salami - Genova','$4.04',4707111858,4748805595,1958031631);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Beef - Rib Roast, Capless','$0.32',3103331886,8843812696,5330803322);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Sauce - Sesame Thai Dressing','$1.81',1296468291,7378954667,316160024);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Wine - Zinfandel Rosenblum','$3.48',802249620,6056667723,8914181707);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Pepper - Black, Crushed','$2.42',2594193135,3008042007,700120343);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Sherbet - Raspberry','$1.27',8418932171,4455821848,1103865749);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Bread Base - Gold Formel','$2.91',8606089796,8672204085,124599532);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Island Oasis - Lemonade','$1.62',3287153390,4607934917,8457926322);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Bagel - 12 Grain Preslice','$1.01',2227122544,4256118020,3882304685);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cheese - Parmesan Cubes','$2.24',3507568233,5354762782,9572221698);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Yeast Dry - Fermipan','$1.42',7626992040,5249366775,7287503204);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Flower - Dish Garden','$4.52',471658138,1934270393,4985292400);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Shrimp - 100 / 200 Cold Water','$2.49',6336680916,382555856,3288442019);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Beef - Tenderloin','$0.85',5093317705,9484787533,667453369);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Jello - Assorted','$2.34',1122436823,4260536818,4018821344);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Table Cloth 120 Round White','$4.51',9617061961,7327037950,7330047384);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('French Pastry - Mini Chocolate','$0.91',2857595808,209075872,8533194579);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Yogurt - Plain','$3.10',4102673,2042863130,6418489780);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cognac - Courvaisier','$4.31',6973215580,4396112394,994431473);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Bread - Dark Rye, Loaf','$4.06',7791393379,7547252125,7729088584);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Basil - Seedlings Cookstown','$0.21',8734838996,9108952140,9148178551);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Chicken - Bones','$3.23',6715167915,3138327192,1422982750);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Tray - 16in Rnd Blk','$1.48',7364907661,1808258118,2681670667);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Juice - Prune','$4.39',4407953039,3984463960,9740901948);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Clams - Bay','$0.82',1526493004,4975054515,6639733382);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Sugar - Crumb','$0.14',1195565763,9121310629,1283710765);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Urban Zen Drinks','$4.11',2698475692,1817249649,1834508770);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Loquat','$2.04',3636850849,5205985267,8510683441);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Tomatoes - Roma','$3.76',8925673606,2586956427,1034074180);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Flour - Fast / Rapid','$1.98',9782305138,8185546894,3129976000);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lobster - Live','$2.98',2519618981,2324453886,6086726213);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Nut - Pecan, Halves','$0.42',2794997718,206681720,1708061614);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Chef Hat 20cm','$1.37',3487408929,770823343,9044477420);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Oregano - Dry, Rubbed','$0.01',2576211569,5226637136,7968983878);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Spice - Montreal Steak Spice','$0.98',1662988508,3502707197,4126237259);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Beans - Kidney White','$4.90',6876584488,6750582664,6354571686);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Eggroll','$1.47',528714511,667029664,2999813961);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Mousse - Passion Fruit','$0.68',1653626674,2772235254,4973144177);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Smoked Tongue','$2.23',8612802792,9778799180,2986648800);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Octopus','$1.66',6296345836,4806218286,7255363261);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Fond - Neutral','$3.46',2426478047,1411953339,5372592028);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Iced Tea - Lemon, 340ml','$4.43',8676137234,2171467150,7932134218);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Roe - Lump Fish, Black','$4.96',1029413606,7739580228,6803107973);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cheese - Roquefort Pappillon','$1.88',1323269703,1198473207,4379265374);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Ginsing - Fresh','$0.30',489385702,2869061366,1277412774);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Bay Leaf Ground','$1.17',8604507302,233870997,1028829108);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Chambord Royal','$0.19',3856313346,4955837697,2482304504);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Soup - French Can Pea','$2.94',9528501613,3524051669,724605517);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Maintenance Removal Charge','$1.51',5468334089,809072157,8189098039);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Wine - Alicanca Vinho Verde','$2.20',1578456940,9036729912,8285427528);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Appetizer - Asian Shrimp Roll','$3.67',1797179535,3145268430,3421413339);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Ezy Change Mophandle','$1.22',7218472672,2465518054,723021244);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Pepper - Chipotle, Canned','$4.99',6641362728,4029397352,186753888);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Lettuce - Mini Greens, Whole','$3.32',1118914066,4417707073,8674939457);
-INSERT INTO Client_Products(CP_Name,Unit_Price,Product_ID,Category_ID,Curr_Client_ID) VALUES ('Cheese Cloth No 60','$2.29',7720600029,7693562664,5810139965);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Wine - Trimbach Pinot Blanc','$4.14',8318809335,1270934228,9467661993);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cookies - Englishbay Oatmeal','$0.51',6898935038,4840397252,7468186278);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Mcgillicuddy Vanilla Schnap','$1.20',8644487485,967002052,6664649489);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Rosemary - Dry','$4.65',5697631146,5516395305,9429212265);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Veal - Knuckle','$0.03',5556894213,3393610511,775550353);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Squid - Breaded','$0.31',2131521855,1836856717,1265294704);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Five Alive Citrus','$4.12',5895786308,9655307565,9078229721);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cookie Chocolate Chip With','$1.85',6193705732,7099429825,4788639181);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Arrowroot','$4.08',9986693934,4366741067,267345917);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Langers - Mango Nectar','$3.08',1959326155,2126377504,6895570020);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Water - Green Tea Refresher','$1.68',5130045939,2225448140,5342435234);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Chicken - Livers','$0.36',5415896201,4296314424,2104432235);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Pepper - Chili Powder','$4.81',8035692283,9323247812,3654911803);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lighter - Bbq','$0.05',7372502624,9599830415,4587202983);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Kellogs All Bran Bars','$2.55',4527151622,3858987573,1292725192);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lettuce - Romaine','$4.11',881499951,7303394257,1836055536);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Beets - Golden','$4.13',3716743658,6712694663,4900207969);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Everfresh Products','$4.88',7226477718,7191200766,4762453366);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lemonade - Strawberry, 591 Ml','$2.37',7666796463,4833751801,280881169);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Rice - Aborio','$2.21',6095529522,9305887104,6743546569);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cheese - Roquefort Pappillon','$3.19',7914147427,7935235384,9691562529);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Pork - Chop, Frenched','$4.13',1194031935,4310850197,934193630);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Bread - Pumpernickle, Rounds','$1.82',2884885676,8465282072,6969232263);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Rice - Aborio','$0.82',6499823627,1044442867,9874873604);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lettuce - Red Leaf','$4.42',3520400073,417382332,4133836626);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cheese - Comte','$1.13',9416217492,6181814183,5884506260);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Soup Campbells - Tomato Bisque','$1.58',7517288334,1121139787,920935192);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Pie Pecan','$3.56',5945093564,6263552735,9516262457);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Pasta - Canelloni, Single Serve','$1.33',8166737116,4692469749,5128406008);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Roe - White Fish','$3.68',6095288274,890341346,1469214873);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Loquat','$4.79',2017026530,728308401,9572590979);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Eel Fresh','$3.14',5453126752,4308253357,617541159);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Fennel - Seeds','$2.20',2982222027,9762949617,8710416889);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Pork - Loin, Boneless','$3.61',6481112346,3414096374,7923583056);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lobster - Tail 6 Oz','$1.62',3046164572,4180315882,2641745550);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Nescafe - Frothy French Vanilla','$4.39',3020293170,5554489338,9187020556);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Appetizer - Asian Shrimp Roll','$2.55',1838924469,9886336978,2688993151);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Jameson - Irish Whiskey','$2.15',7175658060,1773721097,3845496061);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Fennel - Seeds','$4.30',7442730094,2156940630,9064744149);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Foam Espresso Cup Plain White','$2.58',6065541060,7801687302,7561109407);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Wild Boar - Tenderloin','$0.56',8246214063,8909339896,2149725401);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lettuce - Red Leaf','$3.91',7080919177,7255425607,4822461327);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Onions Granulated','$0.89',6353254520,8410834081,9652783064);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cabbage Roll','$3.53',4213729257,2206905515,6477074524);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Wine - Magnotta - Cab Sauv','$2.98',9520710299,6324614387,7666795068);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Salami - Genova','$4.04',4707111858,4748805595,1958031631);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Beef - Rib Roast, Capless','$0.32',3103331886,8843812696,5330803322);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Sauce - Sesame Thai Dressing','$1.81',1296468291,7378954667,316160024);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Wine - Zinfandel Rosenblum','$3.48',802249620,6056667723,8914181707);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Pepper - Black, Crushed','$2.42',2594193135,3008042007,700120343);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Sherbet - Raspberry','$1.27',8418932171,4455821848,1103865749);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Bread Base - Gold Formel','$2.91',8606089796,8672204085,124599532);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Island Oasis - Lemonade','$1.62',3287153390,4607934917,8457926322);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Bagel - 12 Grain Preslice','$1.01',2227122544,4256118020,3882304685);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cheese - Parmesan Cubes','$2.24',3507568233,5354762782,9572221698);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Yeast Dry - Fermipan','$1.42',7626992040,5249366775,7287503204);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Flower - Dish Garden','$4.52',471658138,1934270393,4985292400);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Shrimp - 100 / 200 Cold Water','$2.49',6336680916,382555856,3288442019);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Beef - Tenderloin','$0.85',5093317705,9484787533,667453369);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Jello - Assorted','$2.34',1122436823,4260536818,4018821344);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Table Cloth 120 Round White','$4.51',9617061961,7327037950,7330047384);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('French Pastry - Mini Chocolate','$0.91',2857595808,209075872,8533194579);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Yogurt - Plain','$3.10',4102673,2042863130,6418489780);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cognac - Courvaisier','$4.31',6973215580,4396112394,994431473);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Bread - Dark Rye, Loaf','$4.06',7791393379,7547252125,7729088584);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Basil - Seedlings Cookstown','$0.21',8734838996,9108952140,9148178551);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Chicken - Bones','$3.23',6715167915,3138327192,1422982750);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Tray - 16in Rnd Blk','$1.48',7364907661,1808258118,2681670667);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Juice - Prune','$4.39',4407953039,3984463960,9740901948);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Clams - Bay','$0.82',1526493004,4975054515,6639733382);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Sugar - Crumb','$0.14',1195565763,9121310629,1283710765);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Urban Zen Drinks','$4.11',2698475692,1817249649,1834508770);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Loquat','$2.04',3636850849,5205985267,8510683441);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Tomatoes - Roma','$3.76',8925673606,2586956427,1034074180);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Flour - Fast / Rapid','$1.98',9782305138,8185546894,3129976000);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lobster - Live','$2.98',2519618981,2324453886,6086726213);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Nut - Pecan, Halves','$0.42',2794997718,206681720,1708061614);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Chef Hat 20cm','$1.37',3487408929,770823343,9044477420);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Oregano - Dry, Rubbed','$0.01',2576211569,5226637136,7968983878);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Spice - Montreal Steak Spice','$0.98',1662988508,3502707197,4126237259);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Beans - Kidney White','$4.90',6876584488,6750582664,6354571686);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Eggroll','$1.47',528714511,667029664,2999813961);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Mousse - Passion Fruit','$0.68',1653626674,2772235254,4973144177);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Smoked Tongue','$2.23',8612802792,9778799180,2986648800);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Octopus','$1.66',6296345836,4806218286,7255363261);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Fond - Neutral','$3.46',2426478047,1411953339,5372592028);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Iced Tea - Lemon, 340ml','$4.43',8676137234,2171467150,7932134218);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Roe - Lump Fish, Black','$4.96',1029413606,7739580228,6803107973);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cheese - Roquefort Pappillon','$1.88',1323269703,1198473207,4379265374);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Ginsing - Fresh','$0.30',489385702,2869061366,1277412774);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Bay Leaf Ground','$1.17',8604507302,233870997,1028829108);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Chambord Royal','$0.19',3856313346,4955837697,2482304504);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Soup - French Can Pea','$2.94',9528501613,3524051669,724605517);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Maintenance Removal Charge','$1.51',5468334089,809072157,8189098039);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Wine - Alicanca Vinho Verde','$2.20',1578456940,9036729912,8285427528);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Appetizer - Asian Shrimp Roll','$3.67',1797179535,3145268430,3421413339);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Ezy Change Mophandle','$1.22',7218472672,2465518054,723021244);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Pepper - Chipotle, Canned','$4.99',6641362728,4029397352,186753888);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Lettuce - Mini Greens, Whole','$3.32',1118914066,4417707073,8674939457);
+INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Cheese Cloth No 60','$2.29',7720600029,7693562664,5810139965);
 
 
 
-CREATE TABLE IF NOT EXISTS Orders
+CREATE TABLE IF NOT EXISTS `Orders`
 (
-    O_Customer_ID INTEGER,
-    O_Order_ID    INTEGER AUTO_INCREMENT,
-    Service_ID    INTEGER NOT NULL,
-    App_ID        INTEGER NOT NULL,
-    PRIMARY KEY (O_Order_ID),
-    CONSTRAINT fk_36
-        FOREIGN KEY (Service_ID) REFERENCES Applications (Service_ID) ON DELETE restrict,
-    CONSTRAINT fk_37
-        FOREIGN KEY (App_ID) REFERENCES Applications (App_ID) ON DELETE restrict,
-    INDEX idx_O_Order_ID (O_Order_ID)
+    `O_Customer_ID` INTEGER,
+    `O_Order_ID`    INTEGER AUTO_INCREMENT,
+    `Service_ID`    INTEGER NOT NULL,
+    `App_ID`        INTEGER NOT NULL,
+    PRIMARY KEY (`O_Order_ID`),
+    CONSTRAINT `fk_36`
+        FOREIGN KEY (`Service_ID`) REFERENCES `Applications` (`Service_ID`) ON DELETE restrict,
+    CONSTRAINT `fk_37`
+        FOREIGN KEY (`App_ID`) REFERENCES `Applications` (`App_ID`) ON DELETE restrict,
+    INDEX `idx_O_Order_ID` (`O_Order_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4828072535,6961461808,4976560562,2104016258);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3950580239,7906908899,2146349026,6958645839);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6591579710,379973790,7034880573,2520047488);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (480824924,8439379773,4451940362,5077860092);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8999068307,1899052011,8465821836,2159927961);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6000713371,5628656348,4409227548,9248744117);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8893879492,9689127381,4457892300,311532284);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (9931579854,6120256059,7815675522,7117262087);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7912780327,9589036694,2944473921,2379027382);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8514950878,6767156523,7064737892,8222390015);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2928633944,5152193728,7614860470,2537692179);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2806547237,7894489964,8129916800,4029060412);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3061956786,7048179813,1658613899,8943575319);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (1050885848,1769208488,4013436779,1400084741);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5129463021,1360471308,9882148395,5007928879);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4736957956,4025070472,3564245944,791920445);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2273196687,9206801538,4502083208,221816836);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8394371752,3713305595,5337758691,8629376945);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7880490140,7866523061,6910897846,2251206310);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (878125205,6819996128,3780151359,2011031664);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5097415450,9232066084,4550784326,2405642980);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2045638685,3039400126,8100902534,2983137899);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8335418500,126297819,6455129059,6637979341);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4491293104,5651462198,1164397826,5407408554);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2968982842,9065729194,8235434148,9145132062);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6423578249,3517588989,7542145533,3169489550);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3887127269,9435616798,3383146766,815326726);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6635649166,6584891771,8721613753,5342680697);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2083896068,6084355099,9307407150,2856934358);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (761779086,2823170448,1827929553,8770214395);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3930303957,6410179871,117730785,6598298792);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6719310283,3986468862,8456321192,6063695044);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5985212416,2293534340,5650803048,3360896726);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5760082639,8621079631,3446849440,6271201644);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2451048271,8252416594,2444085302,7931745574);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4752572001,8787066025,1802782729,5462864949);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6276115355,7544148254,8077683126,523808445);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5023869733,9730397341,7698644421,2568911905);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2430203170,572719663,2811577637,645718556);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5590284724,9980125284,9317200877,2401666354);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4746773491,5255769002,3488885216,174667906);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8328648547,3446003452,8935655813,6178840314);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (1414932553,4696262391,8960055611,5974835514);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7176028842,5547855707,1744090467,7234669205);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (1745783946,7163912366,3661541358,1492190608);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2913141110,9598723836,4747725180,9605664089);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8797617105,1046900684,8801009348,1341758826);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (697859258,1197263799,775451037,1626780919);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (9431428814,7211693908,9855773217,2817929152);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6348224996,2454447231,2632226007,5392019269);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3708835948,436056917,3386324452,9892519124);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (106564536,797510788,4828714693,9491552732);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2276890886,2391835264,2591101353,7329174483);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2374417034,9618837327,5619806669,437557227);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (9988824750,6004763659,3410679820,7808412171);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6703119724,8772288388,2551004403,2281971104);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7735378394,7360457440,8857723798,2976381429);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (1510577858,3643584784,8656946854,973069430);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (9612913250,915589419,2085636586,5350042661);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (124516653,3311615131,1360092595,4527594141);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8631113999,8268765534,5343613470,4595470185);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2469292336,3367348872,8891750204,4665777349);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6077980706,6936214738,6024378335,8866449482);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6396409089,4529860612,6338502683,7706088324);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (1726861635,4676993722,387798374,3525408838);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3495165797,1309510881,2025231571,261483625);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5454614254,4818174327,6330678650,7947116261);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (540541419,8917734014,9302207226,638890578);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8116866605,16724860,7127296987,6727901562);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3680611153,3858560367,4210828092,593306074);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (9146953620,8252577695,5195827346,684594382);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2921365138,9127112683,5335662182,6636908246);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7404218306,7380148079,3798597758,6079485117);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (9032743880,6339340199,7999777080,3959696183);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6695788901,7230904358,3117065865,6532688754);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6975816077,3998325468,1765264774,2240144270);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7419833095,9332879621,6105638507,6495674562);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7527627190,8361190554,6387829496,767883586);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (1910361771,2088362681,5808687276,6002724788);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (846916959,6082509978,4398907750,5764702380);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6000144377,4839263469,2002703817,4166844156);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5842502798,1810650860,1276151012,5763894162);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (6618206022,6978435546,5110667497,134664124);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4814791399,5093849219,518270165,7746573371);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (8317699668,5781348212,9873063404,7930648133);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (794870406,3821255234,836986644,9021104881);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (492904693,8073267292,4940220885,6244311744);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (1427900256,57518769,2745897500,114707243);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2442703343,1030367671,2318810168,4259672177);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (4306946681,8184669038,7807563176,1603497714);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3002566837,2409591930,7978270459,5074543770);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3529940445,5018026995,1863209514,8594897871);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2593958677,9922407027,8972845876,3589722355);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (401119432,9656610008,3173885295,4606085452);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (3298042676,1735611522,6744558749,9829779475);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (228537363,1922798517,9120744218,3535059763);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (5588689127,8582020880,2805336747,8429305122);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (897174348,4864496706,1077756577,3963670967);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (2282022440,5192542138,9906461233,667110836);
-INSERT INTO Orders(O_Customer_ID,O_Order_ID,Service_ID,App_ID) VALUES (7244535147,2697712445,716880148,7592248611);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (4828072535,6961461808,4976560562,2104016258);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3950580239,7906908899,2146349026,6958645839);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6591579710,379973790,7034880573,2520047488);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (480824924,8439379773,4451940362,5077860092);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8999068307,1899052011,8465821836,2159927961);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6000713371,5628656348,4409227548,9248744117);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8893879492,9689127381,4457892300,311532284);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (9931579854,6120256059,7815675522,7117262087);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7912780327,9589036694,2944473921,2379027382);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8514950878,6767156523,7064737892,8222390015);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2928633944,5152193728,7614860470,2537692179);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2806547237,7894489964,8129916800,4029060412);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3061956786,7048179813,1658613899,8943575319);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (1050885848,1769208488,4013436779,1400084741);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5129463021,1360471308,9882148395,5007928879);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (4736957956,4025070472,3564245944,791920445);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2273196687,9206801538,4502083208,221816836);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8394371752,3713305595,5337758691,8629376945);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7880490140,7866523061,6910897846,2251206310);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (878125205,6819996128,3780151359,2011031664);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5097415450,9232066084,4550784326,2405642980);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2045638685,3039400126,8100902534,2983137899);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8335418500,126297819,6455129059,6637979341);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (4491293104,5651462198,1164397826,5407408554);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2968982842,9065729194,8235434148,9145132062);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6423578249,3517588989,7542145533,3169489550);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3887127269,9435616798,3383146766,815326726);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6635649166,6584891771,8721613753,5342680697);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2083896068,6084355099,9307407150,2856934358);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (761779086,2823170448,1827929553,8770214395);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3930303957,6410179871,117730785,6598298792);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6719310283,3986468862,8456321192,6063695044);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5985212416,2293534340,5650803048,3360896726);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5760082639,8621079631,3446849440,6271201644);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2451048271,8252416594,2444085302,7931745574);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (4752572001,8787066025,1802782729,5462864949);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6276115355,7544148254,8077683126,523808445);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5023869733,9730397341,7698644421,2568911905);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2430203170,572719663,2811577637,645718556);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5590284724,9980125284,9317200877,2401666354);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (4746773491,5255769002,3488885216,174667906);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8328648547,3446003452,8935655813,6178840314);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (1414932553,4696262391,8960055611,5974835514);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7176028842,5547855707,1744090467,7234669205);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (1745783946,7163912366,3661541358,1492190608);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2913141110,9598723836,4747725180,9605664089);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8797617105,1046900684,8801009348,1341758826);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (697859258,1197263799,775451037,1626780919);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (9431428814,7211693908,9855773217,2817929152);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6348224996,2454447231,2632226007,5392019269);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3708835948,436056917,3386324452,9892519124);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (106564536,797510788,4828714693,9491552732);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2276890886,2391835264,2591101353,7329174483);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2374417034,9618837327,5619806669,437557227);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (9988824750,6004763659,3410679820,7808412171);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6703119724,8772288388,2551004403,2281971104);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7735378394,7360457440,8857723798,2976381429);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (1510577858,3643584784,8656946854,973069430);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (9612913250,915589419,2085636586,5350042661);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (124516653,3311615131,1360092595,4527594141);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8631113999,8268765534,5343613470,4595470185);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2469292336,3367348872,8891750204,4665777349);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6077980706,6936214738,6024378335,8866449482);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6396409089,4529860612,6338502683,7706088324);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (1726861635,4676993722,387798374,3525408838);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3495165797,1309510881,2025231571,261483625);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5454614254,4818174327,6330678650,7947116261);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (540541419,8917734014,9302207226,638890578);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8116866605,16724860,7127296987,6727901562);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3680611153,3858560367,4210828092,593306074);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (9146953620,8252577695,5195827346,684594382);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2921365138,9127112683,5335662182,6636908246);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7404218306,7380148079,3798597758,6079485117);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (9032743880,6339340199,7999777080,3959696183);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6695788901,7230904358,3117065865,6532688754);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6975816077,3998325468,1765264774,2240144270);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7419833095,9332879621,6105638507,6495674562);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7527627190,8361190554,6387829496,767883586);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (1910361771,2088362681,5808687276,6002724788);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (846916959,6082509978,4398907750,5764702380);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6000144377,4839263469,2002703817,4166844156);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5842502798,1810650860,1276151012,5763894162);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (6618206022,6978435546,5110667497,134664124);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (4814791399,5093849219,518270165,7746573371);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (8317699668,5781348212,9873063404,7930648133);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (794870406,3821255234,836986644,9021104881);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (492904693,8073267292,4940220885,6244311744);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (1427900256,57518769,2745897500,114707243);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2442703343,1030367671,2318810168,4259672177);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (4306946681,8184669038,7807563176,1603497714);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3002566837,2409591930,7978270459,5074543770);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3529940445,5018026995,1863209514,8594897871);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2593958677,9922407027,8972845876,3589722355);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (401119432,9656610008,3173885295,4606085452);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (3298042676,1735611522,6744558749,9829779475);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (228537363,1922798517,9120744218,3535059763);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (5588689127,8582020880,2805336747,8429305122);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (897174348,4864496706,1077756577,3963670967);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (2282022440,5192542138,9906461233,667110836);
+INSERT INTO `Orders`(`O_Customer_ID`,`O_Order_ID`,`Service_ID`,`App_ID`) VALUES (7244535147,2697712445,716880148,7592248611);
 
-CREATE TABLE IF NOT EXISTS Order_Details
+CREATE TABLE IF NOT EXISTS `Order_Details`
 (
-    Quantity    INTEGER,
-    Discount    DECIMAL(4, 2),
-    Unit_Price  DECIMAL(5, 2) NOT NULL,
-    OD_Order_ID INTEGER AUTO_INCREMENT,
-    O_Order_ID  INTEGER       NOT NULL,
-    PRIMARY KEY (OD_Order_ID),
-    CONSTRAINT fk_38
-        FOREIGN KEY (O_Order_ID) REFERENCES Orders (O_Order_ID) ON DELETE restrict,
-    INDEX idx_OD_Order_ID (OD_Order_ID)
+    `Quantity`    INTEGER,
+    `Discount`    DECIMAL(4, 2),
+    `Unit_Price`  DECIMAL(5, 2) NOT NULL,
+    `OD_Order_ID` INTEGER AUTO_INCREMENT,
+    `O_Order_ID`  INTEGER       NOT NULL,
+    PRIMARY KEY (`OD_Order_ID`),
+    CONSTRAINT `fk_38`
+        FOREIGN KEY (`O_Order_ID`) REFERENCES `Orders` (`O_Order_ID`) ON DELETE restrict,
+    INDEX `idx_OD_Order_ID` (`OD_Order_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (20,14.05,2.25,9465906573,6961461808);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (69,22.13,3.43,1722837802,7906908899);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (21,27.33,1.61,4142264656,379973790);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (37,89.71,3.42,1139930567,8439379773);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (100,18.04,1.99,3841069754,1899052011);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (37,67.95,3.78,5342171865,5628656348);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (85,39.97,4.43,2468396189,9689127381);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (95,31.76,3.88,8875474982,6120256059);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (53,40.64,1.57,1848777523,9589036694);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (24,10.86,1.02,1993270019,6767156523);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (6,76.66,2.32,6067717425,5152193728);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (32,78.22,3.74,1847789544,7894489964);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (62,64.45,1.62,8494012665,7048179813);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (21,79.35,1.97,4678629963,1769208488);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (46,58.91,2.63,6849460714,1360471308);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (88,61.25,4.39,7855621717,4025070472);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (89,45.06,2.55,3561410073,9206801538);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (56,63.83,4.19,5386380230,3713305595);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (48,72.09,3.57,3689025354,7866523061);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (31,15.15,4.67,4603256787,6819996128);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (3,9.04,4.89,2115146670,9232066084);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (69,92.83,3.31,404920101,3039400126);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (46,19.61,1.46,1781061416,126297819);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (15,15.6,3.59,119284111,5651462198);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (70,82.85,1.59,6437101393,9065729194);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (80,69.22,2.88,4128692352,3517588989);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (2,92.8,4.16,3154036547,9435616798);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (5,67.97,3.12,5885616078,6584891771);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (73,51.7,2.65,7633268190,6084355099);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (64,26.22,1.5,7722746292,2823170448);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (57,17.4,4.96,991680049,6410179871);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (40,22.33,4.57,5125973009,3986468862);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (95,77.58,4.89,4826254075,2293534340);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (14,61.15,1.24,4913736035,8621079631);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (30,95.82,4.61,1054912866,8252416594);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (77,81.01,1.28,5685446888,8787066025);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (1,15.21,3.53,4106106280,7544148254);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (2,65.84,4.88,847146316,9730397341);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (5,10.77,1.96,5172287043,572719663);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (27,60.66,2.74,6337697316,9980125284);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (52,68.9,2.17,624779394,5255769002);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (47,24.17,2.23,6438675628,3446003452);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (84,56.23,3.61,7233951233,4696262391);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (40,75.86,4.3,4100054823,5547855707);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (57,76.74,3.75,1394307543,7163912366);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (33,65.87,2.05,7665041760,9598723836);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (24,45.91,4.7,8081210229,1046900684);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (48,67.34,1.88,5604316342,1197263799);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (84,29.05,2.09,3872267329,7211693908);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (83,66.41,3.09,5602309411,2454447231);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (1,61.36,4.77,8167081338,436056917);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (33,45.98,4.94,9733996858,797510788);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (2,91.54,3.82,2300938170,2391835264);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (92,84.74,1.13,898024714,9618837327);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (74,36.51,2.28,9109910700,6004763659);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (70,44.36,3.84,8583277885,8772288388);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (30,53.42,2.99,5582982752,7360457440);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (18,40.16,4.95,6358639137,3643584784);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (17,87.58,4.98,6371519565,915589419);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (22,70.66,1.82,883085925,3311615131);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (54,89.4,3.07,5034187043,8268765534);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (6,80.12,3.61,2258558956,3367348872);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (37,65.94,1.45,3676648080,6936214738);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (52,28,4.83,5777278515,4529860612);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (9,55.92,1.9,8819377314,4676993722);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (47,78.28,2.78,224849972,1309510881);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (50,76.01,4.12,2872305971,4818174327);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (70,95.67,1.68,7125062237,8917734014);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (53,43.24,1.51,1301504599,16724860);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (97,85.54,4.19,579938417,3858560367);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (67,66.87,1.16,3560080819,8252577695);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (100,74.58,3.9,5653439576,9127112683);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (63,53.8,3.88,8447818721,7380148079);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (74,99.56,3.19,3467466826,6339340199);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (95,2.85,4.76,2303880319,7230904358);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (35,49.34,4.59,7168743139,3998325468);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (40,64,2.47,918245729,9332879621);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (2,23.18,4.5,2083185927,8361190554);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (70,21.29,2.35,7372047609,2088362681);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (66,74.17,4.68,4273995247,6082509978);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (83,62.91,3.15,6249183027,4839263469);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (72,8.25,1.34,3266510232,1810650860);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (89,18.9,2.12,9959314715,6978435546);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (8,18.71,1.49,4530353613,5093849219);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (6,97.29,1.6,1748834657,5781348212);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (28,74.95,3.14,6796521072,3821255234);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (79,89.56,4.77,8289557426,8073267292);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (81,34.5,2.79,468479511,57518769);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (19,23.33,4.69,4403029272,1030367671);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (30,71.43,2.66,9105320461,8184669038);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (36,86.83,2.26,416721133,2409591930);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (23,56.53,2.97,5176333163,5018026995);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (63,31.36,4.57,53874072,9922407027);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (99,46.69,4.28,261798677,9656610008);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (44,42.18,2.79,5830435594,1735611522);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (48,48,1.98,3583426428,1922798517);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (97,97.88,4.47,4464161855,8582020880);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (46,72.93,3.67,8817928178,4864496706);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (65,75.36,2.84,4061637487,5192542138);
-INSERT INTO Order_Details(Quantity,Discount,Unit_Price,OD_Order_ID,O_Order_ID) VALUES (50,65.24,1.73,85060364,2697712445);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (20,14.05,2.25,9465906573,6961461808);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (69,22.13,3.43,1722837802,7906908899);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (21,27.33,1.61,4142264656,379973790);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (37,89.71,3.42,1139930567,8439379773);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (100,18.04,1.99,3841069754,1899052011);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (37,67.95,3.78,5342171865,5628656348);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (85,39.97,4.43,2468396189,9689127381);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (95,31.76,3.88,8875474982,6120256059);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (53,40.64,1.57,1848777523,9589036694);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (24,10.86,1.02,1993270019,6767156523);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (6,76.66,2.32,6067717425,5152193728);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (32,78.22,3.74,1847789544,7894489964);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (62,64.45,1.62,8494012665,7048179813);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (21,79.35,1.97,4678629963,1769208488);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (46,58.91,2.63,6849460714,1360471308);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (88,61.25,4.39,7855621717,4025070472);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (89,45.06,2.55,3561410073,9206801538);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (56,63.83,4.19,5386380230,3713305595);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (48,72.09,3.57,3689025354,7866523061);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (31,15.15,4.67,4603256787,6819996128);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (3,9.04,4.89,2115146670,9232066084);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (69,92.83,3.31,404920101,3039400126);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (46,19.61,1.46,1781061416,126297819);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (15,15.6,3.59,119284111,5651462198);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (70,82.85,1.59,6437101393,9065729194);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (80,69.22,2.88,4128692352,3517588989);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (2,92.8,4.16,3154036547,9435616798);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (5,67.97,3.12,5885616078,6584891771);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (73,51.7,2.65,7633268190,6084355099);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (64,26.22,1.5,7722746292,2823170448);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (57,17.4,4.96,991680049,6410179871);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (40,22.33,4.57,5125973009,3986468862);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (95,77.58,4.89,4826254075,2293534340);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (14,61.15,1.24,4913736035,8621079631);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (30,95.82,4.61,1054912866,8252416594);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (77,81.01,1.28,5685446888,8787066025);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (1,15.21,3.53,4106106280,7544148254);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (2,65.84,4.88,847146316,9730397341);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (5,10.77,1.96,5172287043,572719663);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (27,60.66,2.74,6337697316,9980125284);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (52,68.9,2.17,624779394,5255769002);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (47,24.17,2.23,6438675628,3446003452);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (84,56.23,3.61,7233951233,4696262391);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (40,75.86,4.3,4100054823,5547855707);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (57,76.74,3.75,1394307543,7163912366);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (33,65.87,2.05,7665041760,9598723836);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (24,45.91,4.7,8081210229,1046900684);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (48,67.34,1.88,5604316342,1197263799);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (84,29.05,2.09,3872267329,7211693908);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (83,66.41,3.09,5602309411,2454447231);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (1,61.36,4.77,8167081338,436056917);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (33,45.98,4.94,9733996858,797510788);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (2,91.54,3.82,2300938170,2391835264);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (92,84.74,1.13,898024714,9618837327);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (74,36.51,2.28,9109910700,6004763659);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (70,44.36,3.84,8583277885,8772288388);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (30,53.42,2.99,5582982752,7360457440);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (18,40.16,4.95,6358639137,3643584784);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (17,87.58,4.98,6371519565,915589419);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (22,70.66,1.82,883085925,3311615131);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (54,89.4,3.07,5034187043,8268765534);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (6,80.12,3.61,2258558956,3367348872);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (37,65.94,1.45,3676648080,6936214738);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (52,28,4.83,5777278515,4529860612);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (9,55.92,1.9,8819377314,4676993722);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (47,78.28,2.78,224849972,1309510881);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (50,76.01,4.12,2872305971,4818174327);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (70,95.67,1.68,7125062237,8917734014);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (53,43.24,1.51,1301504599,16724860);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (97,85.54,4.19,579938417,3858560367);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (67,66.87,1.16,3560080819,8252577695);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (100,74.58,3.9,5653439576,9127112683);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (63,53.8,3.88,8447818721,7380148079);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (74,99.56,3.19,3467466826,6339340199);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (95,2.85,4.76,2303880319,7230904358);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (35,49.34,4.59,7168743139,3998325468);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (40,64,2.47,918245729,9332879621);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (2,23.18,4.5,2083185927,8361190554);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (70,21.29,2.35,7372047609,2088362681);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (66,74.17,4.68,4273995247,6082509978);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (83,62.91,3.15,6249183027,4839263469);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (72,8.25,1.34,3266510232,1810650860);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (89,18.9,2.12,9959314715,6978435546);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (8,18.71,1.49,4530353613,5093849219);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (6,97.29,1.6,1748834657,5781348212);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (28,74.95,3.14,6796521072,3821255234);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (79,89.56,4.77,8289557426,8073267292);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (81,34.5,2.79,468479511,57518769);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (19,23.33,4.69,4403029272,1030367671);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (30,71.43,2.66,9105320461,8184669038);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (36,86.83,2.26,416721133,2409591930);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (23,56.53,2.97,5176333163,5018026995);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (63,31.36,4.57,53874072,9922407027);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (99,46.69,4.28,261798677,9656610008);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (44,42.18,2.79,5830435594,1735611522);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (48,48,1.98,3583426428,1922798517);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (97,97.88,4.47,4464161855,8582020880);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (46,72.93,3.67,8817928178,4864496706);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (65,75.36,2.84,4061637487,5192542138);
+INSERT INTO `Order_Details`(`Quantity`,`Discount`,`Unit_Price`,`OD_Order_ID`,`O_Order_ID`) VALUES (50,65.24,1.73,85060364,2697712445);
 
 
-CREATE TABLE IF NOT EXISTS Client_Order
+CREATE TABLE IF NOT EXISTS `Client_Order`
 (
-    Curr_Client_ID INTEGER NOT NULL,
-    Product_ID     INTEGER NOT NULL,
-    OD_Order_ID    INTEGER NOT NULL,
-    CONSTRAINT fk_39
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Client_Products (Curr_Client_ID) ON DELETE cascade,
-    CONSTRAINT fk_40
-        FOREIGN KEY (Product_ID) REFERENCES Client_Products (Product_ID) ON DELETE cascade,
-    CONSTRAINT fk_41
-        FOREIGN KEY (OD_Order_ID) REFERENCES Order_Details (OD_Order_ID) ON DELETE cascade
+    `Curr_Client_ID` INTEGER NOT NULL,
+    `Product_ID`     INTEGER NOT NULL,
+    `OD_Order_ID`    INTEGER NOT NULL,
+    CONSTRAINT `fk_39`
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Client_Products` (`Curr_Client_ID`) ON DELETE cascade,
+    CONSTRAINT `fk_40`
+        FOREIGN KEY (`Product_ID`) REFERENCES `Client_Products` (`Product_ID`) ON DELETE cascade,
+    CONSTRAINT `fk_41`
+        FOREIGN KEY (`OD_Order_ID`) REFERENCES `Order_Details` (`OD_Order_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9467661993,8318809335,9465906573);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7468186278,6898935038,1722837802);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6664649489,8644487485,4142264656);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9429212265,5697631146,1139930567);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (775550353,5556894213,3841069754);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1265294704,2131521855,5342171865);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9078229721,5895786308,2468396189);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4788639181,6193705732,8875474982);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (267345917,9986693934,1848777523);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6895570020,1959326155,1993270019);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (5342435234,5130045939,6067717425);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2104432235,5415896201,1847789544);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (3654911803,8035692283,8494012665);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4587202983,7372502624,4678629963);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1292725192,4527151622,6849460714);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1836055536,881499951,7855621717);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4900207969,3716743658,3561410073);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4762453366,7226477718,5386380230);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (280881169,7666796463,3689025354);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6743546569,6095529522,4603256787);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9691562529,7914147427,2115146670);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (934193630,1194031935,404920101);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6969232263,2884885676,1781061416);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9874873604,6499823627,119284111);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4133836626,3520400073,6437101393);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (5884506260,9416217492,4128692352);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (920935192,7517288334,3154036547);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9516262457,5945093564,5885616078);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (5128406008,8166737116,7633268190);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1469214873,6095288274,7722746292);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9572590979,2017026530,991680049);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (617541159,5453126752,5125973009);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8710416889,2982222027,4826254075);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7923583056,6481112346,4913736035);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2641745550,3046164572,1054912866);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9187020556,3020293170,5685446888);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2688993151,1838924469,4106106280);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (3845496061,7175658060,847146316);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9064744149,7442730094,5172287043);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7561109407,6065541060,6337697316);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2149725401,8246214063,624779394);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4822461327,7080919177,6438675628);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9652783064,6353254520,7233951233);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6477074524,4213729257,4100054823);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7666795068,9520710299,1394307543);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1958031631,4707111858,7665041760);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (5330803322,3103331886,8081210229);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (316160024,1296468291,5604316342);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8914181707,802249620,3872267329);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (700120343,2594193135,5602309411);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1103865749,8418932171,8167081338);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (124599532,8606089796,9733996858);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8457926322,3287153390,2300938170);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (3882304685,2227122544,898024714);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9572221698,3507568233,9109910700);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7287503204,7626992040,8583277885);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4985292400,471658138,5582982752);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (3288442019,6336680916,6358639137);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (667453369,5093317705,6371519565);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4018821344,1122436823,883085925);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7330047384,9617061961,5034187043);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8533194579,2857595808,2258558956);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6418489780,4102673,3676648080);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (994431473,6973215580,5777278515);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7729088584,7791393379,8819377314);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9148178551,8734838996,224849972);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1422982750,6715167915,2872305971);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2681670667,7364907661,7125062237);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9740901948,4407953039,1301504599);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6639733382,1526493004,579938417);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1283710765,1195565763,3560080819);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1834508770,2698475692,5653439576);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8510683441,3636850849,8447818721);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1034074180,8925673606,3467466826);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (3129976000,9782305138,2303880319);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6086726213,2519618981,7168743139);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1708061614,2794997718,918245729);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (9044477420,3487408929,2083185927);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7968983878,2576211569,7372047609);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4126237259,1662988508,4273995247);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6354571686,6876584488,6249183027);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2999813961,528714511,3266510232);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4973144177,1653626674,9959314715);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2986648800,8612802792,4530353613);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7255363261,6296345836,1748834657);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (5372592028,2426478047,6796521072);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (7932134218,8676137234,8289557426);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (6803107973,1029413606,468479511);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (4379265374,1323269703,4403029272);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1277412774,489385702,9105320461);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (1028829108,8604507302,416721133);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (2482304504,3856313346,5176333163);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (724605517,9528501613,53874072);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8189098039,5468334089,261798677);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8285427528,1578456940,5830435594);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (3421413339,1797179535,3583426428);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (723021244,7218472672,4464161855);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (186753888,6641362728,8817928178);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (8674939457,1118914066,4061637487);
-INSERT INTO Client_Order(Curr_Client_ID,Product_ID,OD_Order_ID) VALUES (5810139965,7720600029,85060364);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9467661993,8318809335,9465906573);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7468186278,6898935038,1722837802);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6664649489,8644487485,4142264656);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9429212265,5697631146,1139930567);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (775550353,5556894213,3841069754);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1265294704,2131521855,5342171865);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9078229721,5895786308,2468396189);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4788639181,6193705732,8875474982);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (267345917,9986693934,1848777523);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6895570020,1959326155,1993270019);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (5342435234,5130045939,6067717425);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2104432235,5415896201,1847789544);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (3654911803,8035692283,8494012665);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4587202983,7372502624,4678629963);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1292725192,4527151622,6849460714);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1836055536,881499951,7855621717);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4900207969,3716743658,3561410073);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4762453366,7226477718,5386380230);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (280881169,7666796463,3689025354);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6743546569,6095529522,4603256787);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9691562529,7914147427,2115146670);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (934193630,1194031935,404920101);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6969232263,2884885676,1781061416);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9874873604,6499823627,119284111);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4133836626,3520400073,6437101393);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (5884506260,9416217492,4128692352);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (920935192,7517288334,3154036547);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9516262457,5945093564,5885616078);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (5128406008,8166737116,7633268190);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1469214873,6095288274,7722746292);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9572590979,2017026530,991680049);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (617541159,5453126752,5125973009);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8710416889,2982222027,4826254075);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7923583056,6481112346,4913736035);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2641745550,3046164572,1054912866);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9187020556,3020293170,5685446888);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2688993151,1838924469,4106106280);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (3845496061,7175658060,847146316);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9064744149,7442730094,5172287043);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7561109407,6065541060,6337697316);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2149725401,8246214063,624779394);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4822461327,7080919177,6438675628);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9652783064,6353254520,7233951233);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6477074524,4213729257,4100054823);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7666795068,9520710299,1394307543);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1958031631,4707111858,7665041760);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (5330803322,3103331886,8081210229);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (316160024,1296468291,5604316342);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8914181707,802249620,3872267329);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (700120343,2594193135,5602309411);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1103865749,8418932171,8167081338);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (124599532,8606089796,9733996858);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8457926322,3287153390,2300938170);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (3882304685,2227122544,898024714);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9572221698,3507568233,9109910700);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7287503204,7626992040,8583277885);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4985292400,471658138,5582982752);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (3288442019,6336680916,6358639137);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (667453369,5093317705,6371519565);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4018821344,1122436823,883085925);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7330047384,9617061961,5034187043);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8533194579,2857595808,2258558956);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6418489780,4102673,3676648080);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (994431473,6973215580,5777278515);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7729088584,7791393379,8819377314);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9148178551,8734838996,224849972);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1422982750,6715167915,2872305971);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2681670667,7364907661,7125062237);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9740901948,4407953039,1301504599);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6639733382,1526493004,579938417);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1283710765,1195565763,3560080819);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1834508770,2698475692,5653439576);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8510683441,3636850849,8447818721);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1034074180,8925673606,3467466826);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (3129976000,9782305138,2303880319);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6086726213,2519618981,7168743139);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1708061614,2794997718,918245729);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (9044477420,3487408929,2083185927);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7968983878,2576211569,7372047609);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4126237259,1662988508,4273995247);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6354571686,6876584488,6249183027);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2999813961,528714511,3266510232);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4973144177,1653626674,9959314715);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2986648800,8612802792,4530353613);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7255363261,6296345836,1748834657);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (5372592028,2426478047,6796521072);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (7932134218,8676137234,8289557426);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (6803107973,1029413606,468479511);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (4379265374,1323269703,4403029272);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1277412774,489385702,9105320461);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (1028829108,8604507302,416721133);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (2482304504,3856313346,5176333163);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (724605517,9528501613,53874072);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8189098039,5468334089,261798677);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8285427528,1578456940,5830435594);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (3421413339,1797179535,3583426428);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (723021244,7218472672,4464161855);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (186753888,6641362728,8817928178);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (8674939457,1118914066,4061637487);
+INSERT INTO `Client_Order`(`Curr_Client_ID`,`Product_ID`,`OD_Order_ID`) VALUES (5810139965,7720600029,85060364);
 
 
 
-CREATE TABLE IF NOT EXISTS Customer_Information
+CREATE TABLE IF NOT EXISTS `Customer_Information`
 (
-    Address        varchar(50) NOT NULL,
-    Phone          varchar(50) NOT NULL,
-    Contact_Title  varchar(50),
-    First_Name     varchar(50) NOT NULL,
-    Last_Name      varchar(50) NOT NULL,
-    Demographics   varchar(50) NOT NULL,
-    CI_Customer_ID INTEGER AUTO_INCREMENT,
-    O_Order_ID     INTEGER     NOT NULL,
-    PRIMARY KEY (O_Order_ID, CI_Customer_ID),
-    CONSTRAINT fk_42
-        FOREIGN KEY (O_Order_ID) REFERENCES Orders (O_Order_ID) ON DELETE restrict,
-    UNIQUE INDEX idx_Phone (Phone),
-    INDEX idx_O_Order_ID (O_Order_ID),
-    INDEX idx_CI_Customer_ID (CI_Customer_ID)
+    `Address`        varchar(50) NOT NULL,
+    `Phone`          varchar(50) NOT NULL,
+    `Contact_Title`  varchar(50),
+    `First_Name`     varchar(50) NOT NULL,
+    `Last_Name`      varchar(50) NOT NULL,
+    `Demographics`   varchar(50) NOT NULL,
+    `CI_Customer_ID` INTEGER AUTO_INCREMENT,
+    `O_Order_ID`     INTEGER     NOT NULL,
+    PRIMARY KEY (`O_Order_ID`, `CI_Customer_ID`),
+    CONSTRAINT `fk_42`
+        FOREIGN KEY (`O_Order_ID`) REFERENCES `Orders` (`O_Order_ID`) ON DELETE restrict,
+    UNIQUE INDEX `idx_Phone` (`Phone`),
+    INDEX `idx_O_Order_ID` (`O_Order_ID`),
+    INDEX `idx_CI_Customer_ID` (`CI_Customer_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('85249 Erie Pass','+62 (443) 247-6221','Ms','Ezri','Cussons','molestie sed justo pellentesque',1,6961461808);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('26809 Fulton Trail','+62 (196) 889-4157','Honorable','Humfried','Aspland','mus etiam vel',2,7906908899);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('6 Namekagon Hill','+7 (207) 269-5768','Ms','Yelena','Budgeon','odio odio elementum',3,379973790);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('2 Swallow Terrace','+595 (515) 340-3558','Dr','Moses','Stowell','ut mauris eget massa',4,8439379773);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('57 Lighthouse Bay Avenue','+55 (775) 386-2706','Rev','Lib','Dunklee','vel',5,1899052011);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('8 Elmside Court','+1 (202) 886-2384','Honorable','Marcellina','Raylton','ac nulla sed',6,5628656348);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('28 Jackson Street','+7 (761) 700-9126','Ms','Essa','Beggs','platea dictumst etiam faucibus',7,9689127381);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('77 Wayridge Alley','+86 (307) 844-4109','Mrs','Vidovik','Jollie','sapien cum',8,6120256059);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('93 Clemons Lane','+63 (484) 719-1963','Dr','Maurene','Kinghorn','tortor id nulla ultrices',9,9589036694);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('665 David Road','+502 (273) 263-0018','Dr','Averyl','Dunbleton','eget rutrum at lorem',10,6767156523);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('1049 Roxbury Junction','+62 (608) 742-1540','Rev','Broderic','Haye','dis parturient montes nascetur ridiculus',11,5152193728);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('7 Tony Plaza','+86 (266) 232-1599','Rev','Linnie','Peris','odio consequat varius',12,7894489964);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('6916 Bartillon Crossing','+84 (626) 125-4142','Mrs','Duff','Itschakov','ultrices enim',13,7048179813);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('64846 Sutherland Avenue','+1 (757) 769-7108','Ms','Mabel','Mityushkin','nulla eget eros elementum',14,1769208488);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('6336 Raven Crossing','+86 (563) 168-3002','Honorable','Curran','Streetfield','id turpis integer aliquet',15,1360471308);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('71946 Fair Oaks Street','+7 (656) 460-2873','Honorable','Heinrick','Accombe','ultrices posuere',16,4025070472);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('56 Grover Street','+251 (600) 102-6418','Rev','Flynn','D''Alesco','quam suspendisse potenti',17,9206801538);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('041 Blaine Parkway','+86 (144) 249-4110','Honorable','Dicky','Fisbey','platea dictumst aliquam',18,3713305595);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('41 Butternut Lane','+233 (984) 672-5775','Ms','Leoine','Kief','sit amet consectetuer adipiscing elit',19,7866523061);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('3190 Little Fleur Junction','+420 (243) 868-0611','Honorable','Nickolaus','Napier','id consequat',20,6819996128);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('8 Upham Parkway','+46 (352) 276-2682','Rev','Siffre','Copnall','neque sapien placerat ante nulla',21,9232066084);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('619 Carioca Parkway','+51 (446) 717-4914','Ms','Rosemonde','O'' Molan','pede justo',22,3039400126);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('66 Kipling Drive','+86 (336) 247-0425','Mr','Fanechka','Tallquist','venenatis lacinia aenean sit',23,126297819);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('83410 Lindbergh Alley','+60 (314) 341-4186','Dr','Kim','Stokell','lectus in quam fringilla',24,5651462198);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('57910 Summer Ridge Park','+595 (829) 589-0148','Mrs','Nat','Pavlovsky','suspendisse',25,9065729194);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('0767 Dixon Drive','+86 (902) 848-6111','Ms','Wilhelmine','Cammocke','eget orci vehicula condimentum',26,3517588989);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('8176 Oxford Circle','+86 (400) 453-3089','Ms','Gwenette','Yeell','id turpis integer aliquet',27,9435616798);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('56 Hansons Point','+86 (384) 695-7964','Honorable','Lacey','Pietasch','congue elementum in hac',28,6584891771);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('5 Chive Hill','+58 (423) 112-2044','Dr','Caldwell','Petrashov','molestie lorem quisque',29,6084355099);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('79 Scott Way','+998 (458) 846-2634','Dr','Giorgi','Crone','mattis egestas metus aenean',30,2823170448);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('8722 Eggendart Park','+86 (903) 643-1036','Honorable','Rodolph','Lowless','duis consequat',31,6410179871);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('74 Oneill Park','+1 (453) 305-0884','Mrs','Silvie','Aspinal','nulla suscipit ligula',32,3986468862);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('89 Carberry Point','+86 (368) 123-2219','Honorable','Sherwin','Pighills','cras mi pede malesuada',33,2293534340);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('29 Pennsylvania Center','+380 (918) 655-2770','Dr','Cristian','Rowter','at diam nam tristique tortor',34,8621079631);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('0387 High Crossing Street','+7 (373) 250-5870','Honorable','Phillipe','Brosnan','quisque porta volutpat',35,8252416594);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('40 Northport Alley','+46 (670) 262-7000','Dr','Konstantine','Allwright','eros viverra eget congue eget',36,8787066025);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('768 Forest Dale Drive','+86 (318) 220-5365','Rev','Farrah','Rillatt','varius ut blandit non',37,7544148254);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('5 Forest Pass','+86 (599) 324-7711','Mr','Kip','Shortell','in tempor turpis',38,9730397341);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('72268 Victoria Junction','+998 (258) 940-6278','Dr','Mariejeanne','Luno','rutrum',39,572719663);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('835 Lerdahl Circle','+48 (589) 662-2507','Dr','Alanah','Tewes','turpis adipiscing lorem',40,9980125284);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('31 South Avenue','+62 (252) 731-0000','Ms','Cosette','Wincer','amet justo',41,5255769002);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('7835 Grayhawk Place','+48 (559) 637-5850','Ms','Shaun','McKomb','sapien sapien non mi integer',42,3446003452);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('731 Garrison Center','+86 (236) 141-2947','Dr','Sigmund','Cutmare','suspendisse accumsan tortor quis turpis',43,4696262391);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('78 Twin Pines Court','+62 (549) 952-3623','Mrs','May','Knoton','proin at turpis a',44,5547855707);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('919 Holmberg Crossing','+63 (413) 639-2135','Mrs','Kingsly','Cavaney','quis',45,7163912366);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('6532 Anhalt Alley','+62 (424) 857-6836','Ms','Lacey','Leeds','morbi vel',46,9598723836);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('211 Coleman Street','+55 (873) 225-1720','Mr','Tabb','Brooks','rhoncus aliquam lacus',47,1046900684);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('17 Susan Parkway','+970 (948) 718-2370','Honorable','Bell','Kolak','ut rhoncus',48,1197263799);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('16532 American Ash Lane','+86 (467) 200-7635','Ms','Pearle','O''Daly','ac tellus semper interdum',49,7211693908);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('39834 Marquette Way','+63 (719) 578-9694','Dr','Betteann','Doddemeede','tincidunt lacus at velit vivamus',50,2454447231);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('0910 Bartelt Plaza','+967 (348) 767-6235','Rev','Nikos','Lapping','blandit',51,436056917);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('7 Green Ridge Lane','+504 (244) 743-9731','Honorable','Dari','Seden','est donec odio',52,797510788);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('7587 Mendota Terrace','+62 (677) 329-6468','Dr','Codi','Janeway','suscipit nulla elit ac',53,2391835264);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('8850 Evergreen Road','+998 (366) 621-1933','Honorable','Tish','Elener','laoreet ut rhoncus',54,9618837327);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('6 Arizona Place','+86 (209) 944-1045','Mrs','Morie','Snelling','dolor quis odio consequat varius',55,6004763659);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('64493 Fairfield Lane','+86 (208) 848-4566','Mrs','Germaine','Searl','integer aliquet massa',56,8772288388);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('3 Goodland Pass','+46 (988) 349-8433','Rev','Walden','Hoult','in felis',57,7360457440);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('222 Riverside Alley','+46 (993) 884-4119','Mrs','Bethanne','Corlett','dui luctus rutrum nulla',58,3643584784);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('482 Red Cloud Plaza','+49 (386) 506-1803','Rev','Daile','Mellonby','justo',59,915589419);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('44 Forest Run Court','+46 (453) 483-5946','Mrs','Sue','Wilcocks','velit donec diam neque',60,3311615131);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('9873 Marquette Way','+57 (646) 419-8647','Honorable','Daryl','Kinman','vestibulum sed',61,8268765534);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('1 Glendale Avenue','+62 (712) 272-6700','Ms','Gearalt','Valerius','quam nec dui luctus rutrum',62,3367348872);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('0 Dixon Road','+86 (392) 317-7623','Rev','Gerrie','Le Marchant','duis bibendum',63,6936214738);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('13660 Jay Center','+62 (332) 204-5069','Ms','Cele','Klimuk','cubilia curae mauris viverra diam',64,4529860612);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('428 Sachtjen Crossing','+351 (356) 801-8887','Mrs','Carmencita','Towell','nisl aenean lectus',65,4676993722);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('2364 Green Ridge Alley','+380 (757) 161-2983','Honorable','Staci','Woofenden','faucibus orci luctus et ultrices',66,1309510881);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('4076 Schiller Circle','+380 (649) 806-8284','Dr','Harri','Jerrard','lectus',67,4818174327);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('25 Atwood Trail','+86 (736) 544-2510','Dr','Kristian','Meadus','interdum eu tincidunt in leo',68,8917734014);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('5528 Stone Corner Place','+62 (601) 667-5686','Ms','Uri','Vogt','congue',69,16724860);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('612 Bartillon Junction','+86 (666) 719-5944','Ms','Emmaline','Winsome','risus dapibus augue vel',70,3858560367);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('0343 Cherokee Junction','+86 (100) 998-4155','Mr','Lida','Rushbrook','nunc',71,8252577695);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('9206 Kropf Hill','+46 (992) 672-2979','Mr','Dunc','Kares','montes nascetur ridiculus mus vivamus',72,9127112683);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('401 Columbus Circle','+86 (991) 338-1433','Mr','Adriana','Marran','ac est lacinia',73,7380148079);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('2761 Buhler Way','+976 (818) 162-0626','Dr','Mateo','Roggeman','erat id mauris',74,6339340199);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('15925 Dexter Way','+52 (625) 622-1808','Mr','Deirdre','Di Antonio','ut volutpat sapien arcu sed',75,7230904358);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('55 Bonner Road','+62 (737) 634-4849','Mr','Donnamarie','Chuck','sodales scelerisque',76,3998325468);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('9 Dixon Trail','+967 (585) 562-3607','Ms','Morna','Conrard','mattis odio donec vitae',77,9332879621);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('7407 Truax Parkway','+995 (413) 523-7757','Honorable','Caitlin','McGrady','vestibulum velit id pretium iaculis',78,8361190554);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('737 Granby Court','+86 (753) 834-5065','Honorable','Noelyn','Grimwood','quisque id',79,2088362681);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('5 Saint Paul Alley','+86 (630) 922-7193','Mrs','Bax','Drinkhall','odio cras mi pede malesuada',80,6082509978);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('433 Acker Pass','+62 (278) 151-9651','Dr','Samuel','Speaks','natoque penatibus et',81,4839263469);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('1168 Longview Parkway','+46 (562) 576-5030','Rev','Dan','Saulter','at diam nam tristique tortor',82,1810650860);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('22219 Claremont Avenue','+351 (779) 575-1262','Mrs','Afton','Ganley','a ipsum integer a nibh',83,6978435546);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('30359 Summit Drive','+51 (256) 546-2497','Ms','Alley','Allston','praesent blandit nam nulla',84,5093849219);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('269 Butterfield Drive','+33 (522) 556-4463','Mr','Norean','Huson','urna ut tellus nulla ut',85,5781348212);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('67 Twin Pines Hill','+251 (697) 895-9767','Mrs','Gregorio','Geach','praesent id massa',86,3821255234);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('57 Melrose Center','+380 (105) 228-5374','Mr','Sallyanne','Kaaskooper','turpis adipiscing lorem vitae',87,8073267292);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('303 Burrows Avenue','+86 (207) 332-2732','Mrs','Anderea','Borsnall','aenean sit amet justo',88,57518769);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('632 Mesta Street','+63 (115) 992-8959','Mrs','Mimi','Biner','odio',89,1030367671);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('3593 Daystar Park','+86 (724) 805-5791','Mrs','Torrey','Eade','molestie',90,8184669038);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('9 Brickson Park Junction','+355 (648) 868-6189','Mrs','Kathleen','Schimank','sapien placerat ante nulla justo',91,2409591930);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('7352 Forest Road','+7 (410) 356-4006','Mrs','Kelsey','MacPaden','quam fringilla',92,5018026995);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('3564 Weeping Birch Alley','+51 (389) 126-9995','Mr','Vidovic','Milberry','sollicitudin mi',93,9922407027);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('39 Lukken Point','+46 (314) 483-0973','Mrs','Hugibert','Shepeard','in',94,9656610008);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('9 Claremont Parkway','+1 (131) 391-3824','Honorable','Bobbe','Bourtoumieux','ultrices mattis odio donec',95,1735611522);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('0 8th Terrace','+62 (678) 861-3335','Mr','Celene','Sterman','semper rutrum',96,1922798517);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('864 Colorado Road','+994 (451) 629-2424','Mr','Udale','Larchiere','ultrices posuere',97,8582020880);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('59 Maywood Terrace','+63 (662) 604-3545','Rev','Virgie','Manus','augue vel',98,4864496706);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('9 Holy Cross Pass','+227 (985) 546-4480','Mrs','Irvine','Stebbings','sodales',99,5192542138);
-INSERT INTO Customer_Information(Address,Phone,Contact_Title,First_Name,Last_Name,Demographics,CI_Customer_ID,O_Order_ID) VALUES ('51831 Farmco Trail','+82 (353) 743-1142','Mrs','Miquela','Atcheson','orci',100,2697712445);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('85249 Erie Pass','+62 (443) 247-6221','Ms','Ezri','Cussons','molestie sed justo pellentesque',1,6961461808);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('26809 Fulton Trail','+62 (196) 889-4157','Honorable','Humfried','Aspland','mus etiam vel',2,7906908899);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('6 Namekagon Hill','+7 (207) 269-5768','Ms','Yelena','Budgeon','odio odio elementum',3,379973790);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('2 Swallow Terrace','+595 (515) 340-3558','Dr','Moses','Stowell','ut mauris eget massa',4,8439379773);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('57 Lighthouse Bay Avenue','+55 (775) 386-2706','Rev','Lib','Dunklee','vel',5,1899052011);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('8 Elmside Court','+1 (202) 886-2384','Honorable','Marcellina','Raylton','ac nulla sed',6,5628656348);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('28 Jackson Street','+7 (761) 700-9126','Ms','Essa','Beggs','platea dictumst etiam faucibus',7,9689127381);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('77 Wayridge Alley','+86 (307) 844-4109','Mrs','Vidovik','Jollie','sapien cum',8,6120256059);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('93 Clemons Lane','+63 (484) 719-1963','Dr','Maurene','Kinghorn','tortor id nulla ultrices',9,9589036694);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('665 David Road','+502 (273) 263-0018','Dr','Averyl','Dunbleton','eget rutrum at lorem',10,6767156523);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('1049 Roxbury Junction','+62 (608) 742-1540','Rev','Broderic','Haye','dis parturient montes nascetur ridiculus',11,5152193728);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('7 Tony Plaza','+86 (266) 232-1599','Rev','Linnie','Peris','odio consequat varius',12,7894489964);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('6916 Bartillon Crossing','+84 (626) 125-4142','Mrs','Duff','Itschakov','ultrices enim',13,7048179813);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('64846 Sutherland Avenue','+1 (757) 769-7108','Ms','Mabel','Mityushkin','nulla eget eros elementum',14,1769208488);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('6336 Raven Crossing','+86 (563) 168-3002','Honorable','Curran','Streetfield','id turpis integer aliquet',15,1360471308);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('71946 Fair Oaks Street','+7 (656) 460-2873','Honorable','Heinrick','Accombe','ultrices posuere',16,4025070472);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('56 Grover Street','+251 (600) 102-6418','Rev','Flynn','D''Alesco','quam suspendisse potenti',17,9206801538);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('041 Blaine Parkway','+86 (144) 249-4110','Honorable','Dicky','Fisbey','platea dictumst aliquam',18,3713305595);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('41 Butternut Lane','+233 (984) 672-5775','Ms','Leoine','Kief','sit amet consectetuer adipiscing elit',19,7866523061);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('3190 Little Fleur Junction','+420 (243) 868-0611','Honorable','Nickolaus','Napier','id consequat',20,6819996128);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('8 Upham Parkway','+46 (352) 276-2682','Rev','Siffre','Copnall','neque sapien placerat ante nulla',21,9232066084);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('619 Carioca Parkway','+51 (446) 717-4914','Ms','Rosemonde','O'' Molan','pede justo',22,3039400126);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('66 Kipling Drive','+86 (336) 247-0425','Mr','Fanechka','Tallquist','venenatis lacinia aenean sit',23,126297819);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('83410 Lindbergh Alley','+60 (314) 341-4186','Dr','Kim','Stokell','lectus in quam fringilla',24,5651462198);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('57910 Summer Ridge Park','+595 (829) 589-0148','Mrs','Nat','Pavlovsky','suspendisse',25,9065729194);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('0767 Dixon Drive','+86 (902) 848-6111','Ms','Wilhelmine','Cammocke','eget orci vehicula condimentum',26,3517588989);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('8176 Oxford Circle','+86 (400) 453-3089','Ms','Gwenette','Yeell','id turpis integer aliquet',27,9435616798);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('56 Hansons Point','+86 (384) 695-7964','Honorable','Lacey','Pietasch','congue elementum in hac',28,6584891771);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('5 Chive Hill','+58 (423) 112-2044','Dr','Caldwell','Petrashov','molestie lorem quisque',29,6084355099);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('79 Scott Way','+998 (458) 846-2634','Dr','Giorgi','Crone','mattis egestas metus aenean',30,2823170448);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('8722 Eggendart Park','+86 (903) 643-1036','Honorable','Rodolph','Lowless','duis consequat',31,6410179871);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('74 Oneill Park','+1 (453) 305-0884','Mrs','Silvie','Aspinal','nulla suscipit ligula',32,3986468862);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('89 Carberry Point','+86 (368) 123-2219','Honorable','Sherwin','Pighills','cras mi pede malesuada',33,2293534340);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('29 Pennsylvania Center','+380 (918) 655-2770','Dr','Cristian','Rowter','at diam nam tristique tortor',34,8621079631);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('0387 High Crossing Street','+7 (373) 250-5870','Honorable','Phillipe','Brosnan','quisque porta volutpat',35,8252416594);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('40 Northport Alley','+46 (670) 262-7000','Dr','Konstantine','Allwright','eros viverra eget congue eget',36,8787066025);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('768 Forest Dale Drive','+86 (318) 220-5365','Rev','Farrah','Rillatt','varius ut blandit non',37,7544148254);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('5 Forest Pass','+86 (599) 324-7711','Mr','Kip','Shortell','in tempor turpis',38,9730397341);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('72268 Victoria Junction','+998 (258) 940-6278','Dr','Mariejeanne','Luno','rutrum',39,572719663);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('835 Lerdahl Circle','+48 (589) 662-2507','Dr','Alanah','Tewes','turpis adipiscing lorem',40,9980125284);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('31 South Avenue','+62 (252) 731-0000','Ms','Cosette','Wincer','amet justo',41,5255769002);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('7835 Grayhawk Place','+48 (559) 637-5850','Ms','Shaun','McKomb','sapien sapien non mi integer',42,3446003452);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('731 Garrison Center','+86 (236) 141-2947','Dr','Sigmund','Cutmare','suspendisse accumsan tortor quis turpis',43,4696262391);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('78 Twin Pines Court','+62 (549) 952-3623','Mrs','May','Knoton','proin at turpis a',44,5547855707);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('919 Holmberg Crossing','+63 (413) 639-2135','Mrs','Kingsly','Cavaney','quis',45,7163912366);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('6532 Anhalt Alley','+62 (424) 857-6836','Ms','Lacey','Leeds','morbi vel',46,9598723836);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('211 Coleman Street','+55 (873) 225-1720','Mr','Tabb','Brooks','rhoncus aliquam lacus',47,1046900684);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('17 Susan Parkway','+970 (948) 718-2370','Honorable','Bell','Kolak','ut rhoncus',48,1197263799);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('16532 American Ash Lane','+86 (467) 200-7635','Ms','Pearle','O''Daly','ac tellus semper interdum',49,7211693908);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('39834 Marquette Way','+63 (719) 578-9694','Dr','Betteann','Doddemeede','tincidunt lacus at velit vivamus',50,2454447231);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('0910 Bartelt Plaza','+967 (348) 767-6235','Rev','Nikos','Lapping','blandit',51,436056917);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('7 Green Ridge Lane','+504 (244) 743-9731','Honorable','Dari','Seden','est donec odio',52,797510788);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('7587 Mendota Terrace','+62 (677) 329-6468','Dr','Codi','Janeway','suscipit nulla elit ac',53,2391835264);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('8850 Evergreen Road','+998 (366) 621-1933','Honorable','Tish','Elener','laoreet ut rhoncus',54,9618837327);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('6 Arizona Place','+86 (209) 944-1045','Mrs','Morie','Snelling','dolor quis odio consequat varius',55,6004763659);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('64493 Fairfield Lane','+86 (208) 848-4566','Mrs','Germaine','Searl','integer aliquet massa',56,8772288388);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('3 Goodland Pass','+46 (988) 349-8433','Rev','Walden','Hoult','in felis',57,7360457440);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('222 Riverside Alley','+46 (993) 884-4119','Mrs','Bethanne','Corlett','dui luctus rutrum nulla',58,3643584784);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('482 Red Cloud Plaza','+49 (386) 506-1803','Rev','Daile','Mellonby','justo',59,915589419);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('44 Forest Run Court','+46 (453) 483-5946','Mrs','Sue','Wilcocks','velit donec diam neque',60,3311615131);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('9873 Marquette Way','+57 (646) 419-8647','Honorable','Daryl','Kinman','vestibulum sed',61,8268765534);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('1 Glendale Avenue','+62 (712) 272-6700','Ms','Gearalt','Valerius','quam nec dui luctus rutrum',62,3367348872);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('0 Dixon Road','+86 (392) 317-7623','Rev','Gerrie','Le Marchant','duis bibendum',63,6936214738);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('13660 Jay Center','+62 (332) 204-5069','Ms','Cele','Klimuk','cubilia curae mauris viverra diam',64,4529860612);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('428 Sachtjen Crossing','+351 (356) 801-8887','Mrs','Carmencita','Towell','nisl aenean lectus',65,4676993722);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('2364 Green Ridge Alley','+380 (757) 161-2983','Honorable','Staci','Woofenden','faucibus orci luctus et ultrices',66,1309510881);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('4076 Schiller Circle','+380 (649) 806-8284','Dr','Harri','Jerrard','lectus',67,4818174327);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('25 Atwood Trail','+86 (736) 544-2510','Dr','Kristian','Meadus','interdum eu tincidunt in leo',68,8917734014);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('5528 Stone Corner Place','+62 (601) 667-5686','Ms','Uri','Vogt','congue',69,16724860);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('612 Bartillon Junction','+86 (666) 719-5944','Ms','Emmaline','Winsome','risus dapibus augue vel',70,3858560367);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('0343 Cherokee Junction','+86 (100) 998-4155','Mr','Lida','Rushbrook','nunc',71,8252577695);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('9206 Kropf Hill','+46 (992) 672-2979','Mr','Dunc','Kares','montes nascetur ridiculus mus vivamus',72,9127112683);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('401 Columbus Circle','+86 (991) 338-1433','Mr','Adriana','Marran','ac est lacinia',73,7380148079);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('2761 Buhler Way','+976 (818) 162-0626','Dr','Mateo','Roggeman','erat id mauris',74,6339340199);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('15925 Dexter Way','+52 (625) 622-1808','Mr','Deirdre','Di Antonio','ut volutpat sapien arcu sed',75,7230904358);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('55 Bonner Road','+62 (737) 634-4849','Mr','Donnamarie','Chuck','sodales scelerisque',76,3998325468);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('9 Dixon Trail','+967 (585) 562-3607','Ms','Morna','Conrard','mattis odio donec vitae',77,9332879621);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('7407 Truax Parkway','+995 (413) 523-7757','Honorable','Caitlin','McGrady','vestibulum velit id pretium iaculis',78,8361190554);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('737 Granby Court','+86 (753) 834-5065','Honorable','Noelyn','Grimwood','quisque id',79,2088362681);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('5 Saint Paul Alley','+86 (630) 922-7193','Mrs','Bax','Drinkhall','odio cras mi pede malesuada',80,6082509978);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('433 Acker Pass','+62 (278) 151-9651','Dr','Samuel','Speaks','natoque penatibus et',81,4839263469);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('1168 Longview Parkway','+46 (562) 576-5030','Rev','Dan','Saulter','at diam nam tristique tortor',82,1810650860);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('22219 Claremont Avenue','+351 (779) 575-1262','Mrs','Afton','Ganley','a ipsum integer a nibh',83,6978435546);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('30359 Summit Drive','+51 (256) 546-2497','Ms','Alley','Allston','praesent blandit nam nulla',84,5093849219);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('269 Butterfield Drive','+33 (522) 556-4463','Mr','Norean','Huson','urna ut tellus nulla ut',85,5781348212);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('67 Twin Pines Hill','+251 (697) 895-9767','Mrs','Gregorio','Geach','praesent id massa',86,3821255234);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('57 Melrose Center','+380 (105) 228-5374','Mr','Sallyanne','Kaaskooper','turpis adipiscing lorem vitae',87,8073267292);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('303 Burrows Avenue','+86 (207) 332-2732','Mrs','Anderea','Borsnall','aenean sit amet justo',88,57518769);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('632 Mesta Street','+63 (115) 992-8959','Mrs','Mimi','Biner','odio',89,1030367671);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('3593 Daystar Park','+86 (724) 805-5791','Mrs','Torrey','Eade','molestie',90,8184669038);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('9 Brickson Park Junction','+355 (648) 868-6189','Mrs','Kathleen','Schimank','sapien placerat ante nulla justo',91,2409591930);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('7352 Forest Road','+7 (410) 356-4006','Mrs','Kelsey','MacPaden','quam fringilla',92,5018026995);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('3564 Weeping Birch Alley','+51 (389) 126-9995','Mr','Vidovic','Milberry','sollicitudin mi',93,9922407027);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('39 Lukken Point','+46 (314) 483-0973','Mrs','Hugibert','Shepeard','in',94,9656610008);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('9 Claremont Parkway','+1 (131) 391-3824','Honorable','Bobbe','Bourtoumieux','ultrices mattis odio donec',95,1735611522);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('0 8th Terrace','+62 (678) 861-3335','Mr','Celene','Sterman','semper rutrum',96,1922798517);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('864 Colorado Road','+994 (451) 629-2424','Mr','Udale','Larchiere','ultrices posuere',97,8582020880);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('59 Maywood Terrace','+63 (662) 604-3545','Rev','Virgie','Manus','augue vel',98,4864496706);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('9 Holy Cross Pass','+227 (985) 546-4480','Mrs','Irvine','Stebbings','sodales',99,5192542138);
+INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('51831 Farmco Trail','+82 (353) 743-1142','Mrs','Miquela','Atcheson','orci',100,2697712445);
 
 
 -- #DROP DATABASE segmentify;
