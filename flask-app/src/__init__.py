@@ -39,6 +39,6 @@ def create_app():
     # app.register_blueprint(views,       url_prefix='/v')
     # app.register_blueprint(customers,   url_prefix='/c')
     # app.register_blueprint(products,    url_prefix='/p')
-    app.register_blueprint(current_clients, url_prefit='/cc')
+    app.register_blueprint(current_clients, url_prefix='/cc')
 
     return app
