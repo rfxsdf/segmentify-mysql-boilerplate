@@ -2410,9 +2410,9 @@ CREATE TABLE IF NOT EXISTS `Comp_Comp`
 (
     `Client_Company_ID` INTEGER NOT NULL,
     `Curr_Client_ID`    INTEGER NOT NULL,
-    CONSTRAINT fk_29
+    CONSTRAINT `fk_29`
         FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
-    CONSTRAINT fk_30
+    CONSTRAINT `fk_30`
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -2523,7 +2523,7 @@ CREATE TABLE IF NOT EXISTS `Marketing_Department`
     `Department_ID`  INTEGER AUTO_INCREMENT,
     `Curr_Client_ID` INTEGER NOT NULL,
     PRIMARY KEY (`Department_ID`),
-    CONSTRAINT fk_31
+    CONSTRAINT `fk_31`
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE restrict,
     INDEX `idx_Department_ID` (`Department_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -2641,9 +2641,9 @@ CREATE TABLE IF NOT EXISTS `Applications`
     `Customer_Report`   LONGTEXT,
     `Product_Report`    LONGTEXT,
     PRIMARY KEY (`Department_ID`, `Service_ID`, `App_ID`),
-    CONSTRAINT fk_32
+    CONSTRAINT `fk_32`
         FOREIGN KEY (`Department_ID`) REFERENCES `Marketing_Department` (`Department_ID`) ON DELETE cascade,
-    CONSTRAINT fk_33
+    CONSTRAINT `fk_33`
         FOREIGN KEY (`Service_ID`) REFERENCES `Services` (`Service_ID`) ON DELETE cascade,
     INDEX `idx_Department_ID` (`Department_ID`),
     INDEX `idx_Service_ID` (`Service_ID`),
@@ -2871,9 +2871,9 @@ CREATE TABLE IF NOT EXISTS `Client_Products`
     `Category_ID`    INTEGER       NOT NULL,
     `Curr_Client_ID` INTEGER       NOT NULL,
     PRIMARY KEY (`Curr_Client_ID`, `Product_ID`),
-    CONSTRAINT fk_34
+    CONSTRAINT `fk_34`
         FOREIGN KEY (`Category_ID`) REFERENCES `Categories` (`Category_ID`) ON DELETE restrict,
-    CONSTRAINT fk_35
+    CONSTRAINT `fk_35`
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
     INDEX `idx_Curr_Client_ID` (`Curr_Client_ID`),
     INDEX `idx_Product_ID` (`Product_ID`)
@@ -2989,9 +2989,9 @@ CREATE TABLE IF NOT EXISTS `Orders`
     `Service_ID`    INTEGER NOT NULL,
     `App_ID`        INTEGER NOT NULL,
     PRIMARY KEY (`O_Order_ID`),
-    CONSTRAINT fk_36
+    CONSTRAINT `fk_36`
         FOREIGN KEY (`Service_ID`) REFERENCES `Applications` (`Service_ID`) ON DELETE restrict,
-    CONSTRAINT fk_37
+    CONSTRAINT `fk_37`
         FOREIGN KEY (`App_ID`) REFERENCES `Applications` (`App_ID`) ON DELETE restrict,
     INDEX `idx_O_Order_ID` (`O_Order_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -3105,7 +3105,7 @@ CREATE TABLE IF NOT EXISTS `Order_Details`
     `OD_Order_ID` INTEGER AUTO_INCREMENT,
     `O_Order_ID`  INTEGER       NOT NULL,
     PRIMARY KEY (`OD_Order_ID`),
-    CONSTRAINT fk_38
+    CONSTRAINT `fk_38`
         FOREIGN KEY (`O_Order_ID`) REFERENCES `Orders` (`O_Order_ID`) ON DELETE restrict,
     INDEX `idx_OD_Order_ID` (`OD_Order_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -3217,11 +3217,11 @@ CREATE TABLE IF NOT EXISTS `Client_Order`
     `Curr_Client_ID` INTEGER NOT NULL,
     `Product_ID`     INTEGER NOT NULL,
     `OD_Order_ID`    INTEGER NOT NULL,
-    CONSTRAINT fk_39
+    CONSTRAINT `fk_39`
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Client_Products` (`Curr_Client_ID`) ON DELETE cascade,
-    CONSTRAINT fk_40
+    CONSTRAINT `fk_40`
         FOREIGN KEY (`Product_ID`) REFERENCES `Client_Products` (`Product_ID`) ON DELETE cascade,
-    CONSTRAINT fk_41
+    CONSTRAINT `fk_41`
         FOREIGN KEY (`OD_Order_ID`) REFERENCES `Order_Details` (`OD_Order_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -3339,7 +3339,7 @@ CREATE TABLE IF NOT EXISTS `Customer_Information`
     `CI_Customer_ID` INTEGER AUTO_INCREMENT,
     `O_Order_ID`     INTEGER     NOT NULL,
     PRIMARY KEY (`O_Order_ID`, `CI_Customer_ID`),
-    CONSTRAINT fk_42
+    CONSTRAINT `fk_42`
         FOREIGN KEY (`O_Order_ID`) REFERENCES `Orders` (`O_Order_ID`) ON DELETE restrict,
     UNIQUE INDEX `idx_Phone` (`Phone`),
     INDEX `idx_O_Order_ID` (`O_Order_ID`),
