@@ -3886,9 +3886,9 @@ CREATE TABLE IF NOT EXISTS Orders
     App_ID        INTEGER NOT NULL,
     PRIMARY KEY (O_Order_ID),
     CONSTRAINT fk_36
-        FOREIGN KEY (Service_ID) REFERENCES Application (Service_ID) ON DELETE restrict,
+        FOREIGN KEY (Service_ID) REFERENCES Applications (Service_ID) ON DELETE restrict,
     CONSTRAINT fk_37
-        FOREIGN KEY (App_ID) REFERENCES Application (App_ID) ON DELETE restrict,
+        FOREIGN KEY (App_ID) REFERENCES Applications (App_ID) ON DELETE restrict,
     INDEX idx_O_Order_ID (O_Order_ID)
 );
 
