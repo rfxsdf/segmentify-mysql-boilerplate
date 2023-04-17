@@ -3,7 +3,7 @@
 -- Create a new database.  You can change the name later.  You'll
 -- need this name in the FLASK API file(s),  the AppSmith 
 -- data source creation.
-create database segmentify;
+create database `segmentify`
 
 -- Via the Docker Compose file, a special user called webapp will 
 -- be created in MySQL. We are going to grant that user 
@@ -16,27 +16,27 @@ flush privileges;
 -- Move into the database we just created.
 -- TODO: If you changed the name of the database above, you need to
 -- change it here too. 
-USE segmentify;
+USE `segmentify`;
 
-CREATE TABLE IF NOT EXISTS The_Mavericks
+CREATE TABLE IF NOT EXISTS `The_Mavericks`
 (
-    Headquarter_Address varchar(100) NOT NULL,
-    Reviews             LONGTEXT,
-    Phone               varchar(50)  NOT NULL,
-    Location            varchar(50)  NOT NULL,
-    Fax                 varchar(50)  NOT NULL,
-    Home_Page           varchar(100) NOT NULL,
-    Company_ID          INTEGER      NOT NULL,
-    Contact_Title       varchar(50)  NOT NULL,
-    Contact_Name        varchar(50)  NOT NULL,
-    Company_Name        varchar(50)  NOT NULL,
+    `Headquarter_Address` varchar(100) NOT NULL,
+    `Reviews`             LONGTEXT,
+    `Phone`               varchar(50)  NOT NULL,
+    `Location`            varchar(50)  NOT NULL,
+    `Fax`                 varchar(50)  NOT NULL,
+    `Home_Page`           varchar(100) NOT NULL,
+    `Company_ID`          INTEGER      NOT NULL,
+    `Contact_Title`       varchar(50)  NOT NULL,
+    `Contact_Name`        varchar(50)  NOT NULL,
+    `Company_Name`        varchar(50)  NOT NULL,
     PRIMARY KEY (Company_ID),
     UNIQUE INDEX uq_idx_Phone (Phone),
     UNIQUE INDEX uq_idx_Fax (Fax),
     INDEX idx_Company_ID (Company_ID)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO The_Mavericks(Headquarter_Address,Reviews,Phone,Location,Fax,Home_Page,Company_ID,Contact_Title,Contact_Name,Company_Name) VALUES ('624 Clemons Way','Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+INSERT INTO `The_Mavericks`(`Headquarter_Address`,`Reviews`,`Phone`,`Location`,`Fax`,`Home_Page`,`Company_ID`,`Contact_Title`,`Contact_Name`,`Company_Name`) VALUES ('624 Clemons Way','Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
 Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
@@ -45,7 +45,7 @@ Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibu
 Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
 Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.','+1 (217) 868-4751','Springfield','+1 (314) 371-2620','http://home.pl/donec/ut/dolor/morbi.html?id=cubilia&nisl=curae&venenatis=donec&lacinia=pharetra&aenean=magna&sit=vestibulum&amet=aliquet&justo=ultrices&morbi=erat&ut=tortor&odio=sollicitudin&cras=mi&mi=sit&pede=amet&malesuada=lobortis&in=sapien&imperdiet=sapien&et=non&commodo=mi&vulputate=integer&justo=ac&in=neque&blandit=duis&ultrices=bibendum&enim=morbi&lorem=non&ipsum=quam&dolor=nec&sit=dui&amet=luctus&consectetuer=rutrum&adipiscing=nulla&elit=tellus&proin=in&interdum=sagittis&mauris=dui&non=vel&ligula=nisl&pellentesque=duis&ultrices=ac&phasellus=nibh&id=fusce',3104705100,'Mr','Terence Andrick','The Mavericks');
-INSERT INTO The_Mavericks(Headquarter_Address,Reviews,Phone,Location,Fax,Home_Page,Company_ID,Contact_Title,Contact_Name,Company_Name) VALUES ('624 Clemons Way','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+INSERT INTO `The_Mavericks`(`Headquarter_Address`,`Reviews`,`Phone`,`Location`,`Fax`,`Home_Page`,`Company_ID`,`Contact_Title`,`Contact_Name`,`Company_Name`) VALUES ('624 Clemons Way','In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
 
 Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
 
