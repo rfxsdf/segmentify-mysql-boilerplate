@@ -2175,13 +2175,13 @@ CREATE TABLE IF NOT EXISTS `Curr_Services`
     `Client_Company_ID` INTEGER NOT NULL,
     `Service_ID`        INTEGER NOT NULL,
     `Serv_Company_ID`   INTEGER NOT NULL,
-    CONSTRAINT fk_23
+    CONSTRAINT `fk_23`
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
-    CONSTRAINT fk_24
+    CONSTRAINT `fk_24`
         FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
-    CONSTRAINT fk_25
+    CONSTRAINT `fk_25`
         FOREIGN KEY (`Service_ID`) REFERENCES `Services` (`Service_ID`) ON DELETE cascade,
-    CONSTRAINT fk_26
+    CONSTRAINT `fk_26`
         FOREIGN KEY (`Serv_Company_ID`) REFERENCES `Services` (`Serv_Company_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -2294,13 +2294,13 @@ CREATE TABLE IF NOT EXISTS `Curr_Client_Locs`
     `Curr_Client_ID`    INTEGER     NOT NULL,
     Location          varchar(50) NOT NULL,
     PRIMARY KEY (`Client_Company_ID`, `Curr_Client_ID`, Location),
-    CONSTRAINT fk_27
+    CONSTRAINT `fk_27`
         FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
-    CONSTRAINT fk_28
+    CONSTRAINT `fk_28`
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
-    INDEX idx_Client_Company_ID (`Client_Company_ID`),
-    INDEX idx_Curr_Client_ID (`Curr_Client_ID`),
-    INDEX idx_Locations (`Location`)
+    INDEX `idx_Client_Company_ID` (`Client_Company_ID`),
+    INDEX `idx_Curr_Client_ID` (`Curr_Client_ID`),
+    INDEX `idx_Locations` (`Location`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9134530606,9467661993,'Nanga Eboko');
