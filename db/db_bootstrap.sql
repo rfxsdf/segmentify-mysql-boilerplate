@@ -2169,468 +2169,468 @@ Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.'
 
 
 
-CREATE TABLE IF NOT EXISTS Curr_Services
+CREATE TABLE IF NOT EXISTS `Curr_Services`
 (
-    Curr_Client_ID    INTEGER NOT NULL,
-    Client_Company_ID INTEGER NOT NULL,
-    Service_ID        INTEGER NOT NULL,
-    Serv_Company_ID   INTEGER NOT NULL,
+    `Curr_Client_ID`    INTEGER NOT NULL,
+    `Client_Company_ID` INTEGER NOT NULL,
+    `Service_ID`        INTEGER NOT NULL,
+    `Serv_Company_ID`   INTEGER NOT NULL,
     CONSTRAINT fk_23
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade,
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
     CONSTRAINT fk_24
-        FOREIGN KEY (Client_Company_ID) REFERENCES Current_Clients (Client_Company_ID) ON DELETE cascade,
+        FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
     CONSTRAINT fk_25
-        FOREIGN KEY (Service_ID) REFERENCES Services (Service_ID) ON DELETE cascade,
+        FOREIGN KEY (`Service_ID`) REFERENCES `Services` (`Service_ID`) ON DELETE cascade,
     CONSTRAINT fk_26
-        FOREIGN KEY (Serv_Company_ID) REFERENCES Services (Serv_Company_ID) ON DELETE cascade
+        FOREIGN KEY (`Serv_Company_ID`) REFERENCES `Services` (`Serv_Company_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9467661993,9134530606,4976560562,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7468186278,1262586062,2146349026,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6664649489,7370314812,7034880573,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9429212265,4087716309,4451940362,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (775550353,4955806457,8465821836,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1265294704,8582387245,4409227548,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9078229721,4084794120,4457892300,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4788639181,2099173958,7815675522,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (267345917,8231266844,2944473921,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6895570020,2798444527,7064737892,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5342435234,4752739259,7614860470,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2104432235,3666413048,8129916800,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3654911803,9821053580,1658613899,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4587202983,5803701521,4013436779,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1292725192,9528989446,9882148395,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1836055536,5401776284,3564245944,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4900207969,9388551869,4502083208,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4762453366,7503367997,5337758691,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (280881169,8292934057,6910897846,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6743546569,7814993946,3780151359,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9691562529,1590499735,4550784326,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (934193630,3954047861,8100902534,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6969232263,6091179942,6455129059,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9874873604,9735432668,1164397826,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4133836626,217680364,8235434148,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5884506260,2392670897,7542145533,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (920935192,9415969504,3383146766,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9516262457,4912704458,8721613753,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5128406008,4914419610,9307407150,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1469214873,5408867110,1827929553,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9572590979,4595879032,117730785,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (617541159,1386755222,8456321192,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8710416889,5437962347,5650803048,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7923583056,7333417514,3446849440,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2641745550,4883319008,2444085302,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9187020556,7614794109,1802782729,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2688993151,8023036165,8077683126,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3845496061,3015197401,7698644421,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9064744149,1748122282,2811577637,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7561109407,8952458613,9317200877,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2149725401,9007550101,3488885216,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4822461327,9350940434,8935655813,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9652783064,4527553127,8960055611,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6477074524,1214596819,1744090467,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7666795068,9415046937,3661541358,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1958031631,4667311177,4747725180,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5330803322,508979900,8801009348,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (316160024,8724468223,775451037,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8914181707,7963915467,9855773217,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (700120343,277005736,2632226007,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1103865749,4637651980,3386324452,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (124599532,8670682494,4828714693,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8457926322,9161831352,2591101353,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3882304685,2734533901,5619806669,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9572221698,388601647,3410679820,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7287503204,2292441756,2551004403,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4985292400,3945013690,8857723798,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3288442019,6875380668,8656946854,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (667453369,4506509951,2085636586,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4018821344,9316935113,1360092595,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7330047384,1581184158,5343613470,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8533194579,8357805604,8891750204,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6418489780,1562579835,6024378335,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (994431473,8686869378,6338502683,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7729088584,6296947844,387798374,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9148178551,9169393893,2025231571,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1422982750,1092440208,6330678650,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2681670667,6018780747,9302207226,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9740901948,5200476968,7127296987,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6639733382,8540115174,4210828092,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1283710765,9541545106,5195827346,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1834508770,2744231037,5335662182,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8510683441,1382306547,3798597758,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1034074180,4079076924,7999777080,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3129976000,9266006475,3117065865,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6086726213,5057944991,1765264774,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1708061614,6949584326,6105638507,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (9044477420,9176126927,6387829496,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7968983878,5372970898,5808687276,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4126237259,597726647,4398907750,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6354571686,2136848577,2002703817,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2999813961,9359370029,1276151012,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4973144177,9356820821,5110667497,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2986648800,2937442161,518270165,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7255363261,5210102513,9873063404,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5372592028,3457946647,836986644,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (7932134218,5158698260,4940220885,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (6803107973,2772874214,2745897500,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (4379265374,8909369256,2318810168,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1277412774,4568671914,7807563176,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (1028829108,4690768943,7978270459,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (2482304504,8312003495,1863209514,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (724605517,6534568802,8972845876,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8189098039,822259613,3173885295,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8285427528,2290534536,6744558749,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (3421413339,3201643394,9120744218,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (723021244,9298565526,2805336747,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (186753888,390345164,1077756577,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (8674939457,4996464089,9906461233,3104705100);
-INSERT INTO Curr_Services(Curr_Client_ID,Client_Company_ID,Service_ID,Serv_Company_ID) VALUES (5810139965,115318763,716880148,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9467661993,9134530606,4976560562,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7468186278,1262586062,2146349026,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6664649489,7370314812,7034880573,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9429212265,4087716309,4451940362,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (775550353,4955806457,8465821836,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1265294704,8582387245,4409227548,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9078229721,4084794120,4457892300,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4788639181,2099173958,7815675522,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (267345917,8231266844,2944473921,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6895570020,2798444527,7064737892,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5342435234,4752739259,7614860470,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2104432235,3666413048,8129916800,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3654911803,9821053580,1658613899,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4587202983,5803701521,4013436779,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1292725192,9528989446,9882148395,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1836055536,5401776284,3564245944,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4900207969,9388551869,4502083208,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4762453366,7503367997,5337758691,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (280881169,8292934057,6910897846,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6743546569,7814993946,3780151359,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9691562529,1590499735,4550784326,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (934193630,3954047861,8100902534,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6969232263,6091179942,6455129059,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9874873604,9735432668,1164397826,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4133836626,217680364,8235434148,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5884506260,2392670897,7542145533,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (920935192,9415969504,3383146766,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9516262457,4912704458,8721613753,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5128406008,4914419610,9307407150,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1469214873,5408867110,1827929553,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9572590979,4595879032,117730785,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (617541159,1386755222,8456321192,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8710416889,5437962347,5650803048,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7923583056,7333417514,3446849440,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2641745550,4883319008,2444085302,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9187020556,7614794109,1802782729,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2688993151,8023036165,8077683126,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3845496061,3015197401,7698644421,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9064744149,1748122282,2811577637,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7561109407,8952458613,9317200877,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2149725401,9007550101,3488885216,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4822461327,9350940434,8935655813,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9652783064,4527553127,8960055611,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6477074524,1214596819,1744090467,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7666795068,9415046937,3661541358,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1958031631,4667311177,4747725180,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5330803322,508979900,8801009348,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (316160024,8724468223,775451037,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8914181707,7963915467,9855773217,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (700120343,277005736,2632226007,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1103865749,4637651980,3386324452,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (124599532,8670682494,4828714693,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8457926322,9161831352,2591101353,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3882304685,2734533901,5619806669,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9572221698,388601647,3410679820,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7287503204,2292441756,2551004403,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4985292400,3945013690,8857723798,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3288442019,6875380668,8656946854,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (667453369,4506509951,2085636586,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4018821344,9316935113,1360092595,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7330047384,1581184158,5343613470,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8533194579,8357805604,8891750204,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6418489780,1562579835,6024378335,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (994431473,8686869378,6338502683,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7729088584,6296947844,387798374,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9148178551,9169393893,2025231571,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1422982750,1092440208,6330678650,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2681670667,6018780747,9302207226,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9740901948,5200476968,7127296987,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6639733382,8540115174,4210828092,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1283710765,9541545106,5195827346,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1834508770,2744231037,5335662182,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8510683441,1382306547,3798597758,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1034074180,4079076924,7999777080,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3129976000,9266006475,3117065865,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6086726213,5057944991,1765264774,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1708061614,6949584326,6105638507,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (9044477420,9176126927,6387829496,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7968983878,5372970898,5808687276,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4126237259,597726647,4398907750,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6354571686,2136848577,2002703817,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2999813961,9359370029,1276151012,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4973144177,9356820821,5110667497,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2986648800,2937442161,518270165,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7255363261,5210102513,9873063404,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5372592028,3457946647,836986644,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (7932134218,5158698260,4940220885,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (6803107973,2772874214,2745897500,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (4379265374,8909369256,2318810168,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1277412774,4568671914,7807563176,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (1028829108,4690768943,7978270459,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (2482304504,8312003495,1863209514,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (724605517,6534568802,8972845876,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8189098039,822259613,3173885295,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8285427528,2290534536,6744558749,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (3421413339,3201643394,9120744218,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (723021244,9298565526,2805336747,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (186753888,390345164,1077756577,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (8674939457,4996464089,9906461233,3104705100);
+INSERT INTO `Curr_Services`(`Curr_Client_ID`,`Client_Company_ID`,`Service_ID`,`Serv_Company_ID`) VALUES (5810139965,115318763,716880148,3104705100);
 
 
 
-CREATE TABLE IF NOT EXISTS Curr_Client_Locs
+CREATE TABLE IF NOT EXISTS `Curr_Client_Locs`
 (
-    Client_Company_ID INTEGER     NOT NULL,
-    Curr_Client_ID    INTEGER     NOT NULL,
+    `Client_Company_ID` INTEGER     NOT NULL,
+    `Curr_Client_ID`    INTEGER     NOT NULL,
     Location          varchar(50) NOT NULL,
-    PRIMARY KEY (Client_Company_ID, Curr_Client_ID, Location),
+    PRIMARY KEY (`Client_Company_ID`, `Curr_Client_ID`, Location),
     CONSTRAINT fk_27
-        FOREIGN KEY (Client_Company_ID) REFERENCES Current_Clients (Client_Company_ID) ON DELETE cascade,
+        FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
     CONSTRAINT fk_28
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade,
-    INDEX idx_Client_Company_ID (Client_Company_ID),
-    INDEX idx_Curr_Client_ID (Curr_Client_ID),
-    INDEX idx_Locations (Location)
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
+    INDEX idx_Client_Company_ID (`Client_Company_ID`),
+    INDEX idx_Curr_Client_ID (`Curr_Client_ID`),
+    INDEX idx_Locations (`Location`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9134530606,9467661993,'Nanga Eboko');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1262586062,7468186278,'Rio Branco do Sul');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7370314812,6664649489,'Nice');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4087716309,9429212265,'Stockholm');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4955806457,775550353,'Nīkshahr');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8582387245,1265294704,'Denton');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4084794120,9078229721,'Venado Tuerto');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2099173958,4788639181,'Lakateng');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8231266844,267345917,'Molodohvardiys’k');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2798444527,6895570020,'Quimistán');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4752739259,5342435234,'Puerto Santander');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3666413048,2104432235,'Amparafaravola');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9821053580,3654911803,'Sopron');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5803701521,4587202983,'Dongtai');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9528989446,1292725192,'Sutton');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5401776284,1836055536,'Yabrūd');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9388551869,4900207969,'Hengjing');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7503367997,4762453366,'Kocēni');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8292934057,280881169,'Lameira');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7814993946,6743546569,'Lewopao');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1590499735,9691562529,'Umm Şalāl ‘Alī');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3954047861,934193630,'Bishan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6091179942,6969232263,'Železná Ruda');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9735432668,9874873604,'Pacucha');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (217680364,4133836626,'Estrada');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2392670897,5884506260,'Terong');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9415969504,920935192,'Springfield');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4912704458,9516262457,'Luofang');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4914419610,5128406008,'Xin’an');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5408867110,1469214873,'Ginowan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4595879032,9572590979,'Heung-hai');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1386755222,617541159,'Nioki');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5437962347,8710416889,'Mezhevoy');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7333417514,7923583056,'Muan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4883319008,2641745550,'Lopandino');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7614794109,9187020556,'Xiyang');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8023036165,2688993151,'Iwase');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3015197401,3845496061,'Longsha');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1748122282,9064744149,'Ijuí');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8952458613,7561109407,'Las Varas');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9007550101,2149725401,'Vília');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9350940434,4822461327,'Zhushan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4527553127,9652783064,'Longbu');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1214596819,6477074524,'Labuan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9415046937,7666795068,'Trzebiatów');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4667311177,1958031631,'Pshada');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (508979900,5330803322,'Aral');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8724468223,316160024,'Yantian');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (7963915467,8914181707,'Moch');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (277005736,700120343,'Plereyan');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4637651980,1103865749,'Almoínhas Velhas');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8670682494,124599532,'Concepcion');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9161831352,8457926322,'Divinópolis');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2734533901,3882304685,'Uryupinsk');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (388601647,9572221698,'Rivadavia');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2292441756,7287503204,'Mukacheve');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3945013690,4985292400,'Quinta do Sobrado');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6875380668,3288442019,'Ressano Garcia');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4506509951,667453369,'Rana');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9316935113,4018821344,'Gaoua');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1581184158,7330047384,'Xiaoguwei');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8357805604,8533194579,'Beaufort');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1562579835,6418489780,'Vale de Rolas');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8686869378,994431473,'São Fidélis');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6296947844,7729088584,'Casalinho');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9169393893,9148178551,'Granada');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1092440208,1422982750,'Raciążek');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6018780747,2681670667,'Stamáta');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5200476968,9740901948,'Takarazuka');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8540115174,6639733382,'Beselga');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9541545106,1283710765,'Parung');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2744231037,1834508770,'Barrio San Luis');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (1382306547,8510683441,'Achoma');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4079076924,1034074180,'Picoto');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9266006475,3129976000,'Mueang Phuket');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5057944991,6086726213,'Guapimirim');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6949584326,1708061614,'Shixian');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9176126927,9044477420,'København');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5372970898,7968983878,'Santiago de Cuba');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (597726647,4126237259,'Thika');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2136848577,6354571686,'Pingshi');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9359370029,2999813961,'Uinskoye');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9356820821,4973144177,'Aţ Ţafīlah');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2937442161,2986648800,'Miyang');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5210102513,7255363261,'Amersfoort');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3457946647,5372592028,'Zhukovka');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (5158698260,7932134218,'Petaling Jaya');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2772874214,6803107973,'South River');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8909369256,4379265374,'Marale');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4568671914,1277412774,'Kulykiv');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4690768943,1028829108,'Keroak');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (8312003495,2482304504,'Delareyville');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (6534568802,724605517,'Veisiejai');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (822259613,8189098039,'Szlachta');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (2290534536,8285427528,'Kingisepp');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (3201643394,3421413339,'Uruobo-Okija');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (9298565526,723021244,'Basseterre');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (390345164,186753888,'Krabi');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (4996464089,8674939457,'Poręba Spytkowska');
-INSERT INTO Curr_Client_Locs(Client_Company_ID,Curr_Client_ID,Location) VALUES (115318763,5810139965,'Krajan Timur Mlokorejo');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9134530606,9467661993,'Nanga Eboko');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1262586062,7468186278,'Rio Branco do Sul');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7370314812,6664649489,'Nice');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4087716309,9429212265,'Stockholm');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4955806457,775550353,'Nīkshahr');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8582387245,1265294704,'Denton');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4084794120,9078229721,'Venado Tuerto');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2099173958,4788639181,'Lakateng');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8231266844,267345917,'Molodohvardiys’k');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2798444527,6895570020,'Quimistán');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4752739259,5342435234,'Puerto Santander');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3666413048,2104432235,'Amparafaravola');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9821053580,3654911803,'Sopron');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5803701521,4587202983,'Dongtai');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9528989446,1292725192,'Sutton');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5401776284,1836055536,'Yabrūd');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9388551869,4900207969,'Hengjing');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7503367997,4762453366,'Kocēni');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8292934057,280881169,'Lameira');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7814993946,6743546569,'Lewopao');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1590499735,9691562529,'Umm Şalāl ‘Alī');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3954047861,934193630,'Bishan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6091179942,6969232263,'Železná Ruda');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9735432668,9874873604,'Pacucha');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (217680364,4133836626,'Estrada');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2392670897,5884506260,'Terong');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9415969504,920935192,'Springfield');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4912704458,9516262457,'Luofang');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4914419610,5128406008,'Xin’an');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5408867110,1469214873,'Ginowan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4595879032,9572590979,'Heung-hai');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1386755222,617541159,'Nioki');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5437962347,8710416889,'Mezhevoy');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7333417514,7923583056,'Muan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4883319008,2641745550,'Lopandino');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7614794109,9187020556,'Xiyang');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8023036165,2688993151,'Iwase');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3015197401,3845496061,'Longsha');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1748122282,9064744149,'Ijuí');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8952458613,7561109407,'Las Varas');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9007550101,2149725401,'Vília');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9350940434,4822461327,'Zhushan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4527553127,9652783064,'Longbu');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1214596819,6477074524,'Labuan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9415046937,7666795068,'Trzebiatów');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4667311177,1958031631,'Pshada');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (508979900,5330803322,'Aral');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8724468223,316160024,'Yantian');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (7963915467,8914181707,'Moch');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (277005736,700120343,'Plereyan');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4637651980,1103865749,'Almoínhas Velhas');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8670682494,124599532,'Concepcion');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9161831352,8457926322,'Divinópolis');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2734533901,3882304685,'Uryupinsk');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (388601647,9572221698,'Rivadavia');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2292441756,7287503204,'Mukacheve');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3945013690,4985292400,'Quinta do Sobrado');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6875380668,3288442019,'Ressano Garcia');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4506509951,667453369,'Rana');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9316935113,4018821344,'Gaoua');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1581184158,7330047384,'Xiaoguwei');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8357805604,8533194579,'Beaufort');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1562579835,6418489780,'Vale de Rolas');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8686869378,994431473,'São Fidélis');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6296947844,7729088584,'Casalinho');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9169393893,9148178551,'Granada');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1092440208,1422982750,'Raciążek');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6018780747,2681670667,'Stamáta');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5200476968,9740901948,'Takarazuka');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8540115174,6639733382,'Beselga');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9541545106,1283710765,'Parung');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2744231037,1834508770,'Barrio San Luis');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (1382306547,8510683441,'Achoma');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4079076924,1034074180,'Picoto');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9266006475,3129976000,'Mueang Phuket');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5057944991,6086726213,'Guapimirim');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6949584326,1708061614,'Shixian');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9176126927,9044477420,'København');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5372970898,7968983878,'Santiago de Cuba');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (597726647,4126237259,'Thika');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2136848577,6354571686,'Pingshi');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9359370029,2999813961,'Uinskoye');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9356820821,4973144177,'Aţ Ţafīlah');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2937442161,2986648800,'Miyang');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5210102513,7255363261,'Amersfoort');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3457946647,5372592028,'Zhukovka');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (5158698260,7932134218,'Petaling Jaya');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2772874214,6803107973,'South River');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8909369256,4379265374,'Marale');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4568671914,1277412774,'Kulykiv');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4690768943,1028829108,'Keroak');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (8312003495,2482304504,'Delareyville');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (6534568802,724605517,'Veisiejai');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (822259613,8189098039,'Szlachta');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (2290534536,8285427528,'Kingisepp');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (3201643394,3421413339,'Uruobo-Okija');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (9298565526,723021244,'Basseterre');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (390345164,186753888,'Krabi');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (4996464089,8674939457,'Poręba Spytkowska');
+INSERT INTO `Curr_Client_Locs`(`Client_Company_ID`,`Curr_Client_ID`,`Location`) VALUES (115318763,5810139965,'Krajan Timur Mlokorejo');
 
 
 
-CREATE TABLE IF NOT EXISTS Comp_Comp
+CREATE TABLE IF NOT EXISTS `Comp_Comp`
 (
-    Client_Company_ID INTEGER NOT NULL,
-    Curr_Client_ID    INTEGER NOT NULL,
+    `Client_Company_ID` INTEGER NOT NULL,
+    `Curr_Client_ID`    INTEGER NOT NULL,
     CONSTRAINT fk_29
-        FOREIGN KEY (Client_Company_ID) REFERENCES Current_Clients (Client_Company_ID) ON DELETE cascade,
+        FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
     CONSTRAINT fk_30
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE cascade
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9134530606,9467661993);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1262586062,7468186278);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7370314812,6664649489);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4087716309,9429212265);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4955806457,775550353);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8582387245,1265294704);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4084794120,9078229721);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2099173958,4788639181);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8231266844,267345917);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2798444527,6895570020);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4752739259,5342435234);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3666413048,2104432235);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9821053580,3654911803);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5803701521,4587202983);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9528989446,1292725192);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5401776284,1836055536);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9388551869,4900207969);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7503367997,4762453366);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8292934057,280881169);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7814993946,6743546569);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1590499735,9691562529);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3954047861,934193630);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6091179942,6969232263);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9735432668,9874873604);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (217680364,4133836626);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2392670897,5884506260);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9415969504,920935192);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4912704458,9516262457);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4914419610,5128406008);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5408867110,1469214873);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4595879032,9572590979);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1386755222,617541159);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5437962347,8710416889);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7333417514,7923583056);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4883319008,2641745550);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7614794109,9187020556);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8023036165,2688993151);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3015197401,3845496061);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1748122282,9064744149);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8952458613,7561109407);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9007550101,2149725401);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9350940434,4822461327);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4527553127,9652783064);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1214596819,6477074524);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9415046937,7666795068);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4667311177,1958031631);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (508979900,5330803322);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8724468223,316160024);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (7963915467,8914181707);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (277005736,700120343);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4637651980,1103865749);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8670682494,124599532);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9161831352,8457926322);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2734533901,3882304685);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (388601647,9572221698);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2292441756,7287503204);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3945013690,4985292400);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6875380668,3288442019);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4506509951,667453369);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9316935113,4018821344);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1581184158,7330047384);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8357805604,8533194579);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1562579835,6418489780);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8686869378,994431473);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6296947844,7729088584);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9169393893,9148178551);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1092440208,1422982750);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6018780747,2681670667);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5200476968,9740901948);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8540115174,6639733382);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9541545106,1283710765);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2744231037,1834508770);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (1382306547,8510683441);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4079076924,1034074180);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9266006475,3129976000);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5057944991,6086726213);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6949584326,1708061614);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9176126927,9044477420);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5372970898,7968983878);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (597726647,4126237259);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2136848577,6354571686);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9359370029,2999813961);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9356820821,4973144177);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2937442161,2986648800);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5210102513,7255363261);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3457946647,5372592028);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (5158698260,7932134218);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2772874214,6803107973);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8909369256,4379265374);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4568671914,1277412774);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4690768943,1028829108);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (8312003495,2482304504);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (6534568802,724605517);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (822259613,8189098039);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (2290534536,8285427528);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (3201643394,3421413339);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (9298565526,723021244);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (390345164,186753888);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (4996464089,8674939457);
-INSERT INTO Comp_Comp(Client_Company_ID,Curr_Client_ID) VALUES (115318763,5810139965);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9134530606,9467661993);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1262586062,7468186278);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7370314812,6664649489);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4087716309,9429212265);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4955806457,775550353);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8582387245,1265294704);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4084794120,9078229721);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2099173958,4788639181);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8231266844,267345917);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2798444527,6895570020);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4752739259,5342435234);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3666413048,2104432235);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9821053580,3654911803);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5803701521,4587202983);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9528989446,1292725192);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5401776284,1836055536);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9388551869,4900207969);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7503367997,4762453366);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8292934057,280881169);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7814993946,6743546569);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1590499735,9691562529);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3954047861,934193630);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6091179942,6969232263);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9735432668,9874873604);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (217680364,4133836626);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2392670897,5884506260);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9415969504,920935192);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4912704458,9516262457);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4914419610,5128406008);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5408867110,1469214873);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4595879032,9572590979);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1386755222,617541159);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5437962347,8710416889);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7333417514,7923583056);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4883319008,2641745550);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7614794109,9187020556);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8023036165,2688993151);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3015197401,3845496061);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1748122282,9064744149);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8952458613,7561109407);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9007550101,2149725401);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9350940434,4822461327);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4527553127,9652783064);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1214596819,6477074524);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9415046937,7666795068);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4667311177,1958031631);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (508979900,5330803322);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8724468223,316160024);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (7963915467,8914181707);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (277005736,700120343);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4637651980,1103865749);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8670682494,124599532);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9161831352,8457926322);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2734533901,3882304685);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (388601647,9572221698);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2292441756,7287503204);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3945013690,4985292400);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6875380668,3288442019);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4506509951,667453369);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9316935113,4018821344);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1581184158,7330047384);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8357805604,8533194579);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1562579835,6418489780);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8686869378,994431473);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6296947844,7729088584);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9169393893,9148178551);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1092440208,1422982750);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6018780747,2681670667);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5200476968,9740901948);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8540115174,6639733382);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9541545106,1283710765);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2744231037,1834508770);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (1382306547,8510683441);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4079076924,1034074180);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9266006475,3129976000);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5057944991,6086726213);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6949584326,1708061614);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9176126927,9044477420);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5372970898,7968983878);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (597726647,4126237259);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2136848577,6354571686);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9359370029,2999813961);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9356820821,4973144177);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2937442161,2986648800);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5210102513,7255363261);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3457946647,5372592028);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (5158698260,7932134218);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2772874214,6803107973);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8909369256,4379265374);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4568671914,1277412774);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4690768943,1028829108);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (8312003495,2482304504);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (6534568802,724605517);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (822259613,8189098039);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (2290534536,8285427528);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (3201643394,3421413339);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (9298565526,723021244);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (390345164,186753888);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (4996464089,8674939457);
+INSERT INTO `Comp_Comp`(`Client_Company_ID`,`Curr_Client_ID`) VALUES (115318763,5810139965);
 
 
 
 
-CREATE TABLE IF NOT EXISTS Marketing_Department
+CREATE TABLE IF NOT EXISTS `Marketing_Department`
 (
-    Supervisor_ID  INTEGER NOT NULL,
-    Department_ID  INTEGER AUTO_INCREMENT,
-    Curr_Client_ID INTEGER NOT NULL,
-    PRIMARY KEY (Department_ID),
+    `Supervisor_ID`  INTEGER NOT NULL,
+    `Department_ID`  INTEGER AUTO_INCREMENT,
+    `Curr_Client_ID` INTEGER NOT NULL,
+    PRIMARY KEY (`Department_ID`),
     CONSTRAINT fk_31
-        FOREIGN KEY (Curr_Client_ID) REFERENCES Current_Clients (Curr_Client_ID) ON DELETE restrict,
-    INDEX idx_Department_ID (Department_ID)
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE restrict,
+    INDEX idx_Department_ID (`Department_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (1,6659,9467661993);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (2,6659,7468186278);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (3,6659,6664649489);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (4,6659,9429212265);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (5,6659,775550353);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (6,6659,1265294704);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (7,6659,9078229721);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (8,6659,4788639181);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (9,6659,267345917);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (10,6659,6895570020);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (11,6659,5342435234);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (12,6659,2104432235);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (13,6659,3654911803);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (14,6659,4587202983);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (15,6659,1292725192);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (16,6659,1836055536);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (17,6659,4900207969);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (18,6659,4762453366);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (19,6659,280881169);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (20,6659,6743546569);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (21,6659,9691562529);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (22,6659,934193630);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (23,6659,6969232263);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (24,6659,9874873604);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (25,6659,4133836626);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (26,6659,5884506260);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (27,6659,920935192);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (28,6659,9516262457);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (29,6659,5128406008);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (30,6659,1469214873);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (31,6659,9572590979);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (32,6659,617541159);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (33,6659,8710416889);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (34,6659,7923583056);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (35,6659,2641745550);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (36,6659,9187020556);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (37,6659,2688993151);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (38,6659,3845496061);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (39,6659,9064744149);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (40,6659,7561109407);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (41,6659,2149725401);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (42,6659,4822461327);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (43,6659,9652783064);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (44,6659,6477074524);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (45,6659,7666795068);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (46,6659,1958031631);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (47,6659,5330803322);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (48,6659,316160024);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (49,6659,8914181707);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (50,6659,700120343);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (51,6659,1103865749);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (52,6659,124599532);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (53,6659,8457926322);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (54,6659,3882304685);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (55,6659,9572221698);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (56,6659,7287503204);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (57,6659,4985292400);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (58,6659,3288442019);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (59,6659,667453369);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (60,6659,4018821344);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (61,6659,7330047384);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (62,6659,8533194579);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (63,6659,6418489780);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (64,6659,994431473);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (65,6659,7729088584);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (66,6659,9148178551);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (67,6659,1422982750);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (68,6659,2681670667);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (69,6659,9740901948);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (70,6659,6639733382);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (71,6659,1283710765);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (72,6659,1834508770);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (73,6659,8510683441);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (74,6659,1034074180);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (75,6659,3129976000);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (76,6659,6086726213);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (77,6659,1708061614);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (78,6659,9044477420);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (79,6659,7968983878);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (80,6659,4126237259);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (81,6659,6354571686);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (82,6659,2999813961);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (83,6659,4973144177);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (84,6659,2986648800);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (85,6659,7255363261);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (86,6659,5372592028);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (87,6659,7932134218);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (88,6659,6803107973);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (89,6659,4379265374);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (90,6659,1277412774);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (91,6659,1028829108);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (92,6659,2482304504);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (93,6659,724605517);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (94,6659,8189098039);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (95,6659,8285427528);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (96,6659,3421413339);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (97,6659,723021244);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (98,6659,186753888);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (99,6659,8674939457);
-INSERT INTO Marketing_Department(Supervisor_ID,Department_ID,Curr_Client_ID) VALUES (100,6659,5810139965);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (1,6659,9467661993);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (2,6659,7468186278);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (3,6659,6664649489);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (4,6659,9429212265);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (5,6659,775550353);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (6,6659,1265294704);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (7,6659,9078229721);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (8,6659,4788639181);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (9,6659,267345917);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (10,6659,6895570020);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (11,6659,5342435234);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (12,6659,2104432235);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (13,6659,3654911803);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (14,6659,4587202983);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (15,6659,1292725192);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (16,6659,1836055536);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (17,6659,4900207969);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (18,6659,4762453366);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (19,6659,280881169);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (20,6659,6743546569);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (21,6659,9691562529);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (22,6659,934193630);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (23,6659,6969232263);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (24,6659,9874873604);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (25,6659,4133836626);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (26,6659,5884506260);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (27,6659,920935192);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (28,6659,9516262457);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (29,6659,5128406008);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (30,6659,1469214873);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (31,6659,9572590979);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (32,6659,617541159);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (33,6659,8710416889);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (34,6659,7923583056);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (35,6659,2641745550);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (36,6659,9187020556);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (37,6659,2688993151);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (38,6659,3845496061);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (39,6659,9064744149);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (40,6659,7561109407);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (41,6659,2149725401);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (42,6659,4822461327);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (43,6659,9652783064);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (44,6659,6477074524);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (45,6659,7666795068);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (46,6659,1958031631);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (47,6659,5330803322);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (48,6659,316160024);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (49,6659,8914181707);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (50,6659,700120343);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (51,6659,1103865749);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (52,6659,124599532);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (53,6659,8457926322);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (54,6659,3882304685);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (55,6659,9572221698);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (56,6659,7287503204);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (57,6659,4985292400);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (58,6659,3288442019);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (59,6659,667453369);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (60,6659,4018821344);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (61,6659,7330047384);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (62,6659,8533194579);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (63,6659,6418489780);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (64,6659,994431473);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (65,6659,7729088584);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (66,6659,9148178551);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (67,6659,1422982750);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (68,6659,2681670667);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (69,6659,9740901948);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (70,6659,6639733382);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (71,6659,1283710765);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (72,6659,1834508770);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (73,6659,8510683441);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (74,6659,1034074180);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (75,6659,3129976000);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (76,6659,6086726213);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (77,6659,1708061614);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (78,6659,9044477420);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (79,6659,7968983878);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (80,6659,4126237259);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (81,6659,6354571686);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (82,6659,2999813961);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (83,6659,4973144177);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (84,6659,2986648800);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (85,6659,7255363261);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (86,6659,5372592028);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (87,6659,7932134218);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (88,6659,6803107973);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (89,6659,4379265374);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (90,6659,1277412774);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (91,6659,1028829108);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (92,6659,2482304504);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (93,6659,724605517);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (94,6659,8189098039);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (95,6659,8285427528);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (96,6659,3421413339);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (97,6659,723021244);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (98,6659,186753888);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (99,6659,8674939457);
+INSERT INTO `Marketing_Department`(`Supervisor_ID`,`Department_ID`,`Curr_Client_ID`) VALUES (100,6659,5810139965);
 
 
 CREATE TABLE IF NOT EXISTS Applications
