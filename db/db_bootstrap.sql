@@ -3,7 +3,6 @@
 -- Create a new database.  You can change the name later.  You'll
 -- need this name in the FLASK API file(s),  the AppSmith 
 -- data source creation.
-drop database `segmentify`;
 create database `segmentify`;
 
 -- Via the Docker Compose file, a special user called webapp will 
@@ -2173,20 +2172,11 @@ Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.'
 
 
 CREATE TABLE IF NOT EXISTS `Curr_Services`
-(
-<<<<<<< HEAD
-    `Curr_Client_ID`    BIGINT NOT NULL,
+(   `Curr_Client_ID`    BIGINT NOT NULL,
     `Client_Company_ID` BIGINT NOT NULL,
     `Service_ID`        BIGINT NOT NULL,
     `Serv_Company_ID`   BIGINT NOT NULL,
-    CONSTRAINT fk_23
-=======
-    `Curr_Client_ID`    INTEGER NOT NULL,
-    `Client_Company_ID` INTEGER NOT NULL,
-    `Service_ID`        INTEGER NOT NULL,
-    `Serv_Company_ID`   INTEGER NOT NULL,
     CONSTRAINT `fk_23`
->>>>>>> dda01d13143af76b3cd723df1bae1f3eebdbcf51
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
     CONSTRAINT `fk_24`
         FOREIGN KEY (`Client_Company_ID`) REFERENCES `Current_Clients` (`Client_Company_ID`) ON DELETE cascade,
@@ -3459,8 +3449,8 @@ INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name
 INSERT INTO `Customer_Information`(`Address`,`Phone`,`Contact_Title`,`First_Name`,`Last_Name`,`Demographics`,`CI_Customer_ID`,`O_Order_ID`) VALUES ('51831 Farmco Trail','+82 (353) 743-1142','Mrs','Miquela','Atcheson','orci',100,2697712445);
 
 
--- #DROP DATABASE segmentify;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+# -- #DROP DATABASE segmentify;
+# /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+# /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+# /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+# /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
