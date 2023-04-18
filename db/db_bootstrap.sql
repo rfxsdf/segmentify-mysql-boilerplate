@@ -18,6 +18,9 @@ create database `segmentify`;
 -- change it here too. 
 USE `segmentify`;
 
+grant all privileges on segmentify.* to 'webapp'@'%';
+flush privileges;
+
 CREATE TABLE IF NOT EXISTS `The_Mavericks`
 (
     `Headquarter_Address` varchar(100) NOT NULL,
