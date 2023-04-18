@@ -79,9 +79,9 @@ def add_product():
     query = 'insert into Client_Products (name, price, product_id, cat_id, cc_id) values ("'
     query += name + '", "'
     query += str(price) + '", '
-    query += product_id + "', "
-    query += cat_id + ", "
-    query += cc_id + ')'
+    query += str(product_id) + "', "
+    query += str(cat_id) + ", "
+    query += str(cc_id) + ')'
     current_app.logger.info(query)
 
     cursor = db.get_db().cursor()
