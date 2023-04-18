@@ -113,5 +113,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "fe776eca-8a6c-4ede-87c3-42d6f2527ad0",
+    "colId": "66bca089-9597-4f19-b24a-24f68c302262",
+    "containerId": "",
+    "name": "GET current_clients",
+    "url": "localhost:8001/ie/current_clients",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-18T23:15:52.039Z",
+    "modified": "2023-04-18T23:16:01.573Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

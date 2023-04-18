@@ -10,7 +10,7 @@ def update_order_details():
     new_data = request.get_json()
 
     cursor = db.get_db().cursor()
-    original_od = cursor.execute('select * from order_details')
+    original_od = cursor.execute('select * from Order_Details')
     original_od.data.update(new_data)
     db.session.commit()
 
@@ -20,7 +20,7 @@ def update_order_details():
 @internal_employees.route('/current_clients', methods=['GET'])
 def get_current_clients():
     cursor = db.get_db().cursor()
-    cursor.execute('select * from current_clients')
+    cursor.execute('select * from Current_Clients')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -37,7 +37,7 @@ def update_current_clients():
     new_data = request.get_json()
 
     cursor = db.get_db().cursor()
-    original_cc = cursor.execute('select * from current_clients')
+    original_cc = cursor.execute('select * from Current_Clients')
     original_cc.data.update(new_data)
     db.session.commit()
 
@@ -56,7 +56,7 @@ def delete_client(curr_client_id):
 @internal_employees.route('/current_clients/reports', methods=['GET'])
 def get_report():
     cursor = db.get_db().cursor()
-    cursor.execute('select Reports from current_clients')
+    cursor.execute('select Reports from Current_Clients')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -84,8 +84,8 @@ def create_report():
     curr_client_id = the_data["Curr_Client_ID"]
     reports = the_data["Reports"]
 
-    query = 'insert into current_clients (contact_name, company_name, contact_title, headquarter_address, phone, \
-            fax, demographics, client_company_id, int_emp_id, curr_client_id, reports) values ("'
+    query = 'insert into current_clients (Contact_Name, Company_Name, Contact_Title, Headquarter_Address, Phone, \
+            Fax, Demographics, Client_Company_ID, Int_Emp_ID, Curr_Client_ID, Reports) values ("'
     query += contact_name + '", "'
     query += company_name + "', "
     query += contact_title + '", "'
@@ -110,7 +110,7 @@ def update_reports(curr_client_id):
     new_data = request.get_json()
 
     cursor = db.get_db().cursor()
-    original_price = cursor.execute('select Reports from current_clients where curr_client_id = {0}'.format(curr_client_id))
+    original_price = cursor.execute('select Reports from Current_Clients where Curr_Client_ID = {0}'.format(curr_client_id))
     original_price.data.update(new_data)
     db.session.commit()
 
