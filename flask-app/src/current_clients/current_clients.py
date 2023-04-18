@@ -65,7 +65,7 @@ def get_products(product_id):
     the_response.mimetype = 'application/json'
     return the_response
 
-@current_clients.route('/client_products/<product_id>', methods=["POST"])
+@current_clients.route('/client_products', methods=["POST"])
 def add_product():
     the_data = request.json
     current_app.logger.info(the_data)
@@ -78,10 +78,10 @@ def add_product():
 
     query = 'insert into Client_Products (name, price, product_id, cat_id, cc_id) values ("'
     query += name + '", "'
-    query += str(price) + '", '
-    query += str(product_id) + "', "
-    query += str(cat_id) + ", "
-    query += str(cc_id) + ')'
+    query += cat_id + '", '
+    query += cc_id + "', "
+    query += product_id + ", "
+    query += str(price) + ')'
     current_app.logger.info(query)
 
     cursor = db.get_db().cursor()
