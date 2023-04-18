@@ -76,12 +76,12 @@ def add_product():
     cat_id = the_data["Category_ID"]
     cc_id = the_data["Curr_Client_ID"]
 
-    query = 'insert into Client_Products (name, price, product_id, cat_id, cc_id) values ("'
+    query = 'insert into Client_Products (CP_Name, Unit_Price, Product_ID, Category_ID, Curr_Client_ID) values ("'
     query += name + '", "'
-    query += cat_id + '", '
-    query += cc_id + "', "
-    query += product_id + ", "
-    query += str(price) + ')'
+    query += str(price) + '", '
+    query += str(product_id) + ", " 
+    query += str(cat_id) + ", "
+    query += str(cc_id) + ')'
     current_app.logger.info(query)
 
     cursor = db.get_db().cursor()

@@ -2878,7 +2878,7 @@ CREATE TABLE IF NOT EXISTS `Client_Products`
     CONSTRAINT `fk_34`
         FOREIGN KEY (`Category_ID`) REFERENCES `Categories` (`Category_ID`) ON DELETE restrict,
     CONSTRAINT `fk_35`
-        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
+        FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE restrict,
     INDEX `idx_Curr_Client_ID` (`Curr_Client_ID`),
     INDEX `idx_Product_ID` (`Product_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

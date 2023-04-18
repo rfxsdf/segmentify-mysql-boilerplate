@@ -51,11 +51,11 @@
     "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
     "containerId": "",
     "name": "GET client_products/<product_id> Test 1",
-    "url": "localhost:8001/cc/client_products/8318809335",
+    "url": "localhost:8001/cc/client_products/7517288334",
     "method": "GET",
     "sortNum": 40000,
     "created": "2023-04-18T22:29:09.799Z",
-    "modified": "2023-04-18T22:30:21.783Z",
+    "modified": "2023-04-18T22:59:05.353Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -83,12 +83,12 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2023-04-18T22:32:28.526Z",
-    "modified": "2023-04-18T22:43:15.148Z",
+    "modified": "2023-04-18T23:07:12.007Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"CP_Name\": \"Fruit\"\n  \"Category_ID\": \n}",
+      "raw": "{\n  \"CP_Name\": \"Fruit\",\n  \"Unit_Price\": 3.45,\n  \"Product_ID\": 487591,\n  \"Category_ID\": 1478952643,\n  \"Curr_Client_ID\": 4785915423\n}",
       "form": []
     },
     "tests": [
@@ -99,5 +99,19 @@
         "value": "200"
       }
     ]
+  },
+  {
+    "_id": "020a66df-fcb2-4086-ae92-f9969d0ebb39",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "GET client_products/unit_price",
+    "url": "localhost:8001/cc/client_products",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2023-04-18T22:51:14.354Z",
+    "modified": "2023-04-18T22:52:40.587Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
