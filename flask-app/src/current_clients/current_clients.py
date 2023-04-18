@@ -118,3 +118,45 @@ def update_unitprice(product_id):
     db.session.commit()
 
     return f'Product with id (product_id) updated with new unit price (new_data)'
+
+@current_clients.route('/applications/spending_analysis', method=["GET"])
+def get_spending_analysis():
+    cursor = db.get_db().cursor()
+    cursor.execute('select Spending_Analysis from Applications')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+@current_clients.route('/applications/customer_report', methods=["GET"])
+def get_customer_report():
+    cursor = db.get_db().cursor()
+    cursor.execute('select Customer_Report from Applications')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+@current_clients.route('/applications/product_report', methods=["GET"])
+def get_customer_report():
+    cursor = db.get_db().cursor()
+    cursor.execute('select Product_Report from Applications')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
