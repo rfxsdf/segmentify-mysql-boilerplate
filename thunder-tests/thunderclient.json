@@ -1,44 +1,103 @@
 [
   {
-    "_id": "88175af4-17b2-4389-abdd-eaae3b1c72a5",
-    "colId": "cd143d75-fd2b-4039-a514-cd7a5005de02",
+    "_id": "bb3ac8b6-cbef-442b-828c-a3ae40812fc1",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
     "containerId": "",
-    "name": "GET /",
-    "url": "",
+    "name": "GET customer_information",
+    "url": "localhost:8001/cc/customer_information",
     "method": "GET",
     "sortNum": 10000,
-    "created": "2023-03-29T12:09:19.195Z",
-    "modified": "2023-04-18T18:56:28.748Z",
+    "created": "2023-04-18T22:15:59.716Z",
+    "modified": "2023-04-18T22:26:19.181Z",
     "headers": [],
     "params": [],
     "tests": []
   },
   {
-    "_id": "9353a5d5-9e5c-46d6-b473-584da0370f4c",
-    "colId": "cd143d75-fd2b-4039-a514-cd7a5005de02",
+    "_id": "81dc44c1-166f-42cf-8033-efa9506f7805",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
     "containerId": "",
-    "name": "GET Customers",
-    "url": "localhost:8001/cc/Customer-Information",
+    "name": "GET orders",
+    "url": "localhost:8001/cc/orders",
     "method": "GET",
     "sortNum": 20000,
-    "created": "2023-03-29T12:12:14.723Z",
-    "modified": "2023-04-18T18:57:18.820Z",
+    "created": "2023-04-18T22:26:31.507Z",
+    "modified": "2023-04-18T22:27:50.468Z",
+    "headers": [
+      {
+        "name": "User-Agent",
+        "value": "localhost:8001"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "053ad749-01f8-44b6-bb64-f75c53b2a350",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "GET customer_information/demographics",
+    "url": "localhost:8001/cc/customer_information/demographics",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-18T22:27:36.188Z",
+    "modified": "2023-04-18T22:28:17.754Z",
     "headers": [],
     "params": [],
     "tests": []
   },
   {
-    "_id": "cc8bc863-0411-4b92-bafd-af353df3b23b",
-    "colId": "cd143d75-fd2b-4039-a514-cd7a5005de02",
+    "_id": "5b4b4e09-e59e-44c3-84d2-46b67e8bbfec",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
     "containerId": "",
-    "name": "GET Most Expensive Products",
-    "url": "localhost:8001/p/mostExpensive",
+    "name": "GET client_products/<product_id> Test 1",
+    "url": "localhost:8001/cc/client_products/8318809335",
     "method": "GET",
-    "sortNum": 30000,
-    "created": "2023-03-29T12:13:28.581Z",
-    "modified": "2023-03-29T12:13:48.326Z",
+    "sortNum": 40000,
+    "created": "2023-04-18T22:29:09.799Z",
+    "modified": "2023-04-18T22:30:21.783Z",
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "19e9b141-80cf-49b6-bd91-428d54f35bdb",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "GET client_products/<product_id> Test 2",
+    "url": "localhost:8001/cc/client_products/4102673",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-04-18T22:30:57.839Z",
+    "modified": "2023-04-18T22:31:37.575Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "23115808-017d-4e56-9b0e-a299a7eb40bb",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "POST client_products",
+    "url": "localhost:8001/cc/client_products",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-04-18T22:32:28.526Z",
+    "modified": "2023-04-18T22:43:15.148Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"CP_Name\": \"Fruit\"\n  \"Category_ID\": \n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "res-code",
+        "custom": "",
+        "action": "equal",
+        "value": "200"
+      }
+    ]
   }
 ]
