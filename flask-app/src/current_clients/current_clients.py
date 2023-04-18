@@ -26,7 +26,7 @@ def get_clients():
 @current_clients.route('/orders', methods=['GET'])
 def get_orders():
     cursor = db.get_db().cursor()
-    cursor.execute('select * from orders')
+    cursor.execute('select * from Orders')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -40,7 +40,7 @@ def get_orders():
 @current_clients.route('/customer_information/demographics', methods=["GET"])
 def get_demographics():
     cursor = db.get_db().cursor()
-    cursor.execute('select Demographics from customer_information')
+    cursor.execute('select Demographics from Customer_Information')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -54,7 +54,7 @@ def get_demographics():
 @current_clients.route('/client_products/<product_id>', methods=["GET"])
 def get_products(product_id):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from client_products where product_id = {0}'.format(product_id))
+    cursor.execute('select * from Client_Products where Product_Id = {0}'.format(product_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -76,7 +76,7 @@ def add_product():
     cat_id = the_data["Category_ID"]
     cc_id = the_data["Curr_Client_ID"]
 
-    query = 'insert into client_products (name, price, product_id, cat_id, cc_id) values ("'
+    query = 'insert into Client_Products (name, price, product_id, cat_id, cc_id) values ("'
     query += name + '", "'
     query += str(price) + '", '
     query += product_id + "', "
@@ -94,7 +94,7 @@ def add_product():
 def delete_product(product_id):
     return f'Deleted product with product_id (product_id)'
 
-@current_clients.route('/client_products/unit_price', methods=["GET"])
+@current_clients.route('/cient_products/unit_price', methods=["GET"])
 def get_unitprice():
     cursor = db.get_db().cursor()
     cursor.execute('select Unit_Price from Client_Products')
