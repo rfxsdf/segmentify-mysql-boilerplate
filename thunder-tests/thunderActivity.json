@@ -18,11 +18,11 @@
     "colId": "history",
     "containerId": "",
     "name": "localhost:8001/cc/orders",
-    "url": "localhost:8001/cc/orders",
+    "url": "localhost:8001/cc/customer_information",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-04-17T18:56:30.677Z",
-    "modified": "2023-04-17T23:37:05.485Z",
+    "modified": "2023-04-18T01:39:17.938Z",
     "headers": [],
     "params": [],
     "tests": []

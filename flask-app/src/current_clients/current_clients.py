@@ -119,7 +119,7 @@ def update_unitprice(product_id):
 
     return f'Product with id (product_id) updated with new unit price (new_data)'
 
-@current_clients.route('/applications/spending_analysis', method=["GET"])
+@current_clients.route('/applications/spending_analysis', methods=["GET"])
 def get_spending_analysis():
     cursor = db.get_db().cursor()
     cursor.execute('select Spending_Analysis from Applications')
@@ -148,7 +148,7 @@ def get_customer_report():
     return the_response
 
 @current_clients.route('/applications/product_report', methods=["GET"])
-def get_customer_report():
+def get_product_report():
     cursor = db.get_db().cursor()
     cursor.execute('select Product_Report from Applications')
     row_headers = [x[0] for x in cursor.description]
