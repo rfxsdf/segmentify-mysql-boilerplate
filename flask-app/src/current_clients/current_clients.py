@@ -69,7 +69,7 @@ def get_product_ids():
 
 # Write test
 @current_clients.route('/client_products', methods=["GET"])
-def get_product_ids():
+def get_product_info():
     cursor = db.get_db().cursor()
     cursor.execute('select * from Client_Products')
     row_headers = [x[0] for x in cursor.description]
@@ -138,21 +138,21 @@ def delete_product():
 
     return 'Deleted product with Product_Id: {0}'.format(id_to_delete['Product_ID'])
 
-
+# Rewrite test
 # Update unit price for a specific product id
-@current_clients.route('/client_products/<product_id>', methods=["PUT"])
-def update_unitprice(product_id):
+@current_clients.route('/client_products', methods=["PUT"])
+def update_unitprice():
     new_price = request.json
     current_app.logger.info(new_price)
 
-    query = 'UPDATE Client_Products SET Unit_Price =' + str(new_price['Unit_Price']) + 'WHERE Product_Id =' + str(product_id)
+    query = 'UPDATE Client_Products SET Unit_Price =' + str(new_price['Unit_Price']) + 'WHERE Product_Id =' + str(new_price["Product_ID"])
     current_app.logger.info(query)
     
     cursor = db.get_db().cursor()
     cursor.execute(query)
     db.get_db().commit()
 
-    return 'Product with ID {0} updated with new unit price ${1}'.format(product_id, new_price["Unit_Price"])
+    return 'Product with ID {0} updated with new unit price ${1}'.format(new_price["Product_ID"], new_price["Unit_Price"])
 
 # Get spending analysis of a specific application
 @current_clients.route('/applications/<app_id>/spending_analysis', methods=["GET"])

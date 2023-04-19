@@ -387,16 +387,16 @@
     "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
     "containerId": "",
     "name": "PUT client_products/<product_id> Test 2",
-    "url": "localhost:8001/cc/client_products/1797179535",
+    "url": "localhost:8001/cc/client_products",
     "method": "PUT",
     "sortNum": 220000,
     "created": "2023-04-19T02:17:36.071Z",
-    "modified": "2023-04-19T02:18:13.561Z",
+    "modified": "2023-04-19T05:38:29.414Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"Unit_Price\": 4.20\n}",
+      "raw": "{\n  \"Unit_Price\": 4.20,\n  \"Product_ID\": 1797179535\n}",
       "form": []
     },
     "tests": []
