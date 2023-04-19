@@ -405,12 +405,12 @@
     "_id": "589419af-d218-41b9-9c99-605968d42b02",
     "colId": "66bca089-9597-4f19-b24a-24f68c302262",
     "containerId": "",
-    "name": "PUT order_details/<order_id> Test 1",
+    "name": "PUT order_details Test 1",
     "url": "localhost:8001/ie/order_details/7211693908",
     "method": "PUT",
     "sortNum": 80000,
     "created": "2023-04-19T02:28:45.566Z",
-    "modified": "2023-04-19T02:30:18.440Z",
+    "modified": "2023-04-19T05:05:45.058Z",
     "headers": [],
     "params": [],
     "body": {
@@ -468,6 +468,25 @@
     "body": {
       "type": "json",
       "raw": "{\n  \"Curr_Client_ID\": 1829364758\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ce238b68-70f5-44e1-a33f-348fd77be28c",
+    "colId": "66bca089-9597-4f19-b24a-24f68c302262",
+    "containerId": "",
+    "name": "PUT order_details spm",
+    "url": "localhost:8001/ie/order_details",
+    "method": "PUT",
+    "sortNum": 130000,
+    "created": "2023-04-19T05:10:23.840Z",
+    "modified": "2023-04-19T05:11:04.420Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Quantity\": 100,\n  \"Discount\": 30,\n  \"Unit_Price\": 3.50,\n  \"O_Order_ID\": 7211693908\n}",
       "form": []
     },
     "tests": []

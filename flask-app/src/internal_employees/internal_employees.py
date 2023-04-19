@@ -5,22 +5,22 @@ from src import db
 internal_employees = Blueprint('internal_employees', __name__)
 
 # Update discount, quantity, and unit price on orders based on order id
-@internal_employees.route('/order_details/<order_id>', methods=['PUT'])
-def update_order_details(order_id):
+@internal_employees.route('/order_details', methods=['PUT'])
+def update_order_details():
     new_order_details = request.json
     current_app.logger.info(new_order_details)
 
     query = 'UPDATE Order_Details SET Quantity =' + \
         str(new_order_details['Quantity']) + ', Discount =' +\
             str(new_order_details["Discount"]) + ', Unit_Price =' +\
-                str(new_order_details["Unit_Price"]) + 'WHERE O_Order_ID =' + (order_id)
+                str(new_order_details["Unit_Price"]) + 'WHERE O_Order_ID =' + str(new_order_details["O_Order_ID"])
     current_app.logger.info(query)
     
     cursor = db.get_db().cursor()
     cursor.execute(query)
     db.get_db().commit()
     return 'Order ID {0} has new updated quantity of {1}, new updated discount of {2}, and new updated unit price of {3}.'.format(
-        order_id, new_order_details["Quantity"], new_order_details["Discount"], new_order_details["Unit_Price"])
+        new_order_details["O_Order_ID"], new_order_details["Quantity"], new_order_details["Discount"], new_order_details["Unit_Price"])
 
 # Get all demographics information for current_clients
 @internal_employees.route('/current_clients/demographics', methods=["GET"])
