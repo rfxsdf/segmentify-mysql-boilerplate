@@ -53,6 +53,22 @@ def get_current_clients(curr_client_id):
     the_response.mimetype = 'application/json'
     return the_response
 
+# Need to write test 
+# Get all current clients
+@internal_employees.route('/current_clients', methods=["GET"])
+def get_all_curr_clients():
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Current_Clients')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
 # Remove a specific current client based on curr_client_id
 @internal_employees.route('/current_clients', methods=["DELETE"])
 def delete_client():
