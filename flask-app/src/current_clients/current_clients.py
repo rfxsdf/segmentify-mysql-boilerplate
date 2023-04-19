@@ -22,7 +22,7 @@ def get_clients():
     the_response.mimetype = 'application/json'
     return the_response
 
-# Get all orders
+# Get information on all orders
 @current_clients.route('/orders', methods=['GET'])
 def get_orders():
     cursor = db.get_db().cursor()
@@ -52,7 +52,7 @@ def get_demographics():
     the_response.mimetype = 'application/json'
     return the_response
 
-# Get all product id
+# Get all product ids from client products
 @current_clients.route('/client_products/product_id', methods=["GET"])
 def get_product_ids():
     cursor = db.get_db().cursor()
@@ -67,7 +67,7 @@ def get_product_ids():
     the_response.mimetype = 'application/json'
     return the_response
 
-# Get 
+# Get description of specific products using product_id
 @current_clients.route('/client_products/<product_id>', methods=["GET"])
 def get_products(product_id):
     cursor = db.get_db().cursor()
@@ -82,6 +82,7 @@ def get_products(product_id):
     the_response.mimetype = 'application/json'
     return the_response
 
+# Add a new client product
 @current_clients.route('/client_products', methods=["POST"])
 def add_product():
     the_data = request.json
@@ -122,6 +123,7 @@ def delete_product():
 
     return 'Deleted product with Product_Id: {0}'.format(id_to_delete['Product_ID'])
 
+# Get unit price of a specific client product
 @current_clients.route('/cient_products/<product_id>/unit_price', methods=["GET"])
 def get_unitprice(product_id):
     cursor = db.get_db().cursor()
@@ -139,23 +141,17 @@ def get_unitprice(product_id):
 # Update unit price for a specific product id
 @current_clients.route('/client_products/<product_id>', methods=["PUT"])
 def update_unitprice(product_id):
-    id_to_update = request.json
-    current_app.logger.info(id_to_update)
+    new_price = request.json
+    current_app.logger.info(new_price)
 
-    query = 'UPDATE  from Client_Products where Product_Id =' + str(id_to_delete['Product_ID'])
+    query = 'UPDATE Client_Products SET Unit_Price =' + str(new_price['Unit_Price']) + 'WHERE Product_Id =' + str(product_id)
     current_app.logger.info(query)
     
     cursor = db.get_db().cursor()
     cursor.execute(query)
     db.get_db().commit()
-    new_data = request.get_json()
 
-    cursor = db.get_db().cursor()
-    original_price = cursor.execute('select Unit_Price from Client_Products where Product_ID = {0}'.format(product_id))
-    db.update_client_products(original_price, new_data)
-    db.session.commit()
-
-    return f'Product with id (product_id) updated with new unit price (new_data)'
+    return 'Product with ID {0} updated with new unit price ${1}'.format(product_id, new_price["Unit_Price"])
 
 # Get spending analysis of a specific application
 @current_clients.route('/applications/<app_id>/spending_analysis', methods=["GET"])
