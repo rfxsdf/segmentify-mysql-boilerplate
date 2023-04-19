@@ -376,5 +376,43 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "9a11fd73-794c-4a95-acaf-23762a0d255c",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "PUT client_products/<product_id> Test 1",
+    "url": "localhost:8001/cc/client_products/9528501613",
+    "method": "PUT",
+    "sortNum": 210000,
+    "created": "2023-04-19T02:14:27.027Z",
+    "modified": "2023-04-19T02:15:52.027Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Unit_Price\": 2.50\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2aa3f5b1-53eb-42cb-b692-d0e8582c2f0f",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "PUT client_products/<product_id> Test 2",
+    "url": "localhost:8001/cc/client_products/1797179535",
+    "method": "PUT",
+    "sortNum": 220000,
+    "created": "2023-04-19T02:17:36.071Z",
+    "modified": "2023-04-19T02:18:13.561Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Unit_Price\": 4.20\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
