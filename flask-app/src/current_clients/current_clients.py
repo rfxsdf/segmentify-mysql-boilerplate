@@ -123,20 +123,6 @@ def delete_product():
 
     return 'Deleted product with Product_Id: {0}'.format(id_to_delete['Product_ID'])
 
-# Get unit price of a specific client product
-@current_clients.route('/cient_products/<product_id>/unit_price', methods=["GET"])
-def get_unitprice(product_id):
-    cursor = db.get_db().cursor()
-    cursor.execute('select Unit_Price from Client_Products where Product_ID = {0}'.format(product_id))
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
 
 # Update unit price for a specific product id
 @current_clients.route('/client_products/<product_id>', methods=["PUT"])

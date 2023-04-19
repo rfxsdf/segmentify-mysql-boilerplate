@@ -101,20 +101,6 @@
     ]
   },
   {
-    "_id": "020a66df-fcb2-4086-ae92-f9969d0ebb39",
-    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
-    "containerId": "",
-    "name": "GET client_products/unit_price",
-    "url": "localhost:8001/cc/client_products/1296468291/unit_price",
-    "method": "GET",
-    "sortNum": 70000,
-    "created": "2023-04-18T22:51:14.354Z",
-    "modified": "2023-04-18T23:25:55.796Z",
-    "headers": [],
-    "params": [],
-    "tests": []
-  },
-  {
     "_id": "fe776eca-8a6c-4ede-87c3-42d6f2527ad0",
     "colId": "66bca089-9597-4f19-b24a-24f68c302262",
     "containerId": "",
