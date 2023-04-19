@@ -67,6 +67,21 @@ def get_product_ids():
     the_response.mimetype = 'application/json'
     return the_response
 
+# Write test
+@current_clients.route('/client_products', methods=["GET"])
+def get_product_ids():
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Client_Products')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
 # Get description of specific products using product_id
 @current_clients.route('/client_products/<product_id>', methods=["GET"])
 def get_products(product_id):
