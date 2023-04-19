@@ -67,7 +67,7 @@ def get_product_ids():
     the_response.mimetype = 'application/json'
     return the_response
 
-# Write test
+# Get a list of all client products
 @current_clients.route('/client_products', methods=["GET"])
 def get_product_info():
     cursor = db.get_db().cursor()
@@ -138,7 +138,7 @@ def delete_product():
 
     return 'Deleted product with Product_Id: {0}'.format(id_to_delete['Product_ID'])
 
-# Rewrite test
+
 # Update unit price for a specific product id
 @current_clients.route('/client_products', methods=["PUT"])
 def update_unitprice():
