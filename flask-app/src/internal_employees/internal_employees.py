@@ -22,22 +22,6 @@ def update_order_details(order_id):
     return 'Order ID {0} has new updated quantity of {1}, new updated discount of {2}, and new updated unit price of {3}.'.format(
         order_id, new_order_details["Quantity"], new_order_details["Discount"], new_order_details["Unit_Price"])
 
-# need to write tests
-# Update discount, quantity, and unit price on orders based on order id
-@internal_employees.route('/order_details', methods=['GET'])
-def get_order_details():
-    cursor = db.get_db().cursor()
-    cursor.execute('select * from Order_Details')
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
-
 # Get all demographics information for current_clients
 @internal_employees.route('/current_clients/demographics', methods=["GET"])
 def get_demographics():
