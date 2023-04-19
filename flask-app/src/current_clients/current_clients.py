@@ -22,7 +22,7 @@ def get_clients():
     the_response.mimetype = 'application/json'
     return the_response
 
-# # Get customer detail for customer with particular userID
+# Get all orders
 @current_clients.route('/orders', methods=['GET'])
 def get_orders():
     cursor = db.get_db().cursor()
@@ -37,6 +37,7 @@ def get_orders():
     the_response.mimetype = 'application/json'
     return the_response
 
+# Get all customer demographics information
 @current_clients.route('/customer_information/demographics', methods=["GET"])
 def get_demographics():
     cursor = db.get_db().cursor()
@@ -51,6 +52,7 @@ def get_demographics():
     the_response.mimetype = 'application/json'
     return the_response
 
+# Get 
 @current_clients.route('/client_products/<product_id>', methods=["GET"])
 def get_products(product_id):
     cursor = db.get_db().cursor()
@@ -94,10 +96,10 @@ def add_product():
 def delete_product(product_id):
     return f'Deleted product with product_id (product_id)'
 
-@current_clients.route('/cient_products/unit_price', methods=["GET"])
-def get_unitprice():
+@current_clients.route('/cient_products/<product_id>/unit_price', methods=["GET"])
+def get_unitprice(product_id):
     cursor = db.get_db().cursor()
-    cursor.execute('select Unit_Price from Client_Products')
+    cursor.execute('select Unit_Price from Client_Products where Product_ID = {0}'.format(product_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -108,21 +110,23 @@ def get_unitprice():
     the_response.mimetype = 'application/json'
     return the_response
 
+# Update unit price for a specific product id
 @current_clients.route('/client_products/<product_id>', methods=["PUT"])
 def update_unitprice(product_id):
     new_data = request.get_json()
 
     cursor = db.get_db().cursor()
-    original_price = cursor.execute('select Unit_Price from client_products where product_id = {0}'.format(product_id))
-    original_price.data.update(new_data)
+    original_price = cursor.execute('select Unit_Price from Client_Products where Product_ID = {0}'.format(product_id))
+    db.update_client_products(original_price, new_data)
     db.session.commit()
 
     return f'Product with id (product_id) updated with new unit price (new_data)'
 
-@current_clients.route('/applications/spending_analysis', methods=["GET"])
-def get_spending_analysis():
+# Get spending analysis of a specific application
+@current_clients.route('/applications/<app_id>/spending_analysis', methods=["GET"])
+def get_spending_analysis(app_id):
     cursor = db.get_db().cursor()
-    cursor.execute('select Spending_Analysis from Applications')
+    cursor.execute('select Spending_Analysis from Applications where App_ID = {0}'.format(app_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -133,10 +137,11 @@ def get_spending_analysis():
     the_response.mimetype = 'application/json'
     return the_response
 
-@current_clients.route('/applications/customer_report', methods=["GET"])
-def get_customer_report():
+# Get customer report of a specific application
+@current_clients.route('/applications/<app_id>/customer_report', methods=["GET"])
+def get_customer_report(app_id):
     cursor = db.get_db().cursor()
-    cursor.execute('select Customer_Report from Applications')
+    cursor.execute('select Customer_Report from Applications where App_ID = {0}'.format(app_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -147,10 +152,11 @@ def get_customer_report():
     the_response.mimetype = 'application/json'
     return the_response
 
-@current_clients.route('/applications/product_report', methods=["GET"])
-def get_product_report():
+# Get product report for a specific application
+@current_clients.route('/applications/<app_id>/product_report', methods=["GET"])
+def get_product_report(app_id):
     cursor = db.get_db().cursor()
-    cursor.execute('select Product_Report from Applications')
+    cursor.execute('select Product_Report from Applications where App_ID = {0}'.format(app_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
