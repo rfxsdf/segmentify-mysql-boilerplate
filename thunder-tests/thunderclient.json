@@ -387,16 +387,16 @@
     "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
     "containerId": "",
     "name": "PUT client_products/<product_id> Test 2",
-    "url": "localhost:8001/cc/client_products",
+    "url": "localhost:8001/cc/client_products/1797179535",
     "method": "PUT",
     "sortNum": 220000,
     "created": "2023-04-19T02:17:36.071Z",
-    "modified": "2023-04-19T05:22:15.280Z",
+    "modified": "2023-04-19T02:18:13.561Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"Unit_Price\": 4.20,\n  \"Product_ID\": 1797179535\n}",
+      "raw": "{\n  \"Unit_Price\": 4.20\n}",
       "form": []
     },
     "tests": []
@@ -487,44 +487,6 @@
     "body": {
       "type": "json",
       "raw": "{\n  \"Quantity\": 100,\n  \"Discount\": 30,\n  \"Unit_Price\": 3.50,\n  \"O_Order_ID\": 7211693908\n}",
-      "form": []
-    },
-    "tests": []
-  },
-  {
-    "_id": "026f8fd6-e128-43d1-a8e5-0aa380e1328e",
-    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
-    "containerId": "",
-    "name": "Update unit price",
-    "url": "localhost:8001/cc/client_products",
-    "method": "PUT",
-    "sortNum": 230000,
-    "created": "2023-04-19T05:23:37.679Z",
-    "modified": "2023-04-19T05:23:59.839Z",
-    "headers": [],
-    "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n  \"Unit_Price\": 4.20,\n  \"Product_ID\": 1797179535\n}",
-      "form": []
-    },
-    "tests": []
-  },
-  {
-    "_id": "2674bc24-cccb-448d-91fb-8e5dde138917",
-    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
-    "containerId": "",
-    "name": "PUT update_unit_price12",
-    "url": "localhost:8001/cc/client_products",
-    "method": "PUT",
-    "sortNum": 240000,
-    "created": "2023-04-19T05:32:34.044Z",
-    "modified": "2023-04-19T05:37:07.388Z",
-    "headers": [],
-    "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n  \"Unit_Price\": 4.20,\n  \"Product_ID\": 8246214063\n}",
       "form": []
     },
     "tests": []
