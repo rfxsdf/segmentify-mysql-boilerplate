@@ -16,11 +16,27 @@ def update_order_details():
 
     return f'(original_od) updated to (new_data)'
 
-# Get information about current clients
-@internal_employees.route('/current_clients', methods=['GET'])
-def get_current_clients():
+# Get all demographics information for current_clients
+@internal_employees.route('/current_clients/demographics', methods=["GET"])
+def get_demographics():
     cursor = db.get_db().cursor()
-    cursor.execute('select * from Current_Clients')
+    cursor.execute('select Demographics from Current_Clients')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+    
+
+# Get information for specific current_clients based on curr_client_id
+@internal_employees.route('/current_clients/<curr_client_id>', methods=['GET'])
+def get_current_clients(curr_client_id):
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Current_Clients where Curr_Client_ID = {0}'.format(curr_client_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -52,11 +68,11 @@ def delete_client(curr_client_id):
     return f'Deleted (current_clients) with curr_client_id (curr_client_id)'
 
 
-# Get reports of current clients
-@internal_employees.route('/current_clients/reports', methods=['GET'])
-def get_report():
+# Get reports of current clients based on client id
+@internal_employees.route('/current_clients/<curr_client_id>/reports', methods=['GET'])
+def get_report(curr_client_id):
     cursor = db.get_db().cursor()
-    cursor.execute('select Reports from Current_Clients')
+    cursor.execute('select Reports from Current_Clients where Curr_Client_ID = {0}'.format(curr_client_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -67,7 +83,8 @@ def get_report():
     the_response.mimetype = 'application/json'
     return the_response
 
-@internal_employees.route('/current_clients/reports', methods=["POST"])
+# Add a new client 
+@internal_employees.route('/current_clients', methods=["POST"])
 def create_report():
     the_data = request.json
     current_app.logger.info(the_data)
@@ -84,19 +101,19 @@ def create_report():
     curr_client_id = the_data["Curr_Client_ID"]
     reports = the_data["Reports"]
 
-    query = 'insert into current_clients (Contact_Name, Company_Name, Contact_Title, Headquarter_Address, Phone, \
+    query = 'insert into Current_Clients (Contact_Name, Company_Name, Contact_Title, Headquarter_Address, Phone, \
             Fax, Demographics, Client_Company_ID, Int_Emp_ID, Curr_Client_ID, Reports) values ("'
     query += contact_name + '", "'
-    query += company_name + "', "
+    query += company_name + '", "' 
     query += contact_title + '", "'
-    query += headquarter_address + "', "
+    query += headquarter_address + '", "'
     query += phone + '", "'
-    query += fax + "', "
+    query += fax + '", "'
     query += demographics + '", "'
-    query += str(client_company_id) + "', "
-    query += str(int_emp_id) + ", "
-    query += str(curr_client_id) + ", "
-    query += reports + ')'
+    query += str(client_company_id) + '", "'
+    query += str(int_emp_id) + '", '
+    query += str(curr_client_id) + ', "'
+    query += reports + '")'
     current_app.logger.info(query)
 
     cursor = db.get_db().cursor()
