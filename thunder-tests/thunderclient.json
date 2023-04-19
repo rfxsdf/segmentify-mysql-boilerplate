@@ -324,5 +324,57 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "231fc744-2f41-49fe-b185-d0a972b50a13",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "DELETE client_products Test 1",
+    "url": "localhost:8001/cc/client_products",
+    "method": "DELETE",
+    "sortNum": 180000,
+    "created": "2023-04-19T01:54:51.405Z",
+    "modified": "2023-04-19T01:57:59.630Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Product_ID\":4879516498\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "91191bc3-1953-4a63-b5db-8d4c20aa55db",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "DELETE client_products Test 2",
+    "url": "localhost:8001/cc/client_products",
+    "method": "DELETE",
+    "sortNum": 190000,
+    "created": "2023-04-19T02:01:23.346Z",
+    "modified": "2023-04-19T02:02:26.471Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Product_ID\": 1879456\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "dd8967ef-2882-4aa8-a031-788205d09683",
+    "colId": "5e76ec1b-bf91-4970-b8d7-bb3e78466434",
+    "containerId": "",
+    "name": "GET client_products/product_id",
+    "url": "localhost:8001/cc/client_products/product_id",
+    "method": "GET",
+    "sortNum": 200000,
+    "created": "2023-04-19T02:07:07.375Z",
+    "modified": "2023-04-19T02:07:19.344Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

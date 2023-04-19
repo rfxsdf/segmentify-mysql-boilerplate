@@ -52,6 +52,21 @@ def get_demographics():
     the_response.mimetype = 'application/json'
     return the_response
 
+# Get all product id
+@current_clients.route('/client_products/product_id', methods=["GET"])
+def get_product_ids():
+    cursor = db.get_db().cursor()
+    cursor.execute('select Product_ID from Client_Products')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
 # Get 
 @current_clients.route('/client_products/<product_id>', methods=["GET"])
 def get_products(product_id):
@@ -92,9 +107,20 @@ def add_product():
 
     return 'Success!'
 
-@current_clients.route('/client_products/<product_id>', methods=["DELETE"])
-def delete_product(product_id):
-    return f'Deleted product with product_id (product_id)'
+# Delete product based on a specific product id
+@current_clients.route('/client_products', methods=["DELETE"])
+def delete_product():
+    id_to_delete = request.json
+    current_app.logger.info(id_to_delete)
+
+    query = 'DELETE from Client_Products where Product_Id =' + str(id_to_delete['Product_ID'])
+    current_app.logger.info(query)
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+
+    return 'Deleted product with Product_Id: {0}'.format(id_to_delete['Product_ID'])
 
 @current_clients.route('/cient_products/<product_id>/unit_price', methods=["GET"])
 def get_unitprice(product_id):
@@ -113,6 +139,15 @@ def get_unitprice(product_id):
 # Update unit price for a specific product id
 @current_clients.route('/client_products/<product_id>', methods=["PUT"])
 def update_unitprice(product_id):
+    id_to_update = request.json
+    current_app.logger.info(id_to_update)
+
+    query = 'UPDATE  from Client_Products where Product_Id =' + str(id_to_delete['Product_ID'])
+    current_app.logger.info(query)
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
     new_data = request.get_json()
 
     cursor = db.get_db().cursor()
