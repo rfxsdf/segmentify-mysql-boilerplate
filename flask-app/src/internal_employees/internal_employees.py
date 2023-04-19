@@ -22,8 +22,8 @@ def update_order_details():
     return 'Order ID {0} has new updated quantity of {1}, new updated discount of {2}, and new updated unit price of {3}.'.format(
         new_order_details["O_Order_ID"], new_order_details["Quantity"], new_order_details["Discount"], new_order_details["Unit_Price"])
 
-# need to write tests
-# Update discount, quantity, and unit price on orders based on order id
+
+# Get information on all order details
 @internal_employees.route('/order_details', methods=['GET'])
 def get_order_details():
     cursor = db.get_db().cursor()
@@ -69,7 +69,7 @@ def get_current_clients(curr_client_id):
     the_response.mimetype = 'application/json'
     return the_response
 
-# Need to write test 
+
 # Get all current clients
 @internal_employees.route('/current_clients', methods=["GET"])
 def get_all_curr_clients():
@@ -101,21 +101,21 @@ def delete_client():
     return 'Deleted current client with ID: {0}'.format(id_to_delete['Curr_Client_ID'])
 
 
+# Update int_emp id on a current client
 @internal_employees.route('/current_clients', methods=['PUT'])
 def update_current_clients():
     new_data = request.get_json()
+    current_app.logger.info(new_data)
+
+    query = 'UPDATE Current_Clients SET Int_Emp_ID =' +\
+        str(new_data["Int_Emp_ID"]) + 'WHERE Curr_Client_ID = {0}'.format(str(new_data['Curr_Client_ID']))
+    current_app.logger.info(query)
 
     cursor = db.get_db().cursor()
-    original_cc = cursor.execute('select * from Current_Clients')
-    original_cc.data.update(new_data)
+    cursor.execute(query)
     db.session.commit()
 
-    return f'(original_cc) updated to (new_data)'
-
-@internal_employees.route('/current_clients', methods=["DELETE"])
-def delete_current_clients():
-    return f'Marked (current_clients) as no longer clients'
-
+    return 'Client with ID {0} updated with new information.'.format(new_data["Curr_Client_ID"])
 
 
 # Get reports of current clients based on client id
@@ -171,14 +171,3 @@ def create_report():
     db.get_db().commit()
 
     return 'Success!'
-
-@internal_employees.route('/current_clients/<curr_client_id>', methods=["PUT"])
-def update_reports(curr_client_id):
-    new_data = request.get_json()
-
-    cursor = db.get_db().cursor()
-    original_price = cursor.execute('select Reports from Current_Clients where Curr_Client_ID = {0}'.format(curr_client_id))
-    original_price.data.update(new_data)
-    db.session.commit()
-
-    return f'Current client with id (curr_client_id) updated with new report (new_data)'
