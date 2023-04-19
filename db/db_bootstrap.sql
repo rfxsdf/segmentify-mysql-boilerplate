@@ -2874,13 +2874,13 @@ CREATE TABLE IF NOT EXISTS `Client_Products`
     `Product_ID`     BIGINT NOT NULL,
     `Category_ID`    BIGINT       NOT NULL,
     `Curr_Client_ID` BIGINT       NOT NULL,
-    PRIMARY KEY (`Curr_Client_ID`, `Product_ID`),
+    PRIMARY KEY (`Product_ID`),
     CONSTRAINT `fk_34`
         FOREIGN KEY (`Category_ID`) REFERENCES `Categories` (`Category_ID`) ON DELETE restrict,
     CONSTRAINT `fk_35`
         FOREIGN KEY (`Curr_Client_ID`) REFERENCES `Current_Clients` (`Curr_Client_ID`) ON DELETE cascade,
     INDEX `idx_Curr_Client_ID` (`Curr_Client_ID`),
-    UNIQUE INDEX `idx_Product_ID` (`Product_ID`)
+    INDEX `idx_Product_ID` (`Product_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `Client_Products`(`CP_Name`,`Unit_Price`,`Product_ID`,`Category_ID`,`Curr_Client_ID`) VALUES ('Wine - Trimbach Pinot Blanc',4.14,8318809335,1270934228,9467661993);
