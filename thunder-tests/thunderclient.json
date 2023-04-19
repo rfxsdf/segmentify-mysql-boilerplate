@@ -433,5 +433,43 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "42d896ae-c111-4243-b363-3aef21076d20",
+    "colId": "66bca089-9597-4f19-b24a-24f68c302262",
+    "containerId": "",
+    "name": "DELETE current_clients Test 1",
+    "url": "localhost:8001/ie/current_clients",
+    "method": "DELETE",
+    "sortNum": 100000,
+    "created": "2023-04-19T03:31:12.985Z",
+    "modified": "2023-04-19T03:33:30.497Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Curr_Client_ID\": 7849517965\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2195c77c-d549-4b14-a272-8f531a73ad5e",
+    "colId": "66bca089-9597-4f19-b24a-24f68c302262",
+    "containerId": "",
+    "name": "DELETE current_clients Test 2",
+    "url": "localhost:8001/ie/current_clients",
+    "method": "DELETE",
+    "sortNum": 110000,
+    "created": "2023-04-19T03:33:54.520Z",
+    "modified": "2023-04-19T03:34:48.064Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"Curr_Client_ID\": 1829364758\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

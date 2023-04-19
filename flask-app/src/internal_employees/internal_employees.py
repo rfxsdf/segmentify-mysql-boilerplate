@@ -53,7 +53,22 @@ def get_current_clients(curr_client_id):
     the_response.mimetype = 'application/json'
     return the_response
 
-# Update all current clients
+# Remove a specific current client based on curr_client_id
+@internal_employees.route('/current_clients', methods=["DELETE"])
+def delete_client():
+    id_to_delete = request.json
+    current_app.logger.info(id_to_delete)
+
+    query = 'DELETE from Current_Clients where Curr_CLient_ID =' + str(id_to_delete['Curr_Client_ID'])
+    current_app.logger.info(query)
+    
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+
+    return 'Deleted current client with ID: {0}'.format(id_to_delete['Curr_Client_ID'])
+
+
 @internal_employees.route('/current_clients', methods=['PUT'])
 def update_current_clients():
     new_data = request.get_json()
@@ -69,9 +84,6 @@ def update_current_clients():
 def delete_current_clients():
     return f'Marked (current_clients) as no longer clients'
 
-@internal_employees.route('/current_clients/<curr_client_id>', methods=["DELETE"])
-def delete_client(curr_client_id):
-    return f'Deleted (current_clients) with curr_client_id (curr_client_id)'
 
 
 # Get reports of current clients based on client id
