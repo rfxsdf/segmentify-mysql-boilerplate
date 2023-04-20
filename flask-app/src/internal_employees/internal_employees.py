@@ -100,24 +100,6 @@ def delete_client():
 
     return 'Deleted current client with ID: {0}'.format(id_to_delete['Curr_Client_ID'])
 
-
-# Update int_emp id on a current client
-@internal_employees.route('/current_clients', methods=['PUT'])
-def update_current_clients():
-    new_data = request.get_json()
-    current_app.logger.info(new_data)
-
-    query = 'UPDATE Current_Clients SET Int_Emp_ID =' +\
-        str(new_data["Int_Emp_ID"]) + 'WHERE Curr_Client_ID = {0}'.format(str(new_data['Curr_Client_ID']))
-    current_app.logger.info(query)
-
-    cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.session.commit()
-
-    return 'Client with ID {0} updated with new information.'.format(new_data["Curr_Client_ID"])
-
-
 # Get reports of current clients based on client id
 @internal_employees.route('/current_clients/<curr_client_id>/reports', methods=['GET'])
 def get_report(curr_client_id):
