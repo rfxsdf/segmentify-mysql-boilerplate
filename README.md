@@ -25,6 +25,8 @@ If the user aligns more with an internal employee, they could view a database of
 
 **Contact Information**: Luke Abbatessa (abbatessa.l@northeastern.edu), Jenny Cai (cai.je@northeastern.edu), Yuting Zheng (zheng.yuti@northeastern.edu)
 
+**Link to Video**: https://youtu.be/eCnmc2uHYh8
+
 This repo contains a boilerplate setup for spinning up 3 Docker containers: 
 1. A MySQL 8 container for obvious reasons
 1. A Python Flask container to implement a REST API
